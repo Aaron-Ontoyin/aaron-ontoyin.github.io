@@ -391,6 +391,7 @@ p {
 .project h3 {
     font-size: 24px;
     margin-bottom: 10px;
+    text-align: left;
 }
 
 .project p {
