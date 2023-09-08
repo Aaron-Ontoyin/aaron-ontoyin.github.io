@@ -1,0 +1,686 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    line-height: 30px;
+    text-align: justify;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+.social-link {
+    color: #011224;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+
+ul {
+    list-style-type: none;
+}
+
+
+header {
+    background-color: rgb(20, 19, 19);
+    color: aliceblue;
+    padding: 20px 0;
+}
+
+nav ul {
+    list-style: none;
+    text-align: right;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+}
+
+nav a:hover {
+    color: #007bff;
+}
+
+#hero {
+    background-image: url('../images/background-image.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    text-align: center;
+    padding: 100px 0;
+}
+
+.hero-content {
+    max-width: 800px;
+    margin: 0 auto;
+    color: #011224;
+    font-weight: bold;
+}
+
+.hero-content h1 {
+    color: rgb(1, 1, 51);
+}
+
+h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 1.2rem;
+}
+
+#about-box {
+    transform: rotate(-3deg);
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.1);
+    padding-bottom: 100px;
+    margin-bottom: 7rem;
+}
+
+#aboutme-header {
+    font-size: 3rem;
+}
+
+#subscription {
+    width: fit-content;
+    display: block;
+    position: absolute;
+    right: 50px;
+    bottom: 10px;
+}
+
+.cta-button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.cta-button:hover {
+    background-color: #0056b3;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px;
+    background-color: #fff;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.container h2 {
+    color: rgba(7, 7, 61, 0.9);
+}
+
+@keyframes floatingRotating {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: rotate(-2deg);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes floatingBouncing {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-20px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes floatingSign {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    15% {
+        transform: rotateY(720deg);
+    }
+
+    30% {
+        transform: rotate(10deg);
+    }
+
+    45% {
+        transform: rotate(-10deg);
+    }
+
+
+    60% {
+        transform: scale(0.1);
+    }
+
+    80% {
+        transform: scale(1);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+#skills {
+    display: flex;
+    flex-direction: column;
+}
+
+.sign-container {
+    width: 100%;
+    height: 300px;
+    background-image: url('../images/sign.png');
+    background-size: cover;
+    background-position: center;
+    opacity: 0.5;
+}
+
+#skills-box {
+    width: 90vw;
+    background-color: rgba(218, 236, 251, 0.3);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow:
+        0 4px 6px rgba(0, 0, 0, 0.1),
+        0 10px 20px rgba(0, 0, 0, 0.15),
+        0 10px 20px rgba(0, 0, 150, 0.15);
+    border-radius: 15px;
+    backdrop-filter: blur(10px);
+    opacity: 0.9;
+    align-items: center;
+
+}
+
+#skills-list {
+    color: rgb(27, 31, 1);
+    line-height: 40px;
+    padding: 2px;
+    padding-top: 15px;
+    width: fit-content;
+    text-align: left;
+}
+
+#projects {
+    display: flex;
+    flex-direction: column;
+}
+
+.project {
+    margin-top: 30px;
+    padding: 15px;
+    box-shadow: 0px 3px 10px rgba(0, 0, 255, 0.1);
+    border-radius: 30px;
+}
+
+#status-container {
+    border-radius: 15px;
+    /* overflow: scroll; */
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    background-image: url("../images/aaron_drillbotics.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.status-title {
+    color: rgb(7, 7, 206);
+    font-size: 2rem;
+    margin-bottom: 10px;
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.status-inner-container {
+    padding: 3rem;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.88);
+}
+
+#statusButton {
+    display: block;
+}
+
+
+#projects-box {
+    max-height: 100vh;
+    overflow: scroll;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    animation: floatingBouncing 2s infinite;
+    position: relative;
+    padding-top: 0;
+}
+
+.sign-container {
+    height: 40vw;
+    background-image: url('../images/sign.png');
+    background-size: cover;
+    background-position: center;
+    opacity: 0.2;
+    color: whitesmoke;
+    font-size: 5em;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+@media (min-width: 768px) {
+    #skills {
+        flex-direction: row;
+    }
+
+    #skills-box {
+        width: 40vw;
+        margin-right: 60px;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        animation: floatingRotating 2s infinite;
+    }
+
+    
+    #projects {
+        flex-direction: row;
+    }
+
+    #projects-box {
+        margin-top: 200px;
+        width: 40vw;
+        max-height: 100vh;
+        margin-left: 60px;
+        z-index: 1;
+        position: relative;
+    }
+
+    #projects-box::-webkit-scrollbar {
+        width: 0.1em;
+    }
+
+    #projects-box::-webkit-scrollbar-thumb {
+        background-color: transparent;
+    }
+
+    #status-container {
+        width: 0;
+        left: 520px;
+        margin-top: 250px;
+        position: absolute;
+        width: 45vw;
+        max-height: 90vh;
+        margin-top: 250px;
+        border-right: 7px ridge rgb(3, 3, 44);
+        margin-top: 250px;
+        
+    }
+
+    #status-container::-webkit-scrollbar {
+        width: 0.1em;
+    }
+
+    #status-container::-webkit-scrollbar-thumb {
+        background-color: transparent;
+    }
+
+
+    .sign-container {
+        width: 25vw;
+        height: 25vw;
+        margin-left: 100px;
+        margin-top: 120px;
+        border-radius: 20px;
+    }
+
+}
+
+.projects-title {
+    font-size: 2rem;
+    padding-top: 5px;
+    margin-bottom: 10px;
+    text-align: center;
+    position: sticky;
+    z-index: 1;
+    top: 0;
+    background-color: white;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.sign-text {
+    animation: floatingSign 8s infinite;
+}
+
+.project h3 {
+    color: #090b0c;
+}
+
+.project h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.project p {
+    font-size: 16px;
+    color: #555;
+}
+
+.project-button {
+    margin-top: 10px;
+    text-align: center;
+    border: none;
+}
+
+.project-button a {
+    display: block;
+    padding: 10px 20px;
+    background-color: #6428fc;
+    color: #fff;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.4s ease;
+}
+
+.project-button a:hover {
+    background-color: #381f78;
+}
+
+#more-info {
+    background-image: url('../images/cover_image.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 30px 30px 30px 30px rgba(50, 100, 0, 0.8);
+
+}
+
+
+#more-info h2 {
+    position: absolute;
+    left: 3rem;
+    margin-top: 1rem;
+    font-size: xx-large;
+    color: #6536dd;
+    font-weight: bolder;
+}
+
+#more-info span {
+    font-style: italic;
+}
+
+#testimonials-box {
+    margin: 3rem;
+    margin-top: 4rem;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #f5f5f5a0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: medium;
+    border-radius: 15px;
+    padding: 4rem;
+    padding-top: 1rem;
+    transition: background-color 0.3s ease;
+    overflow: auto;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+#testimonials-box::-webkit-scrollbar {
+    width: 0.1em;
+}
+
+#testimonials-box::-webkit-scrollbar-thumb {
+    background-color: transparent;
+}
+
+#testimonials-box:hover {
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+
+.testimonial {
+    margin-top: 1.5rem;
+    padding: 1px;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 5rem;
+    box-shadow: 8px 2px rgba(0, 0, 0, 0.3);
+}
+
+.testimonial div {
+    width: 75%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.testimonial div h3 {
+    margin-top: 1rem;
+    color: rgb(208, 223, 236);
+    text-shadow: 10px 10px 10px rgba(0, 0, 0, 0.88);
+}
+
+.testimonial img {
+    border-radius: 50%;
+    margin-bottom: 1rem;
+    margin-left: 1rem;
+    width: 150px;
+    height: 150px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.88);
+}
+
+
+#contact-container {
+    padding: 5px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow:
+        0 4px 6px rgba(0, 0, 0, 0.1),
+        0 10px 20px rgba(0, 0, 0, 0.15),
+        0 20px 40px rgba(0, 0, 255, 0.15);
+    backdrop-filter: blur(10px);
+    opacity: 0.9;
+}
+
+/* Styling for the footer */
+footer {
+    text-align: center;
+    background-color: #121010;
+    color: #fff;
+    padding: 20px 0;
+    font-size: 0.9rem;
+}
+
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+    
+    header {
+        text-align: center;
+    }
+
+    nav ul {
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    nav ul li {
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    #hero {
+        padding: 80px 0;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+
+    .testimonial {
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 1rem;
+        margin-bottom: 2rem;
+    }
+
+    .testimonial img {
+        margin-top: 1rem;
+    }
+
+    #testimonials-box {
+        margin-left: 1.5rem;
+        margin-right: 1.5rem;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+
+}
+
+
+.navbar {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.navbar-menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navbar-menu li {
+    margin: 0 20px;
+}
+
+@media screen and (max-width: 768px) {
+    .navbar-menu {
+        display: none;
+        flex-direction: column;
+        align-items: flex-end;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        background-color: #fff;
+        border: 1px solid #ddd;
+        box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+        z-index: 1;
+    }
+
+    .navbar-menu.active {
+        display: flex;
+    }
+
+    .navbar-menu li {
+        margin: 10px;
+    }
+
+    .menu-toggle-button {
+        background: none;
+        border: none;
+        cursor: pointer;
+        padding: 10px;
+    }
+
+    .menu-icon::before,
+    .menu-icon::after {
+        content: '';
+        display: block;
+        height: 3px;
+        width: 25px;
+        background-color: #333;
+        margin: 4px 0;
+    }
+
+    .menu-toggle.active .menu-icon::before {
+        transform: rotate(45deg) translate(5px, 6px);
+    }
+
+    .menu-toggle.active .menu-icon::after {
+        transform: rotate(-45deg) translate(5px, -6px);
+    }
+}
+
+
+/* ... Your existing CSS ... */
+
+/* Styles for the Contact Me section */
+#contact {
+    background-color: #f9f9f9;
+    padding: 40px;
+    /* Added padding for spacing */
+    text-align: center;
+    /* Center-align the contact list */
+}
+
+.contact-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    /* Allows items to wrap to the next line */
+    justify-content: center;
+    /* Center-align items horizontally */
+    gap: 20px;
+    /* Spacing between contact items */
+}
+
+.contact-list li {
+    text-align: center;
+    margin: 10px;
+    /* Margin around each contact item */
+    font-size: 14px;
+    /* Decrease the font size */
+}
+
+.contact-list i {
+    font-size: 36px;
+    /* Increase icon size */
+    margin-bottom: 5px;
+    /* Add space between icon and text */
+    color: #007bff;
+    /* Icon color (blue) */
+}
+
+.contact-list span {
+    display: block;
+    /* Make the text block-level for line break */
+}

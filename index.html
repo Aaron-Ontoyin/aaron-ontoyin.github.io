@@ -1,65 +1,225 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Image Compression Landing Page</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Aaron Ontoyin Yin - Profile</title>
+    <link rel="stylesheet" href="static/styles/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 </head>
+
 <body>
     <header>
-        <nav>
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#features">Features</a></li>
+        <nav class="navbar">
+            <div class="navbar-toggle">
+                <button id="menu-toggle" class="menu-toggle-button">
+                    <span class="menu-icon"></span>
+                </button>
+            </div>
+            <ul class="navbar-menu">
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
-        <h1>Image compression App</h1>
-        <p>A perfect app for all your image compression problems.</p>
-        <a href="https://github.com/Aaron-Ontoyin/Image-compression-vw.git" target="_blank" class="btn">View Project</a>
-    </header>
-    
-    <section id="features">
-        <h2>Key Features</h2>
 
-        <div class="feature">
-            <img src="upload.jpeg" alt="Feature 1" height="100px" width="100px">
-            <h3>Upload an image</h3>
-        </div>
-        <div class="feature">
-            <img src="control.jpeg" alt="Feature 2" height="100px" width="100px">
-            <h3>Control Image Compression</h3>
-        </div>
-        <div class="feature">
-            <img src="compare.jpeg" alt="Feature 3" height="100px" width="100px">
-            <h3>Compare Compressed with Original Image</h3>
+    </header>
+
+    <section id="hero">
+        <div class="hero-content">
+            <h1>Aaron Ontoyin Yin</h1>
+            <p>Electrical & Electronics Engineering Student | Software Engineer | Data Scientist | Machine Learning
+                Enthusiast</p>
+            <a href="#contact" class="cta-button">Get in Touch</a>
         </div>
     </section>
-    
+
     <section id="about">
-        <h2>About Me</h2>
-        <p>I embarked on this project driven by my passion for the world of digital media and a strong desire to make a tangible impact. As an avid photographer and content creator, I often faced the challenge of managing large image files. This struggle inspired me to create a solution that would not only simplify my life but also benefit others facing similar issues. The idea for my image compression web app was born from these personal experiences and the vision of making image optimization accessible to all.</p>
-        <p>This project was developed as a personal endeavor and a demonstration of my skills. It is also a part of my portfolio as a student of Holberton School.</p>
-        
-        <h3>Connect with Me</h3>
-        <ul>
-            <li><a href="https://www.linkedin.com/in/aarononto" target="_blank">LinkedIn</a></li>
-            <li><a href="https://github.com/Aaron-Ontoyin" target="_blank">GitHub</a></li>
-            <li><a href="https://twitter.com/OntoAaron" target="_blank">Twitter / X</a></li>
-        </ul>
-        
-        <a href="https://github.com/Aaron-Ontoyin/Image-compression-vw.git" target="_blank" class="btn">GitHub Repository</a>
+        <div class="container" id="about-box">
+            <h2 id="aboutme-header">About Me</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde expedita voluptas soluta ipsa ducimus,
+                voluptates odio debitis quis. Fugiat sequi aspernatur beatae tempora expedita vitae maiores, consequatur
+                quisquam iste ut reprehenderit quaerat asperiores! Esse odio culpa cum nisi, non amet quos in tempora
+                facilis repudiandae.
+            </p>
+            <div id="subscription">
+                <span>Aaron Ontoyin Yin</span> <br>
+                <img src="#" alt="Sign"> <br>
+                <span>Vadmin</span>
+            </div>
+        </div>
     </section>
-     
+
+    <section id="skills">
+        <div class="sign-container">
+            <span class="sign-text">Vadmin</span>
+        </div>
+        <div class="container" id="skills-box">
+            <h2>Skills</h2>
+            <ul id="skills-list">
+                <li>
+                    <i class="fas fa-laptop-code"></i> Software Development
+                </li>
+                <li>
+                    <i class="fas fa-chart-bar"></i> Data Analysis
+                </li>
+                <li>
+                    <i class="fas fa-robot"></i> Machine Learning
+                </li>
+                <li>
+                    <i class="fas fa-lightbulb"></i> Electrical Engineering
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="projects">
+        <div class="container" id="projects-box">
+            <h2 class="projects-title">Projects</h2>
+            <div class="project">
+                <h3>Website Redesign</h3>
+                <p>A redesign of a company website to improve user experience and visual appeal. Implemented responsive
+                    design and enhanced site performance.</p>
+                <button class="project-button"><a href="https://www.example.com/project1" target="_blank">View
+                        Project</a></button>
+            </div>
+            <div class="project">
+                <h3>Data Visualization Dashboard</h3>
+                <p>Developed an interactive data visualization dashboard using D3.js to display key metrics and trends
+                    from large datasets.</p>
+                <button class="project-button"><a href="https://www.example.com/project2" target="_blank">View
+                        Project</a></button>
+            </div>
+            <div class="project">
+                <h3>Machine Learning Model</h3>
+                <p>Implemented a machine learning model for sentiment analysis on social media data. Achieved 85%
+                    accuracy in sentiment classification.</p>
+                <button class="project-button"><a href="https://www.example.com/project3" target="_blank">View
+                        Project</a></button>
+            </div>
+        </div>
+        <div id="status-container">
+            <div class="status-inner-container">
+                <h2 class="status-title">My Status</h2>
+                <div class="status">
+                    <h3>Projects Completed</h3>
+                    <span>100</span>
+                </div>
+                <div class="status">
+                    <h3>Happy Clients</h3>
+                    <span>50</span>
+                </div>
+                <div class="status">
+                    <h3>Hours Worked</h3>
+                    <span>1000</span>
+                </div>
+                <div class="status">
+                    <h3>Awards Won</h3>
+                    <span>10</span>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="more-info">
+        <h2>Testimonials</h2>
+
+        <div id="testimonials-box">
+            <div class="testimonial">
+                <div class="">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum. Quisquam,
+                        voluptatum.
+                        Quisquam, voluptatum.
+                    </p>
+                    <h3>John Doe</h3>
+                    <span>CEO, ABC Company</span>
+                </div>
+                <img src="static/images/cover_image.jpg" alt="Testimonial 1">
+            </div>
+            <div class="testimonial">
+                <div class="">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum. Quisquam,
+                        voluptatum.
+                        Quisquam, voluptatum.
+                    </p>
+                    <h3>John Doe</h3>
+                    <span>CEO, ABC Company</span>
+                </div>
+                <img src="static/images/cover_image.jpg" alt="Testimonial 2">
+            </div>
+            <div class="testimonial">
+                <div class="">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum. Quisquam,
+                        voluptatum.
+                        Quisquam, voluptatum.
+                    </p>
+                    <h3>John Doe</h3>
+                    <span>CEO, ABC Company</span>
+                </div>
+                <img src="static/images/cover_image.jpg" alt="Testimonial 3">
+            </div>
+        </div>
+    </section>
+
+
     <section id="contact">
-        <h2>Contact Me</h2>
-        <p>For inquiries, please email me at <a href="mailto:aarononto909@gmail.com">aarononto909@gmail.com</a>.</p>
+        <div class="container" id="contact-container">
+            <h2>Contact Me</h2>
+            <ul class="contact-list">
+                <li>
+                    <a href="mailto:dummy.email@example.com">
+                        <i class="fas fa-envelope"></i>
+                        <span class="social-link">Email</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://twitter.com/dummyTwitter" target="_blank">
+                        <i class="fab fa-twitter"></i>
+                        <span class="social-link">Twitter</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.facebook.com/DummyFacebook" target="_blank">
+                        <i class="fab fa-facebook"></i>
+                        <span class="social-link">Facebook</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="tel:+1234567890">
+                        <i class="fab fa-whatsapp"></i>
+                        <span class="social-link">WhatsApp</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fab fa-discord"></i>
+                        <span class="social-link">DummyDiscord#1234</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.instagram.com/dummyInstagram" target="_blank">
+                        <i class="fab fa-instagram"></i>
+                        <span class="social-link">Instagram</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://github.com/DummyGitHub" target="_blank">
+                        <i class="fab fa-github"></i>
+                        <span class="social-link">GitHub</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
     </section>
-    
-    <section id="video">
-        <h2>Project Overview Video</h2>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/your_video_id" frameborder="0" allowfullscreen></iframe>
-    </section>
+
+    <footer>
+        <p>&copy; 2023 Your Name</p>
+    </footer>
+
+    <script src="static/js/script.js" defer></script>
 </body>
+
 </html>
