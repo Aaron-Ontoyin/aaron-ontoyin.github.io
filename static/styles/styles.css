@@ -65,7 +65,7 @@ nav a:hover {
 
 .hero-content {
     max-width: 800px;
-    margin: 0 auto;
+    margin: auto 1rem;
     color: #011224;
     font-weight: bold;
 }
