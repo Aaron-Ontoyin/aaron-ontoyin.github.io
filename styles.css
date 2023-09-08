@@ -80,6 +80,10 @@ nav a {
     margin-bottom: 30px;
 }
 
+.feature h3 {
+    color: rgb(6, 178, 178);
+}
+
 .feature img {
     max-width: 100%;
     height: auto;
@@ -90,17 +94,23 @@ nav a {
     background-color: #fff;
     padding: 50px 150px;
     text-align: center;
+}
 
+#about h2 {
+    margin-bottom: 20px;
 }
 
 #about p {
     font-size: 16px;
     margin-bottom: 20px;
+    color: #6d6a6a;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 #about ul {
     list-style: none;
     padding: 0;
+    margin: 20px;
 }
 
 #about ul li {
@@ -108,7 +118,10 @@ nav a {
     margin-right: 20px;
 }
 
-/* Style the Contact section */
+#about a {
+    margin-top: 30px;
+}
+
 #contact {
     text-align: center;
     padding: 50px 0;
