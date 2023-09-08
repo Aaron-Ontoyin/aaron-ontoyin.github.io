@@ -266,6 +266,12 @@ p {
     padding: 3rem;
     border-radius: 10px;
     background-color: rgba(0, 0, 0, 0.88);
+    color: rgba(240, 248, 255, 0.477);
+    font-weight: lighter;
+}
+
+.status span a {
+    color: #0056b3;
 }
 
 #statusButton {
@@ -438,7 +444,7 @@ p {
     left: 3rem;
     margin-top: 1rem;
     font-size: xx-large;
-    color: #6536dd;
+    color: rgb(223, 240, 255);
     font-weight: bolder;
 }
 
@@ -506,6 +512,7 @@ p {
 
 
 #contact-container {
+    min-width: 70vw;
     padding: 5px;
     border: 1px solid rgba(255, 255, 255, 0.2);
     box-shadow:
@@ -518,7 +525,8 @@ p {
 
 /* Styling for the footer */
 footer {
-    text-align: center;
+    display: flex;
+    justify-content: center;
     background-color: #121010;
     color: #fff;
     padding: 20px 0;
