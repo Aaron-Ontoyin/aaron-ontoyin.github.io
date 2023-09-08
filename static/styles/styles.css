@@ -563,6 +563,8 @@ footer {
 
     .testimonial img {
         margin-top: 1rem;
+        box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.88);
+        
     }
 
     #testimonials-box {
