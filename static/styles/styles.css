@@ -603,6 +603,10 @@ footer {
 }
 
 @media screen and (max-width: 768px) {
+    .contact-list {
+        width: fit-content;
+    }
+
     .navbar-menu {
         display: none;
         flex-direction: column;
