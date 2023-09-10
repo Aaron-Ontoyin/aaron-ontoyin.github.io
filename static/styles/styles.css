@@ -103,7 +103,7 @@ p {
     bottom: 10px;
 }
 
-.cta-button {
+#cta-button {
     display: inline-block;
     margin-top: 20px;
     padding: 10px 20px;
@@ -115,7 +115,7 @@ p {
     transition: background-color 0.3s ease-in-out;
 }
 
-.cta-button:hover {
+#cta-button:hover {
     background-color: #0056b3;
 }
 
@@ -137,15 +137,15 @@ p {
 
 @keyframes floatingRotating {
     0% {
-        transform: translateY(0);
+        transform: rotate(0);
     }
 
     50% {
         transform: rotate(-2deg);
     }
-
+    
     100% {
-        transform: translateY(0);
+        transform: rotate(0);
     }
 }
 
@@ -477,7 +477,7 @@ p {
 }
 
 #testimonials-box:hover {
-    background-color: rgba(0, 0, 0, 0.9);
+    background-color: rgba(0, 0, 0, 0.8);
 }
 
 
@@ -618,6 +618,11 @@ footer {
 
     .navbar-menu.active {
         display: flex;
+        right: 0;
+        top: 75px;
+        border-bottom-left-radius: 10px;
+        background-color: rgba(0, 0, 0, 0.8);
+        border: 2px inset rgb(4, 4, 45);
     }
 
     .navbar-menu li {
@@ -694,4 +699,22 @@ footer {
 .contact-list span {
     display: block;
     /* Make the text block-level for line break */
+}
+
+#back-to-top-button {
+    display: none;
+    position: fixed;
+    bottom: 60px;
+    right: 60px;
+    background-color: #f200ff;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    padding: 10px 20px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+#back-to-top-button:hover {
+    background-color: #4e00b3;
 }
