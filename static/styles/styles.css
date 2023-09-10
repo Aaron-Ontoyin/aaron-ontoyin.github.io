@@ -687,12 +687,12 @@ footer {
     text-align: center;
     margin: 10px;
     /* Margin around each contact item */
-    font-size: 14px;
+    font-size: 12px;
     /* Decrease the font size */
 }
 
 .contact-list i {
-    font-size: 36px;
+    font-size: 32px;
     /* Increase icon size */
     margin-bottom: 5px;
     /* Add space between icon and text */
