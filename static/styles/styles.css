@@ -691,7 +691,7 @@ footer {
     /* Decrease the font size */
 }
 
-#aanics-link {
+.external-link {
     color: #007bff;
     text-decoration: underline;
 }
