@@ -691,6 +691,11 @@ footer {
     /* Decrease the font size */
 }
 
+#aanics-link {
+    color: #007bff;
+    text-decoration: underline;
+}
+
 .contact-list i {
     font-size: 32px;
     /* Increase icon size */
