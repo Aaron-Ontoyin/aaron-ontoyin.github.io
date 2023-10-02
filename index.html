@@ -7,6 +7,9 @@
     <title>Aaron Ontoyin Yin - Profile</title>
     <link rel="stylesheet" href="static/styles/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mooli&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -18,10 +21,10 @@
                 </button>
             </div>
             <ul class="navbar-menu">
-                <li><a href="#about">About Me</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="#about" class="nav-item">About Me</a></li>
+                <li><a href="#skills" class="nav-item">Skills</a></li>
+                <li><a href="#projects" class="nav-item">Projects</a></li>
+                <li><a href="#contact" class="nav-item">Contact</a></li>
             </ul>
         </nav>
 
@@ -40,7 +43,9 @@
         <div class="container" id="about-box">
             <h2 id="aboutme-header">About Me</h2>
             <p>I'm a passionate undergraduate studying Electrical and Electronics Engineering who is now experiencing
-                the exciting field of Software Engineering at <a href="https://www.alxafrica.com/" class="external-link">ALX</a>. I engage in Electronics, Robotics and IoT as an <a href="https://aaenics.com/" class="external-link">Aaenics</a> UMAT
+                the exciting field of Software Engineering at <a href="https://www.alxafrica.com/"
+                    class="external-link">ALX</a>. I engage in Electronics, Robotics and IoT as an <a
+                    href="https://aaenics.com/" class="external-link">Aaenics</a> UMAT
                 tutor, but my own research interests are in the fields of AI and data science. I value relationships and
                 friendships, and I gladly identify as a Pythonista who uses this repo of features to create original
                 solutions. This is me!
@@ -128,10 +133,42 @@
                 </div>
                 <div class="status">
                     <h3></h3>
-                    <span>See me on <a href="https://www.linkedin.com/in/aarononto/" target="_blank">LinkedIn</a> for more!</span>
+                    <span>See me on <a href="https://www.linkedin.com/in/aarononto/" target="_blank">LinkedIn</a> for
+                        more!</span>
                 </div>
             </div>
 
+        </div>
+    </section>
+
+    <section id="gallery">
+        <h2>Me!</h2>
+        <p>Scroll right <i class="fa fa-angles-right fa-beat-fade"></i></p>
+        <div class="gallery-container">
+            <div class="gallery-item">
+                <img src="static/images/cover_image.jpg" alt="Gallery Image 1">
+            </div>
+            <div class="gallery-item">
+                <img src="static/images/cover_image.jpg" alt="Gallery Image 2">
+            </div>
+            <div class="gallery-item">
+                <img src="static/images/cover_image.jpg" alt="Gallery Image 3">
+            </div>
+            <div class="gallery-item">
+                <img src="static/images/cover_image.jpg" alt="Gallery Image 4">
+            </div>
+            <div class="gallery-item">
+                <img src="static/images/cover_image.jpg" alt="Gallery Image 5">
+            </div>
+            <div class="gallery-item">
+                <img src="static/images/cover_image.jpg" alt="Gallery Image 6">
+            </div>
+            <div class="gallery-item">
+                <img src="static/images/cover_image.jpg" alt="Gallery Image 6">
+            </div>
+            <div class="gallery-item">
+                <img src="static/images/cover_image.jpg" alt="Gallery Image 6">
+            </div>
         </div>
     </section>
 
@@ -237,14 +274,19 @@
             </ul>
         </div>
 
-        <button id="back-to-top-button" title="Back to Top">^</button>
+        <button id="back-to-top-button" title="Back to Top"><i class="fa-solid fa-up-long"></i></button>
 
     </section>
+
+    <div class="image-modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="modalImage">
+    </div>
 
     <footer>
         <p>&copy; 2023 Aaron Ontoyin Yin</p>
     </footer>
-
+    <script src="https://kit.fontawesome.com/0850c8daaf.js" crossorigin="anonymous"></script>
     <script src="static/js/script.js" defer></script>
 </body>
 

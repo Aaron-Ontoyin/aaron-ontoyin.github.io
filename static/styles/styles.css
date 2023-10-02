@@ -4,6 +4,7 @@
     box-sizing: border-box;
     line-height: 30px;
     text-align: justify;
+    scroll-behavior: smooth;
 }
 
 a {
@@ -17,8 +18,9 @@ a {
 
 body {
     font-family: 'Arial', sans-serif;
-    background-color: #f5f5f5;
+    background-color: aliceblue;
     color: #333;
+    font-family: 'Mooli', sans-serif;
 }
 
 
@@ -28,9 +30,9 @@ ul {
 
 
 header {
-    background-color: rgb(20, 19, 19);
+    background-color: black;
     color: aliceblue;
-    padding: 20px 0;
+    padding: 1.2rem 0;
 }
 
 nav ul {
@@ -40,38 +42,58 @@ nav ul {
 
 nav ul li {
     display: inline;
-    margin-right: 20px;
+    margin-right: 1.3rem;
 }
 
-nav a {
+.nav-item {
     text-decoration: none;
-    color: #fff;
+    color: aliceblue;
     font-weight: bold;
     transition: color 0.3s ease-in-out;
 }
 
-nav a:hover {
-    color: #007bff;
+.nav-item:hover {
+    color: blueviolet;
+}
+
+.menu-toggle-button {
+    display: none;
 }
 
 #hero {
     background-image: url('../images/background-image.jpg');
     background-size: cover;
     background-position: center;
-    color: #fff;
     text-align: center;
-    padding: 100px 0;
+    padding: 7rem 0;
+}
+
+
+.hero-content h1 {
+    color: rgba(7, 7, 61, 0.9);
 }
 
 .hero-content {
     max-width: 800px;
     margin: auto 1rem;
-    color: #011224;
+    color: rgba(4, 4, 56, 0.9);
     font-weight: bold;
 }
 
-.hero-content h1 {
-    color: rgb(1, 1, 51);
+#cta-button {
+    display: inline-block;
+    margin-top: 2.5rem;
+    padding: 0.6rem 1.2rem;
+    background-color: rgb(24, 24, 145);
+    color: rgb(216, 228, 238);
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease-in-out;
+}
+
+#cta-button:hover {
+    background-color: rgb(23, 23, 82);
 }
 
 h1 {
@@ -103,22 +125,6 @@ p {
     bottom: 10px;
 }
 
-#cta-button {
-    display: inline-block;
-    margin-top: 20px;
-    padding: 10px 20px;
-    background-color: #007bff;
-    color: #fff;
-    text-decoration: none;
-    border-radius: 5px;
-    font-weight: bold;
-    transition: background-color 0.3s ease-in-out;
-}
-
-#cta-button:hover {
-    background-color: #0056b3;
-}
-
 .container {
     max-width: 800px;
     margin: 0 auto;
@@ -143,7 +149,7 @@ p {
     50% {
         transform: rotate(-2deg);
     }
-    
+
     100% {
         transform: rotate(0);
     }
@@ -259,7 +265,6 @@ p {
     font-size: 2rem;
     margin-bottom: 10px;
     text-align: center;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 .status-inner-container {
@@ -303,7 +308,14 @@ p {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+#status-container::-webkit-scrollbar, #projects-box::-webkit-scrollbar, .gallery-container::-webkit-scrollbar {
+    width: 0.1em;
+}
+
+#status-container::-webkit-scrollbar-thumb, #projects-box::-webkit-scrollbar-thumb, .gallery-container::-webkit-scrollbar-thumb {
+    background-color: transparent;
 }
 
 @media (min-width: 768px) {
@@ -320,7 +332,7 @@ p {
         animation: floatingRotating 2s infinite;
     }
 
-    
+
     #projects {
         flex-direction: row;
     }
@@ -334,14 +346,6 @@ p {
         position: relative;
     }
 
-    #projects-box::-webkit-scrollbar {
-        width: 0.1em;
-    }
-
-    #projects-box::-webkit-scrollbar-thumb {
-        background-color: transparent;
-    }
-
     #status-container {
         width: 0;
         left: 520px;
@@ -352,17 +356,8 @@ p {
         margin-top: 250px;
         border-right: 7px ridge rgb(3, 3, 44);
         margin-top: 250px;
-        
-    }
 
-    #status-container::-webkit-scrollbar {
-        width: 0.1em;
     }
-
-    #status-container::-webkit-scrollbar-thumb {
-        background-color: transparent;
-    }
-
 
     .sign-container {
         width: 25vw;
@@ -434,7 +429,7 @@ p {
     display: flex;
     flex-direction: column;
     align-items: center;
-    box-shadow: 30px 30px 30px 30px rgba(50, 100, 0, 0.8);
+    box-shadow: 0px 0px 10px rgba(50, 100, 0, 0.8);
 
 }
 
@@ -452,12 +447,69 @@ p {
     font-style: italic;
 }
 
+#gallery {
+    margin-top: 6em;
+    margin-bottom: 3em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* background-color: rgb(11, 0, 12) */
+}
+
+#gallery h2 {
+    margin-top: 0.5em;
+    font-size: 2rem;
+    margin-bottom: 1em;
+    text-align: center;
+    z-index: 1;
+    top: 0;
+    text-shadow: 0px 1px 4px blueviolet;
+}
+
+.gallery-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 1.5rem;
+    margin-bottom: 2em;
+    margin-left: 1em;
+    max-height: 90vh;
+    overflow: scroll;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+.gallery-item:hover {
+    transform: scale(1.1);
+}
+
+.gallery-item {
+    max-width: 25em;
+    max-height: 25em;
+    overflow: hidden;
+    border-radius: 10px;
+    cursor: pointer;
+    margin: 5px;
+    box-sizing: border-box;
+    box-shadow: 2px 0px 5px rgb(137, 43, 226);
+    transition: transform 0.3s ease-in-out;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease-in-out;
+}
+
 #testimonials-box {
     margin: 3rem;
     margin-top: 4rem;
     background-color: rgba(0, 0, 0, 0.7);
     color: #f5f5f5a0;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: medium;
     border-radius: 15px;
     padding: 4rem;
@@ -492,7 +544,6 @@ p {
 
 .testimonial div {
     width: 75%;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .testimonial div h3 {
@@ -536,7 +587,7 @@ footer {
 
 /* Media queries for responsiveness */
 @media (max-width: 768px) {
-    
+
     header {
         text-align: center;
     }
@@ -573,7 +624,7 @@ footer {
     .testimonial img {
         margin-top: 1rem;
         box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.88);
-        
+
     }
 
     #testimonials-box {
@@ -660,15 +711,11 @@ footer {
 }
 
 
-/* ... Your existing CSS ... */
 
-/* Styles for the Contact Me section */
 #contact {
     background-color: #f9f9f9;
     padding: 40px;
-    /* Added padding for spacing */
     text-align: center;
-    /* Center-align the contact list */
 }
 
 .contact-list {
@@ -676,19 +723,14 @@ footer {
     padding: 0;
     display: flex;
     flex-wrap: wrap;
-    /* Allows items to wrap to the next line */
     justify-content: center;
-    /* Center-align items horizontally */
     gap: 20px;
-    /* Spacing between contact items */
 }
 
 .contact-list li {
     text-align: center;
     margin: 10px;
-    /* Margin around each contact item */
     font-size: 12px;
-    /* Decrease the font size */
 }
 
 .external-link {
@@ -698,16 +740,12 @@ footer {
 
 .contact-list i {
     font-size: 32px;
-    /* Increase icon size */
     margin-bottom: 5px;
-    /* Add space between icon and text */
     color: #007bff;
-    /* Icon color (blue) */
 }
 
 .contact-list span {
     display: block;
-    /* Make the text block-level for line break */
 }
 
 #back-to-top-button {
@@ -724,6 +762,38 @@ footer {
     cursor: pointer;
 }
 
+
+.image-modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.95);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.modal-content {
+    max-width: 95%;
+    max-height: 95%;
+    display: block;
+    border-radius: 5px;
+}
+
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+}
+
 #back-to-top-button:hover {
-    background-color: #4e00b3;
+    background-color: #f200ff9f;
 }
