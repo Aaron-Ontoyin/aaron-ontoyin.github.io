@@ -310,11 +310,15 @@ p {
     align-items: center;
 }
 
-#status-container::-webkit-scrollbar, #projects-box::-webkit-scrollbar, .gallery-container::-webkit-scrollbar {
+#status-container::-webkit-scrollbar,
+#projects-box::-webkit-scrollbar,
+.gallery-container::-webkit-scrollbar {
     width: 0.1em;
 }
 
-#status-container::-webkit-scrollbar-thumb, #projects-box::-webkit-scrollbar-thumb, .gallery-container::-webkit-scrollbar-thumb {
+#status-container::-webkit-scrollbar-thumb,
+#projects-box::-webkit-scrollbar-thumb,
+.gallery-container::-webkit-scrollbar-thumb {
     background-color: transparent;
 }
 
@@ -401,6 +405,7 @@ p {
 }
 
 .project-button {
+    cursor: pointer;
     margin-top: 10px;
     text-align: center;
     border: none;
@@ -454,7 +459,7 @@ p {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    /* background-color: rgb(11, 0, 12) */
+    background-color: rgb(232, 238, 244);
 }
 
 #gallery h2 {
@@ -472,11 +477,11 @@ p {
     flex-wrap: wrap;
     flex-direction: column;
     justify-content: center;
-    gap: 2rem;
+    gap: 1.2rem;
     margin-top: 1.5rem;
     margin-bottom: 2em;
     margin-left: 1em;
-    max-height: 90vh;
+    max-height: 87vh;
     overflow: scroll;
     scrollbar-width: none;
     -ms-overflow-style: none;
@@ -487,8 +492,8 @@ p {
 }
 
 .gallery-item {
-    max-width: 25em;
-    max-height: 25em;
+    max-width: 17em;
+    max-height: 17em;
     overflow: hidden;
     border-radius: 10px;
     cursor: pointer;
@@ -763,7 +768,8 @@ footer {
 }
 
 
-.image-modal {
+.image-modal,
+.info-modal {
     display: none;
     position: fixed;
     z-index: 1;
@@ -783,6 +789,17 @@ footer {
     max-height: 95%;
     display: block;
     border-radius: 5px;
+}
+
+.info-modal-content {
+    background-color: aliceblue;
+    padding: 2.5em;
+    border-radius: 1em;
+}
+
+.info-modal-content h3 {
+    border-bottom: 1px solid gray;
+    margin-bottom: 1em;
 }
 
 .close {

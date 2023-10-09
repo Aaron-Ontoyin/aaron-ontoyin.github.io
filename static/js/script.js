@@ -52,6 +52,19 @@ window.addEventListener('scroll', function () {
     }
 });
 
+const galleryContainer = document.querySelector('.gallery-container');
+
+for(let idx=0; idx < 16; idx++) {
+    let name;
+    if (idx == 1 || idx == 3)
+    name = `${idx+1}.jpeg`
+    else
+    name = `${idx+1}.jpg`
+
+    galleryContainer.innerHTML += `<div class="gallery-item"><img src="static/images/gallery/${name}" alt="Gallery Image"></div>`
+};
+
+
 backButton.addEventListener('click', function () {
     window.scrollTo({
         top: 0,
@@ -60,47 +73,71 @@ backButton.addEventListener('click', function () {
 });
 
 // // Modal for images
-const imagesModal = document.querySelector('.image-modal');
+const imageModal = document.querySelector('.image-modal');
+const infoModal = document.querySelector('.info-modal');
 const modalImg = document.getElementById('modalImage');
-const modalClose = document.querySelector('.close');
-const galleryItems = document.querySelectorAll(".gallery-item");
+const modalClose = document.querySelectorAll('.close');
+const galleryItems = document.querySelectorAll('.gallery-item');
 
-function showModal(item) {
-    imagesModal.style.transition = 'opacity 0.8s ease-in-out';
+function showInfoModal() {
+    infoModal.style.transition = 'opacity 0.8s ease-in-out';
+    requestAnimationFrame(() => {
+        infoModal.style.display = "flex";
+        requestAnimationFrame(() => {
+            infoModal.style.opacity = 1;
+        });
+    });
+}
+
+function showImgModal(item) {
+    imageModal.style.transition = 'opacity 0.8s ease-in-out';
 
     requestAnimationFrame(() => {
-        imagesModal.style.display = "flex";
+        imageModal.style.display = "flex";
         requestAnimationFrame(() => {
-            imagesModal.style.opacity = 1;
+            imageModal.style.opacity = 1;
         });
     });
 
     modalImg.src = item.querySelector('img').src;
 }
 
-function hideModal() {
-    imagesModal.style.transition = 'opacity 0.8s ease-in-out';
+function hideModals() {
+    imageModal.style.transition = 'opacity 0.8s ease-in-out';
+    infoModal.style.transition = 'opacity 0.8s ease-in-out';
 
     requestAnimationFrame(() => {
-        imagesModal.style.opacity = 0;
+        imageModal.style.opacity = 0;
+        infoModal.style.opacity = 0;
         requestAnimationFrame(() => {
-            imagesModal.style.display = "none";
+            imageModal.style.display = "none";
+            infoModal.style.display = "none";
         });
     });
 }
 
-galleryItems.forEach((item) => {
+const secreteProjects = document.querySelectorAll('.secrete-project');
+secreteProjects.forEach((item) => {
     item.addEventListener('click', () => {
-        showModal(item);
+        showInfoModal();
     });
 });
 
-modalClose.addEventListener('click', function () {
-    hideModal();
+galleryItems.forEach((item) => {
+    item.addEventListener('click', () => {
+        showImgModal(item);
+    });
 });
 
+modalClose.forEach((item) => {
+    item.addEventListener('click', function () {
+        hideModals();
+    })
+});
+
+modalContact = document.getElementById('modal-cnt');
 window.addEventListener('click', (event) => {
-    if (event.target == imagesModal) {
-        hideModal();
+    if (event.target == imageModal || event.target == infoModal || event.target == modalContact) {
+        hideModals();
     }
 });
