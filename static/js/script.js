@@ -1,143 +1,88 @@
-// // Smooth scrolling for navigation links
-// function scrollToTarget(targetId) {
-//     const targetElement = document.getElementById(targetId);
-
-//     if (targetElement) {
-//         window.scrollTo({
-//             top: targetElement.offsetTop,
-//             behavior: 'smooth'
-//         });
-//     }
-// }
-
-// document.getElementById("cta-button").addEventListener('click', function (e) {
-//     e.preventDefault();
-//     const targetId = this.getAttribute('href').substring(1);
-//     scrollToTarget(targetId);
-// });
-
-// document.querySelectorAll('nav a').forEach(anchor => {
-//     anchor.addEventListener('click', function (e) {
-//         e.preventDefault();
-//         const targetId = this.getAttribute('href').substring(1);
-//         scrollToTarget(targetId);
-//     });
-// });
-
-// nav toggle
-const menuToggle = document.getElementById('menu-toggle');
-const navbarMenu = document.querySelector('.navbar-menu');
-
-menuToggle.addEventListener('click', function () {
-    navbarMenu.classList.toggle('active');
-});
-
-const navbarLinks = document.querySelectorAll('.navbar-menu a');
-navbarLinks.forEach(function (link) {
-    link.addEventListener('click', function () {
-        navbarMenu.classList.remove('active');
-    });
-});
-
-
-// // Back to Top button
-const backButton = document.getElementById('back-to-top-button');
-
-window.addEventListener('scroll', function () {
-
-    if (document.documentElement.scrollTop > 100) {
-        backButton.style.display = 'block';
-    } else {
-        backButton.style.display = 'none';
-    }
-});
-
-const galleryContainer = document.querySelector('.gallery-container');
-
-for(let idx=0; idx < 16; idx++) {
-    let name;
-    if (idx == 1 || idx == 3)
-    name = `${idx+1}.jpeg`
-    else
-    name = `${idx+1}.jpg`
-
-    galleryContainer.innerHTML += `<div class="gallery-item"><img src="static/images/gallery/${name}" alt="Gallery Image"></div>`
+const bodyScrollOptions = {
+    damping: 0.1,
+    thumbMinSize: 5,
+    renderByPixels: true,
+    alwaysShowTracks: false,
+    continuousScrolling: true
 };
 
+const testimonialDiv = $('.testimonial .p-2');
+const testimonialImg = $('.testimonial img');
 
-backButton.addEventListener('click', function () {
-    window.scrollTo({
-        top: 0,
-        behavior: 'smooth'
-    });
-});
+const galleryContainer = $('.gallery-container-inner');
+const images = [
+    "1.jpg",
+    "2.jpeg",
+    "3.jpg",
+    "4.jpeg",
+    "5.jpg",
+    "6.jpg",
+    "7.jpg",
+    "8.jpg",
+    "9.jpg",
+    "10.jpg",
+    "11.jpg",
+    "12.jpg",
+    "13.jpg",
+    "14.jpg",
+    "15.jpg",
+    "16.jpg",
+    "17.jpg"
+];
 
-// // Modal for images
-const imageModal = document.querySelector('.image-modal');
-const infoModal = document.querySelector('.info-modal');
-const modalImg = document.getElementById('modalImage');
-const modalClose = document.querySelectorAll('.close');
-const galleryItems = document.querySelectorAll('.gallery-item');
 
-function showInfoModal() {
-    infoModal.style.transition = 'opacity 0.8s ease-in-out';
-    requestAnimationFrame(() => {
-        infoModal.style.display = "flex";
-        requestAnimationFrame(() => {
-            infoModal.style.opacity = 1;
-        });
-    });
-}
+$(document).ready(function () {
+    AOS.init();
 
-function showImgModal(item) {
-    imageModal.style.transition = 'opacity 0.8s ease-in-out';
-
-    requestAnimationFrame(() => {
-        imageModal.style.display = "flex";
-        requestAnimationFrame(() => {
-            imageModal.style.opacity = 1;
-        });
+    $('.dropdown').on('show.bs.dropdown', function () {
+        $(this).find('.dropdown-menu').first().stop(true, true).slideDown();
     });
 
-    modalImg.src = item.querySelector('img').src;
-}
-
-function hideModals() {
-    imageModal.style.transition = 'opacity 0.8s ease-in-out';
-    infoModal.style.transition = 'opacity 0.8s ease-in-out';
-
-    requestAnimationFrame(() => {
-        imageModal.style.opacity = 0;
-        infoModal.style.opacity = 0;
-        requestAnimationFrame(() => {
-            imageModal.style.display = "none";
-            infoModal.style.display = "none";
-        });
+    $('.dropdown').on('hide.bs.dropdown', function () {
+        $(this).find('.dropdown-menu').first().stop(true, true).slideUp();
     });
-}
 
-const secreteProjects = document.querySelectorAll('.secrete-project');
-secreteProjects.forEach((item) => {
-    item.addEventListener('click', () => {
-        showInfoModal();
-    });
-});
+    for (var i = 0; i < images.length; i++) {
+        var img = $('<img>');
 
-galleryItems.forEach((item) => {
-    item.addEventListener('click', () => {
-        showImgModal(item);
-    });
-});
-
-modalClose.forEach((item) => {
-    item.addEventListener('click', function () {
-        hideModals();
-    })
-});
-
-modalContact = document.getElementById('modal-cnt');
-window.addEventListener('click', (event) => {
-    if (event.target == imageModal || event.target == infoModal || event.target == modalContact) {
-        hideModals();
+        img.attr('src', 'static/images/gallery/' + images[i]);
+        img.addClass('gallery-item');
+        galleryContainer.append(img);
     }
+
+    if (window.matchMedia('(max-width: 767px)').matches) {
+        $('.testimonial').each(function () {
+            var testimonialDiv = $(this).find('.p-2');
+            var testimonialImg = $(this).find('img');
+
+            testimonialImg.clone().insertBefore(testimonialDiv);
+            testimonialImg.remove();
+        });
+    }
+
+    $('#copyright-year').html(new Date().getFullYear());
+
+    // const scroll = new SmoothScroll('body', {
+    //     damping: 1,
+    //     speed: 500,
+    //     thumbMinSize: 5,
+    //     renderByPixels: true,
+    //     alwaysShowTracks: false,
+    //     continuousScrolling: true
+    // });
+    // const projectsScroll = new SmoothScroll('#projects-box', {
+    //     damping: 1,
+    //     thumbMinSize: 5,
+    //     renderByPixels: true,
+    //     alwaysShowTracks: false,
+    //     continuousScrolling: true
+    // });
+    // const testimonialsScroll = new SmoothScroll('#testimonials-container-inner', {
+    //     damping: 1,
+    //     thumbMinSize: 5,
+    //     renderByPixels: true,
+    //     alwaysShowTracks: false,
+    //     continuousScrolling: true
+    // });
+
 });

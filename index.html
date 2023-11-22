@@ -5,307 +5,437 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aaron Ontoyin Yin - Profile</title>
-    <link rel="stylesheet" href="static/styles/styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="icon" type="image/x-icon" href="/static/images/sign.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Mooli&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="./static/styles/styles.css">
+    <!-- <script src="./static/js/smooth-scrollbar.js"></script> -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/smooth-scroll/16.1.3/smooth-scroll.polyfills.min.js"></script> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+
 </head>
 
 <body>
     <header>
-        <nav class="navbar">
-            <div class="navbar-toggle">
-                <button id="menu-toggle" class="menu-toggle-button">
-                    <span class="menu-icon"></span>
+        <nav class="navbar bg-body-tertiary fixed-top p-0">
+            <div class="container-fluid nav-inner p-3 bg-black">
+                <a class="navbar-brand" href="/">Aaron Ontoyin Yin</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
                 </button>
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                    aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#aboutBox">About Me</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#skills-box">Skills</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#projects-box">Projects</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    Reach Out
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li class="dropdown-item">
+                                        <a href="mailto:dummy.email@example.com" target="_blank">
+                                            <i class="fas fa-envelope"></i> Email
+                                        </a>
+                                    </li>
+                                    <li class="dropdown-item">
+                                        <a href="https://twitter.com/OntoAaron" target="_blank">
+                                            <i class="fab fa-twitter"></i> Twitter
+                                        </a>
+                                    </li>
+                                    <li class="dropdown-item">
+                                        <a href="https://www.facebook.com/aaron.yin.528?mibextid=ZbWKwL"
+                                            target="_blank">
+                                            <i class="fab fa-facebook"></i> Facebook
+                                        </a>
+                                    </li>
+                                    <li class="dropdown-item">
+                                        <a href="https://wa.me/qr/VWLYQWTX4SNDG1" target="_blank">
+                                            <i class="fab fa-whatsapp"></i> WhatsApp
+                                        </a>
+                                    </li>
+                                    <li class="dropdown-item">
+                                        <a href="https://discord.gg/KJEtabKm" target="_blank">
+                                            <i class="fab fa-discord"></i> Discord
+                                        </a>
+                                    </li>
+                                    <li class="dropdown-item">
+                                        <a href="https://instagram.com/aaron_ontoyin?utm_source=qr&igshid=OGIxMTE0OTdkZA=="
+                                            target="_blank">
+                                            <i class="fab fa-instagram"></i> Instagram
+                                        </a>
+                                    </li>
+                                    <li class="dropdown-item">
+                                        <a href="https://github.com/Aaron-Ontoyin" target="_blank">
+                                            <i class="fab fa-github"></i> GitHub
+                                        </a>
+                                    </li>
+                                    <li class="dropdown-item">
+                                        <a href="https://www.linkedin.com/in/aarononto/" target="_blank">
+                                            <i class="fab fa-linkedin"></i> LinkedIn
+                                        </a>
+                                    </li>
+                                    <li class="dropdown-item">
+                                        <a href="tel:+233597743383" target="_blank">
+                                            <i class="fa fa-phone-square"></i> Phone
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item" href="#">Reach out to me on any of the above media.</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </div>
-            <ul class="navbar-menu">
-                <li><a href="#about" class="nav-item">About Me</a></li>
-                <li><a href="#skills" class="nav-item">Skills</a></li>
-                <li><a href="#projects" class="nav-item">Projects</a></li>
-                <li><a href="#contact" class="nav-item">Contact</a></li>
-            </ul>
         </nav>
-
     </header>
 
-    <section id="hero">
-        <div class="hero-content">
-            <h1>Aaron Ontoyin Yin</h1>
-            <p>Electrical & Electronics Engineering Student | Software Engineer | Data Scientist | Machine Learning
-                Enthusiast</p>
-            <a href="#contact" id="cta-button">Get in Touch</a>
+    <main>
+        <div class="pt-5">
+            <div class="bg-dark mt-4 hero-container w-100 d-flex flex-column justify-content-center p-3">
+                <h1><strong>Aaron Ontoyin Yin</strong></h1>
+                <p>Electrical & Electronics Engineering Student | Software Engineer | Data Scientist | A.I Enthusiast
+                </p>
+                <a href="#contact" class="btn btn-primary cta-button">Get in Touch</a>
+            </div>
         </div>
-    </section>
+        <div class="container px-4 px-md-4 py-4 py-md-5 text-center d-flex justify-content-center mb-5">
+            <div class="container bg-white rounded mx-md-5 p-4 pl-5" id="aboutBox">
+                <h2 id="aboutMeHeader">About Me</h2>
+                <p class="about-text">
+                    Heya! I'm an undergrad in Electrical and Electronics Engineering, but that's not all
+                    I do. I'm also diving headfirst into the world of Software Engineering over at <a
+                        href="https://www.alxafrica.com/" target="_blank">ALX</a>., and it's been a blast!
 
-    <section id="about">
-        <div class="container" id="about-box">
-            <h2 id="aboutme-header">About Me</h2>
-            <p>I'm a passionate undergraduate studying Electrical and Electronics Engineering who is now experiencing
-                the exciting field of Software Engineering at <a href="https://www.alxafrica.com/"
-                    class="external-link">ALX</a>. I engage in Electronics, Robotics and IoT as a tutor at <a
-                    href="https://aaenics.com/" class="external-link">Aaenics</a> UMAT, but my own research
-                interests are in the fields of AI and data science. I value relationships and
-                friendships, and I gladly identify as a Pythonista who uses this repo of features to create original
-                solutions. This is me!
-            </p>
-            <div id="subscription">
-                <span>Aaron Ontoyin Yin</span> <br>
-                <!-- <img src="static/images/signature.jpg" alt="Sign" height="40px"> <br> -->
-                <span>Vadmin</span>
-            </div>
-        </div>
-    </section>
+                    You can sometimes find me at <a href="https://aaenics.com/" target="_blank">Aaenics</a>, teaching
+                    the
+                    next generation about Electronics, Robotics, and IoT. It's a pretty cool gig.
 
-    <section id="skills">
-        <div class="sign-container">
-            <span class="sign-text">Vadmin</span>
-        </div>
-        <div class="container" id="skills-box">
-            <h2>Skills</h2>
-            <ul id="skills-list">
-                <li>
-                    <i class="fas fa-laptop"></i> Artificial Intelligence (A.I)
-                </li>
-                <li>
-                    <i class="fas fa-chart-bar"></i> Data Analysis
-                </li>
-                <li>
-                    <i class="fas fa-laptop-code"></i> Software Engineering
-                </li>
-                <li>
-                    <i class="fas fa-robot"></i> Robotics
-                </li>
-                <li>
-                    <i class="fas fa-atom"></i> Quantum Computing
-                </li>
-                <li>
-                    <i class="fas fa-microchip"></i> Electronics Engineering
-                </li>
-                <li>
-                    <i class="fas fa-lightbulb"></i> Electrical Engineering
-                </li>
-            </ul>
-        </div>
-    </section>
+                    But wait, there's more! I'm also into AI and Data Science. And I love them. And just to keep things
+                    interesting, I'm studying Quantum
+                    Computing at <a href="https://the-cs.org/" target="_blank">The Coding School'</a>. It's like regular
+                    computing, but on steroids.
 
-    <section id="projects">
-        <div class="container" id="projects-box">
-            <h2 class="projects-title">Some Projects</h2>
-            <div class="project">
-                <h3>Data Transmission in Networks</h3>
-                <p>Using streamlit, I wrote a software that helps in the analysis and visualization of a Phd research on
-                    efficient data transmission in Networks. This work involved how data is transmitted from one Node to
-                    the other and the factors that affect the process in a network.</p>
-                <button class="project-button"><a class="secrete-project">View Project</a></button>
-            </div>
-            <div class="project">
-                <h3>Drillbotics Reseach Competition</h3>
-                <p><a href="https://drillbotics.com/" class="external-link" target="_blank">Drillbotics</a> is an
-                    intensive research Competition organized
-                    by <a href="https://www.spe.org/en/" class="external-link" target="_blank">SPE</a>, DSATS for
-                    universities across the globe.
-                    I was a key member of the <a
-                        href="https://umat.edu.gh/media-press/news/drillbotics-team-tops-the-virtual-directional-drilling-rig-simulator-design-category-at-the-2023-international-drillbotics-competition"
-                        class="external-link" target="_blank">UMaT team</a> (only team from Africa),
-                    for the 2023 competition. With my team, I led the development of a python package for simulating
-                    directional drilling. We also built an interface for monitoring the processes involved.
+                    A Pythonista, I would gladly say I am.
+
+                    But at the end of the day, it's not just about the tech. It's about the people I meet and the
+                    friendships I make along the way. Nice to meet you!
                 </p>
-                <button class="project-button"><a href="https://drillbotics.com/umat-2023-team-on-the-national-news/"
-                        target="_blank">View Project</a></button>
-            </div>
-            <div class="project">
-                <h3>Image Compression App</h3>
-                <p>I developed an Image compression App that works on multiple image types. The app gives more
-                    flexibility allowing you
-                    to actually 'controll your image pixels'.
-                </p>
-                <button class="project-button"><a
-                        href="https://the-tech-at-virtual-world.blogspot.com/2023/09/image-compression-web-app.html"
-                        target="_blank">View Project</a></button>
-            </div>
-            <div class="project">
-                <h3>Uni Hostels App</h3>
-                <p>I develped a web app for easy management and finding of hostels in Universities. The app gives you
-                    the luxury and time saving
-                    oportunity to find hostels that just meet your needs at the confort of your choice.
-                </p>
-                <button class="project-button"><a
-                        href="https://www.linkedin.com/posts/aarononto_ghie-umat-hackathon-activity-7044333066227466240-mR3h?utm_source=share&utm_medium=member_desktop"
-                        target="_blank">View Project</a></button>
-            </div>
-            <div class="project">
-                <h3>AcademicRecords</h3>
-                <p>I developed a cpp + python, let's call it cython 😅, program for efficient and easy management of
-                    academic records
-                    at the university level. This was console based anyway.
-                </p>
-                <button class="project-button"><a href="https://github.com/Aaron-Ontoyin/student-Academic-Records"
-                        target="_blank">View Project</a></button>
-            </div>
-            <div class="project">
-                <h3>Electronics</h3>
-                <p>For mini electronics, I've built countless projects including Fingerprint + keycard attendance
-                    system, automous vehicles, different types of smart entropy minimizers,
-                    etc.
-                </p>
-                <button class="project-button"><a href="https://github.com/Aaron-Ontoyin/student-Academic-Records"
-                        target="_blank">View Project</a></button>
-            </div>
-            <!-- <div class="project">
-                <h3>Admission Prediction</h3>
-                <p>I built a machine learning model that predicts students admission into a universities
-                    considering factors such as'GRE Score', 'TOEFL Score', 'University Rating', 'LOR ', 'CGPA', 'Research'.
-                    This was to investigate the outputs on normal linear regression, Lasso regression and Ridge regression.
-                </p>
-                <button class="project-button"><a href="https://github.com/Aaron-Ontoyin/ML-algo.git"
-                        target="_blank">View Project</a></button>
-            </div> -->
-        </div>
-        <div id="status-container">
-            <div class="status-inner-container">
-                <h2 class="status-title">Me!</h2>
-                <div class="status">
-                    <h3>Projects Completed</h3>
-                    <span>26</span>
-                </div>
-                <div class="status">
-                    <h3>Certificates Received</h3>
-                    <span>11</span>
-                </div>
-                <div class="status">
-                    <h3>Hours Worked</h3>
-                    <span>1000+</span>
-                </div>
-                <div class="status">
-                    <h3>Awards Won</h3>
-                    <span>6</span>
-                </div>
-                <div class="status">
-                    <h3></h3>
-                    <span>See me on <a href="https://www.linkedin.com/in/aarononto/" target="_blank">LinkedIn</a> for
-                        more!</span>
+                <div class="w-100 text-end">
+                    <span>Aaron Ontoyin Yin</span> <br>
+                    <!-- <img src="static/images/signature.jpg" alt="Sign" height="40px"> <br> -->
+                    <span>Vadmin</span>
                 </div>
             </div>
-
         </div>
-    </section>
-
-    <section id="gallery">
-        <h2>Me!</h2>
-        <p>Scroll right <i class="fa fa-angles-right fa-beat-fade"></i></p>
-        <div class="gallery-container">
-
-        </div>
-    </section>
-
-    <section id="more-info">
-        <h2>Testimonials</h2>
-
-        <div id="testimonials-box">
-            <div class="testimonial">
-                <div class="">
-                    <p>I highly recommend Aaron Ontoyin. I had the pleasure of working with him on two significant
-                        projects: the drilling simulator automatic software for SPE and an opportunistic routing
-                        networking project. Aaron's exceptional willingness to learn, adapt, and think critically in
-                        conjunction with programming played a pivotal role in the success of both endeavors. His
-                        dedication, problem-solving skills, and collaborative spirit make him an invaluable asset to any
-                        team. Aaron's commitment to excellence is truly commendable, and I have no doubt he will
-                        continue to excel in his future endeavors.
-                    </p>
-                    <h3>Eyram Dela kuwornu</h3>
-                    <span>Computer Scientist and Engineer, Trestle Group</span>
+        <div class="p-2 my-5 w-100 py-5">
+            <div class="row">
+                <div class="col-12 col-md-6 p-2 p-md-5 text-center d-flex justify-content-around">
+                    <div class="sign-container-inner rounded text-center d-flex justify-content-center w-100"
+                        data-aos="zoom-in" data-aos-duration="1000">
+                        <span class="sign-text">Vadmin</span>
+                    </div>
                 </div>
-                <img src="static/images/dela.jpeg" alt="Testimonial 1">
+                <div class="skills-container col-md-6 text-end" data-aos="slide-left" data-aos-duration="1500" id="skills-box">
+                    <div class="skills-container-inner text-center pr-2 p-lg-4">
+                        <h2>Skills</h2>
+                        <ul id="skills-list" class="text-start">
+                            <li>
+                                <i class="fas fa-laptop"></i> Artificial Intelligence (A.I)
+                            </li>
+                            <li>
+                                <i class="fas fa-chart-bar"></i> Data Analysis
+                            </li>
+                            <li>
+                                <i class="fas fa-laptop-code"></i> Software Engineering
+                            </li>
+                            <li>
+                                <i class="fas fa-robot"></i> Robotics
+                            </li>
+                            <li>
+                                <i class="fas fa-atom"></i> Quantum Computing
+                            </li>
+                            <li>
+                                <i class="fas fa-microchip"></i> Electronics Engineering
+                            </li>
+                            <li>
+                                <i class="fas fa-lightbulb"></i> Electrical Engineering
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </div>
-    </section>
+        <div class="my-5 py-5 w-100">
+            <div class="d-md-flex flex-wrap">
+                <div class="container bg-white rounded pb-3 px-3 text-center" id="projects-box">
+                    <div class="projects-title bg-white mb-4">Some Projects</div>
+                    <div class="project-box p-3 my-3">
+                        <h4 class="card-title text-black">Data Transmission in Networks</h4>
+                        <p class="card-data justify-text">Using streamlit, I wrote a software that helps in the
+                            analysis
+                            and visualization of a Phd research on
+                            efficient data transmission in Networks. This work involved how data is transmitted from
+                            one
+                            Node to
+                            the other and the factors that affect the process in a network.</p>
+                        <a class="btn project-btn secrete-project" data-bs-toggle="modal"
+                            data-bs-target="#private-project-modal">View Project</a>
+                    </div>
 
+                    <div class="project-box p-3 my-3">
+                        <h4 classs="card-title text-black">Drillbotics Reseach Competition</h4>
+                        <p class="card-data justify-text"><a href="https://drillbotics.com/" class="external-link"
+                                target="_blank">Drillbotics</a> is an
+                            intensive research Competition organized
+                            by <a href="https://www.spe.org/en/" class="external-link" target="_blank">SPE</a>,
+                            DSATS
+                            for
+                            universities across the globe.
+                            I was a key member of the <a
+                                href="https://umat.edu.gh/media-press/news/drillbotics-team-tops-the-virtual-directional-drilling-rig-simulator-design-category-at-the-2023-international-drillbotics-competition"
+                                class="external-link" target="_blank">UMaT team</a> (only team from Africa),
+                            for the 2023 competition. With my team, I led the development of a python package for
+                            simulating
+                            directional drilling. We also built an interface for monitoring the processes involved.
+                        </p>
+                        <a class="btn project-btn" href="https://drillbotics.com/umat-2023-team-on-the-national-news/"
+                            target="_blank">View
+                            Project</a>
+                    </div>
 
-    <section id="contact">
-        <div class="container" id="contact-container">
-            <h2>Contact Me</h2>
-            <ul class="contact-list">
-                <li>
-                    <a href="mailto:dummy.email@example.com" target="_blank">
-                        <i class="fas fa-envelope"></i>
-                        <span class="social-link">Email</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="https://twitter.com/OntoAaron" target="_blank">
-                        <i class="fab fa-twitter"></i>
-                        <span class="social-link">Twitter</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="https://www.facebook.com/aaron.yin.528?mibextid=ZbWKwL" target="_blank">
-                        <i class="fab fa-facebook"></i>
-                        <span class="social-link">Facebook</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="https://wa.me/qr/VWLYQWTX4SNDG1" target="_blank">
-                        <i class="fab fa-whatsapp"></i>
-                        <span class="social-link">WhatsApp</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="https://discord.gg/KJEtabKm" target="_blank">
-                        <i class="fab fa-discord"></i>
-                        <span class="social-link">Discord</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="https://instagram.com/aaron_ontoyin?utm_source=qr&igshid=OGIxMTE0OTdkZA==" target="_blank">
-                        <i class="fab fa-instagram"></i>
-                        <span class="social-link">Instagram</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="https://github.com/Aaron-Ontoyin" target="_blank">
-                        <i class="fab fa-github"></i>
-                        <span class="social-link">GitHub</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="https://www.linkedin.com/in/aarononto/" target="_blank">
-                        <i class="fab fa-linkedin"></i>
-                        <span class="social-link">LinkedIn</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="tel:+233597743383" target="_blank">
-                        <i class="fa fa-phone-square"></i>
-                        <span class="social-link">Phone</span>
-                    </a>
-                </li>
-            </ul>
+                    <div class="project-box p-3 my-3">
+                        <h4 classs="card-title text-black">Image Compression App</h4>
+                        <p class="card-data justify-text">I developed an Image compression App that works on
+                            multiple
+                            image types. The app gives more
+                            flexibility allowing you
+                            to 'controll your image pixels'.
+                        </p>
+                        <a class="btn project-btn secrete-project"
+                            href="https://the-tech-at-virtual-world.blogspot.com/2023/09/image-compression-web-app.html"
+                            target="_blank">View Project</a>
+                    </div>
+                    <div class="project-box p-3 my-3">
+                        <h4 classs="card-title text-black">Uni Hostels App</h4>
+                        <p class="card-data justify-text">I develped a web app for easy management and finding of
+                            hostels in Universities. The app
+                            gives you
+                            the luxury and time saving
+                            oportunity to find hostels that just meet your needs.
+                        </p>
+                        <a class="btn project-btn secrete-project"
+                            href="https://www.linkedin.com/posts/aarononto_ghie-umat-hackathon-activity-7044333066227466240-mR3h?utm_source=share&utm_medium=member_desktop"
+                            target="_blank">View Project</a>
+                    </div>
+                    <div class="project-box p-3 my-3">
+                        <h4 classs="card-title text-black">AcademicRecords</h4>
+                        <p class="card-data justify-text">I developed a cpp + python, let's call it cython 😅,
+                            program
+                            for efficient and easy
+                            management of
+                            academic records
+                            at the university level. This was console based anyway.
+                        </p>
+                        <a class="btn project-btn secrete-project"
+                            href="https://github.com/Aaron-Ontoyin/student-Academic-Records" target="_blank">View
+                            Project</a>
+                    </div>
+                    <div class="project-box p-3 my-3">
+                        <h4 classs="card-title text-black">Electronics</h4>
+                        <p class="card-data justify-text">For mini electronics, I've built countless projects
+                            including
+                            Fingerprint + keycard
+                            attendance
+                            system, automous vehicles, different types of smart entropy minimizers,
+                            etc.
+                        </p>
+                        <a class="btn project-btn secrete-project"
+                            href="https://github.com/Aaron-Ontoyin/student-Academic-Records" target="_blank"
+                            data-bs-toggle="modal" data-bs-target="#private-project-modal">View
+                            Project</a>
+                    </div>
+                    <div>Contact Me for Details</div>
+                </div>
+                <div class="status" data-aos="slide-right" data-aos-duration="900">
+                    <div class="status-container-inner w-100 h-100 p-5">
+                        <div class="h2 status-title">Me!</div>
+                        <div class="">
+                            <div class="h4">Projects Completed</div>
+                            <span>30+</span>
+                        </div>
+                        <div class="">
+                            <div class="h4">Certificates Received</div>
+                            <span>10+</span>
+                        </div>
+                        <div class="">
+                            <div class="h4">Hours Worked</div>
+                            <span>1000+</span>
+                        </div>
+                        <div class="">
+                            <div class="h4">Awards Won</div>
+                            <span>5+</span>
+                        </div>
+                        <div class="">
+                            <span>See me on <a href="https://www.linkedin.com/in/aarononto/"
+                                    target="_blank">LinkedIn</a> for more!</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
+        <div class="container my-5 w-100 text-center d-flex flex-column justify-content-center">
+            <p class="h5 gallery-arrow">Scroll right <i class="fa fa-angles-right fa-beat-fade"></i></p>
+            <div class="gallery-container-inner w-100 p-3">
 
+            </div>
+        </div>
+        <div class="my-5 testimonials-container d-flex flex-column text-center w-100 p-2 p-md-5">
+            <div class="testimonials-container-inner p-1 p-md-3">
+                <div class="testimonial mb-3 d-md-flex">
+                    <div class="p-2">
+                        <p class="justify-text">I highly recommend Aaron Ontoyin. I had the pleasure of working with him
+                            on two significant
+                            projects: the drilling simulator automatic software for SPE and an opportunistic routing
+                            networking project. Aaron's exceptional willingness to learn, adapt, and think critically in
+                            conjunction with programming played a pivotal role in the success of both endeavors. His
+                            dedication, problem-solving skills, and collaborative spirit make him an invaluable asset to
+                            any
+                            team. Aaron's commitment to excellence is truly commendable, and I have no doubt he will
+                            continue to excel in his future endeavors.
+                        </p>
+                        <div class="h3 text-start">Eyram Dela kuwornu</div>
+                        <div class="text-start">Computer Scientist and Engineer, Trestle Group</div>
+                    </div>
+                    <img src="static/images/dela.jpeg" alt="Testimonial 1">
+                </div>
+            </div>
+        </div>
+        <div class="p-2 p-md-3 p-lg-5 w-100 text-center d-flex justify-content-center" id="contact">
+            <div class="container text-start p-lg-4" id="contact-container" data-aos="slide-up"
+                data-aos-duration="1000">
+                <h2>Contact Me</h2>
+                <ul class="contact-list d-flex justify-content-around flex-wrap">
+                    <li>
+                        <a href="mailto:dummy.email@example.com" target="_blank">
+                            <i class="fas fa-envelope"></i>
+                            <span class="social-link">Email</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://twitter.com/OntoAaron" target="_blank">
+                            <i class="fab fa-twitter"></i>
+                            <span class="social-link">Twitter</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.facebook.com/aaron.yin.528?mibextid=ZbWKwL" target="_blank">
+                            <i class="fab fa-facebook"></i>
+                            <span class="social-link">Facebook</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://wa.me/qr/VWLYQWTX4SNDG1" target="_blank">
+                            <i class="fab fa-whatsapp"></i>
+                            <span class="social-link">WhatsApp</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://discord.gg/KJEtabKm" target="_blank">
+                            <i class="fab fa-discord"></i>
+                            <span class="social-link">Discord</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://instagram.com/aaron_ontoyin?utm_source=qr&igshid=OGIxMTE0OTdkZA=="
+                            target="_blank">
+                            <i class="fab fa-instagram"></i>
+                            <span class="social-link">Instagram</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/Aaron-Ontoyin" target="_blank">
+                            <i class="fab fa-github"></i>
+                            <span class="social-link">GitHub</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.linkedin.com/in/aarononto/" target="_blank">
+                            <i class="fab fa-linkedin"></i>
+                            <span class="social-link">LinkedIn</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="tel:+233597743383" target="_blank">
+                            <i class="fa fa-phone-square"></i>
+                            <span class="social-link">Phone</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <footer class="footer bg-dark mt-5 p-2 bg-black">
+            <div class="text-center pt-4">
+                <p class="">© <span id="copyright-year"></span> Aaron Ontoyin Yin. All rights reserved.</p>
+            </div>
+            </div>
+        </footer>
         <button id="back-to-top-button" title="Back to Top"><i class="fa-solid fa-up-long"></i></button>
 
-    </section>
 
-    <div class="image-modal">
-        <span class="close">&times;</span>
-        <img class="modal-content" id="modalImage">
-    </div>
-    <div class="info-modal">
-        <span class="close">&times;</span>
-        <div class="info-modal-content" id="modalInfo">
-            <h3>Private Content</h3>
-            <p>This project is private. If you really wanna see it, <a href="#contact" class="external-link"
-                    id="modal-cnt">contact me</a>.</p>
+        <div class="modal fade" id="private-project-modal" data-bs-backdrop="static" data-bs-keyboard="false"
+            tabindex="-1" aria-labelledby="private-project-modalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="private-project-modalLabel">View Project</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        Please contact me to learn more about this Project.
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary" onclick="window.location.href='#contact'"
+                            target="_blank">Contact</button>
+                    </div>
+                </div>
+            </div>
         </div>
-    </div>
 
-    <footer>
-        <p>&copy; 2023 Aaron Ontoyin Yin</p>
-    </footer>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+        crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/0850c8daaf.js" crossorigin="anonymous"></script>
-    <script src="static/js/script.js" defer></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="./static/js/script.js"></script>
 </body>
 
 </html>
