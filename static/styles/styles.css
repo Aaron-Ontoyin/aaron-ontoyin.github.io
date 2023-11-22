@@ -5,6 +5,12 @@
 
 html {
     scroll-padding-top: 100px;
+    width: 100vw;
+
+}
+
+main {
+    width: 100vw;
 }
 
 .offcanvas {
@@ -21,6 +27,7 @@ html {
 
 body {
     background-color: aliceblue;
+    width: 100vw;
 }
 
 a {
@@ -369,22 +376,18 @@ a {
 
 }
 
+body::-webkit-scrollbar,
 #status-container::-webkit-scrollbar,
 #projects-box::-webkit-scrollbar,
-.gallery-container-inner::-webkit-scrollbar {
-    width: 0.1em;
-}
-
-#status-container::-webkit-scrollbar-thumb,
-#projects-box::-webkit-scrollbar-thumb,
-.gallery-container-inner::-webkit-scrollbar-thumb {
-    background-color: transparent;
-}
-
+.gallery-container-inner::-webkit-scrollbar,
 .testimonials-container-inner::-webkit-scrollbar {
     width: 0.1em;
 }
 
+body::-webkit-scrollbar-thumb,
+#status-container::-webkit-scrollbar-thumb,
+#projects-box::-webkit-scrollbar-thumb,
+.gallery-container-inner::-webkit-scrollbar-thumb,
 .testimonials-container-inner::-webkit-scrollbar-thumb {
     background-color: transparent;
 }
