@@ -1,11 +1,3 @@
-const bodyScrollOptions = {
-    damping: 0.1,
-    thumbMinSize: 5,
-    renderByPixels: true,
-    alwaysShowTracks: false,
-    continuousScrolling: true
-};
-
 const testimonialDiv = $('.testimonial .p-2');
 const testimonialImg = $('.testimonial img');
 
@@ -44,9 +36,9 @@ $(document).ready(function () {
 
     for (var i = 0; i < images.length; i++) {
         var img = $('<img>');
-
         img.attr('src', 'static/images/gallery/' + images[i]);
         img.addClass('gallery-item');
+        img.attr('data-aos', 'fade-left');
         galleryContainer.append(img);
     }
 
@@ -62,23 +54,26 @@ $(document).ready(function () {
 
     $('#copyright-year').html(new Date().getFullYear());
 
-    // const scroll = new SmoothScroll('body', {
-    //     damping: 1,
+    // var Scrollbar = window.Scrollbar;
+    // var bodyScroll = Scrollbar.init(document.querySelector('body'), {
+    //     damping: 0.05,
     //     speed: 500,
     //     thumbMinSize: 5,
     //     renderByPixels: true,
     //     alwaysShowTracks: false,
     //     continuousScrolling: true
     // });
-    // const projectsScroll = new SmoothScroll('#projects-box', {
-    //     damping: 1,
+
+    // var projectsScroll = Scrollbar.init(document.querySelector('#projects-box'), {
+    //     damping: 0.1,
     //     thumbMinSize: 5,
     //     renderByPixels: true,
     //     alwaysShowTracks: false,
-    //     continuousScrolling: true
+    //     // continuousScrolling: true
     // });
-    // const testimonialsScroll = new SmoothScroll('#testimonials-container-inner', {
-    //     damping: 1,
+
+    // var testimonialsScroll = Scrollbar.init(document.querySelector('.testimonials-container-inner'), {
+    //     damping: 0.1,
     //     thumbMinSize: 5,
     //     renderByPixels: true,
     //     alwaysShowTracks: false,

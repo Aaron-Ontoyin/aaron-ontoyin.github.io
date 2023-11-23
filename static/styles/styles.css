@@ -1,3 +1,18 @@
+body::-webkit-scrollbar {
+    width: 0px;  /* Remove scrollbar space */
+    background: transparent;  /* Optional: just make scrollbar invisible */
+}
+
+/* Optional: show position indicator in page margin */
+body::before {
+    content: '';
+    height: 100%;
+    float: right;
+    width: 3px;
+    background: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.05), transparent);
+}
+
+
 * {
     font-family: 'Mooli', sans-serif;
     scroll-behavior: smooth;
@@ -35,7 +50,7 @@ a {
 }
 
 .justify-text {
-    text-align: justify;
+    text-align: justify
 }
 
 .hero-container {
@@ -140,6 +155,7 @@ a {
     box-shadow: 1px 3px 4px rgb(238, 1, 238, 0.3);
     z-index: 1;
     right: 26vw;
+    border-radius: 150x;
 }
 
 .project-box {
@@ -155,6 +171,11 @@ a {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
+
+.project-box h6 {
+    color: #3f14ac;
+    font-weight: 600;
+}
 
 .project-btn {
     color: aliceblue;
@@ -195,8 +216,8 @@ a {
 }
 
 .gallery-container-inner {
-    background-color: rgb(212, 231, 248);
-    border: 2px solid rgb(237, 230, 230);
+    background-color: rgba(220, 232, 243, 0.846);
+    box-shadow: 0px 40px 50px white;
     border-radius: 15px;
     display: flex;
     flex-wrap: wrap;
@@ -219,7 +240,7 @@ a {
 }
 
 .gallery-item {
-    max-width: 300px;
+    max-width: 250px;
     width: auto;
     height: auto;
     border-radius: 10px;
@@ -259,7 +280,8 @@ a {
 }
 
 .testimonial {
-    box-shadow: 8px 2px rgba(0, 0, 0, 0.3);
+    box-shadow: 8px 5px rgba(0, 0, 0, 0.5);
+
 }
 
 .testimonial div {
@@ -314,6 +336,11 @@ a {
         max-height: 75vh;
     }
 
+    
+    .gallery-container-inner {
+        height: 50vh;
+    }
+
     .testimonials-container {
         max-height: 60vh;
     }
@@ -329,8 +356,24 @@ a {
         height: 25vh;
     }
 
+    .hero-container h1 {
+        font-size: 1.7rem;
+    }
+
+    .hero-container p {
+        font-size: 0.8rem;
+    }
+
     #aboutBox {
         width: 90vw;
+    }
+
+    #aboutMeHeader {
+        font-size: 1.3rem;
+    }
+
+    .about-text {
+        font-size: 0.85rem;
     }
 
     .skills-container {
@@ -341,27 +384,51 @@ a {
 
     #projects-box {
         max-height: 65vh;
-        width: 95%;
-
+        width: 80%;
+        position: relative;
+        margin-left: 100px;
+        border-top-right-radius: 40px;
+        border-bottom-right-radius: 40px;
     }
 
-    #projects-box {
-        position: relative;
-        left: 0;
-        right: 0;
+    .projects-title {
+        font-size: 1.5rem;
+    }
+
+    .project-box p {
+        font-size: 0.8rem;
+    }
+
+    .project-box a {
+        font-size: 0.7rem;
     }
 
     .status {
-        border-top-left-radius: 0;
-        border-bottom-left-radius: 0;
-        width: 90vw;
+        width: 100vw;
         position: relative;
-        left: -5px;
+        left: 0;
+        border-left: 7px solid #6428fc;
         border-right: 7px solid #6428fc;
+    }
+
+    .gallery-container-inner {
+        height: 50vh;
+    }
+
+    .gallery-item {
+        max-width: 190px;
     }
 
     .testimonials-container {
         max-height: 70vh;
+    }
+
+    .testimonials-container-inner {
+        width: 80vw;
+    }
+
+    .testimonial {
+        font-size: 0.9rem;
     }
 
     .testimonial div {
@@ -370,8 +437,10 @@ a {
 
     .testimonial img {
         float: right;
-        margin-left: 20px;
-        margin-bottom: 20px;
+        width: 90px;
+        height: 90px;
+        margin-left: 10px;
+        margin-bottom: 10px;
     }
 
 }
