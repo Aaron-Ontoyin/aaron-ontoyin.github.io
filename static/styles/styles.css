@@ -1,6 +1,8 @@
 body::-webkit-scrollbar {
-    width: 0px;  /* Remove scrollbar space */
-    background: transparent;  /* Optional: just make scrollbar invisible */
+    width: 0px;
+    /* Remove scrollbar space */
+    background: transparent;
+    /* Optional: just make scrollbar invisible */
 }
 
 /* Optional: show position indicator in page margin */
@@ -20,16 +22,6 @@ body::before {
 
 html {
     scroll-padding-top: 100px;
-    width: 100vw;
-
-}
-
-main {
-    width: 100vw;
-}
-
-.offcanvas {
-    background-color: aliceblue;
 }
 
 .navbar-brand {
@@ -38,6 +30,11 @@ main {
 
 .navbar-toggler-icon {
     background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(150, 150, 170, 1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+.off-canvas-navbar {
+    background-color: #dcf2f7;
+    border-top: inset 72px #356873;
 }
 
 body {
@@ -49,12 +46,20 @@ a {
     text-decoration: none;
 }
 
+.fit-content-width-important {
+    width: fit-content !important;
+}
+
+.modal-backdrop {
+    opacity: 0.8 !important;
+}
+
 .justify-text {
     text-align: justify
 }
 
 .hero-container {
-    background-image: url('../images/background-image.jpg');
+    background-image: url('../images/background-image.webp');
     background-size: cover;
     background-position: center;
     height: 70vh;
@@ -68,8 +73,7 @@ a {
 
 .cta-button {
     width: fit-content;
-    background-color: rgb(220, 46, 220);
-    border: none;
+    background-color: #ae74de;
     color: aliceblue;
 }
 
@@ -102,12 +106,11 @@ a {
 }
 
 .sign-container-inner {
-    background-image: url('../images/sign.png');
+    background-image: url('../images/sign.webp');
     background-size: cover;
     background-position: center;
     color: whitesmoke;
     font-size: 4rem;
-    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.1);
     box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.1);
     min-height: 200px;
     max-height: 300px;
@@ -194,7 +197,7 @@ a {
     border-radius: 15px;
     scrollbar-width: none;
     -ms-overflow-style: none;
-    background-image: url("../images/aaron_drillbotics.jpg");
+    background-image: url("../images/aaron_drillbotics.webp");
     background-size: cover;
     background-position: center;
     position: absolute;
@@ -218,20 +221,15 @@ a {
 .gallery-container-inner {
     background-color: rgba(220, 232, 243, 0.846);
     box-shadow: 0px 40px 50px white;
-    border-radius: 15px;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    justify-content: center;
-    gap: 1.2rem;
-    margin-top: 1.5rem;
-    margin-bottom: 2em;
-    margin-left: 1em;
     max-height: 85vh;
-    width: 100%;
-    overflow: scroll;
     scrollbar-width: none;
     -ms-overflow-style: none;
+    display: grid;
+    gap: 0.5rem;
+    grid-auto-flow: column;
+    grid-template-rows: repeat(2, 1fr);
+    overflow-x: scroll;
+    overflow-y: hidden;
 }
 
 .gallery-arrow {
@@ -240,12 +238,10 @@ a {
 }
 
 .gallery-item {
-    max-width: 250px;
-    width: auto;
-    height: auto;
     border-radius: 10px;
     cursor: pointer;
     margin: 1px;
+    max-height: 200px;
     box-sizing: border-box;
     box-shadow: 2px 0px 5px rgb(137, 43, 226);
     transition: transform 0.3s ease-in-out;
@@ -256,7 +252,7 @@ a {
 }
 
 .testimonials-container {
-    background-image: url('../images/cover_image.jpg');
+    background-image: url('../images/cover_image.webp');
     background-size: cover;
     background-position: center;
     max-height: 80vh;
@@ -336,7 +332,7 @@ a {
         max-height: 75vh;
     }
 
-    
+
     .gallery-container-inner {
         height: 50vh;
     }
@@ -384,7 +380,7 @@ a {
 
     #projects-box {
         max-height: 65vh;
-        width: 80%;
+        width: 85%;
         position: relative;
         margin-left: 100px;
         border-top-right-radius: 40px;

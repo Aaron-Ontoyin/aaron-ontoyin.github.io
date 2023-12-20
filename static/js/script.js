@@ -2,25 +2,7 @@ const testimonialDiv = $('.testimonial .p-2');
 const testimonialImg = $('.testimonial img');
 
 const galleryContainer = $('.gallery-container-inner');
-const images = [
-    "1.jpg",
-    "2.jpeg",
-    "3.jpg",
-    "4.jpeg",
-    "5.jpg",
-    "6.jpg",
-    "7.jpg",
-    "8.jpg",
-    "9.jpg",
-    "10.jpg",
-    "11.jpg",
-    "12.jpg",
-    "13.jpg",
-    "14.jpg",
-    "15.jpg",
-    "16.jpg",
-    "17.jpg"
-];
+const numOfImages = 17;
 
 
 $(document).ready(function () {
@@ -34,11 +16,13 @@ $(document).ready(function () {
         $(this).find('.dropdown-menu').first().stop(true, true).slideUp();
     });
 
-    for (var i = 0; i < images.length; i++) {
+    for (let i = 1; i < numOfImages + 1; i++) {
         var img = $('<img>');
-        img.attr('src', 'static/images/gallery/' + images[i]);
-        img.addClass('gallery-item');
+        img.attr('src', `static/images/gallery/${i}.webp`);
+        img.addClass('gallery-item', 'img-fluid');
         img.attr('data-aos', 'fade-left');
+        img.attr('width', 'auto');
+        img.attr('height', 'auto');
         galleryContainer.append(img);
     }
 

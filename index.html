@@ -1,13 +1,14 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="w-100">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Aaron Ontoyin Yin - Profile">
     <title>Aaron Ontoyin Yin - Profile</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="icon" type="image/x-icon" href="/static/images/sign.png">
+    <link rel="icon" type="image/x-icon" href="/static/images/sign.webp">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Mooli&display=swap" rel="stylesheet">
@@ -23,12 +24,12 @@
     <header>
         <nav class="navbar bg-body-tertiary fixed-top p-0">
             <div class="container-fluid nav-inner p-3 bg-black">
-                <a class="navbar-brand" href="/"> &nbsp; <span class="d-none d-md-block">Aaron Ontoyin Yin</span></a>
+                <a class="navbar-brand" href="index.html"> <span class="ms-2 d-none d-md-block">Aaron Ontoyin Yin</span></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
                     data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                <div class="offcanvas offcanvas-end fit-content-width-important off-canvas-navbar" tabindex="-1" id="offcanvasNavbar"
                     aria-labelledby="offcanvasNavbarLabel">
                     <div class="offcanvas-header">
                         <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
@@ -45,66 +46,15 @@
                             <li class="nav-item">
                                 <a class="nav-link" href="#projects-box">Projects</a>
                             </li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                                    aria-expanded="false">
-                                    Reach Out
-                                </a>
-                                <ul class="dropdown-menu">
-                                    <li class="dropdown-item">
-                                        <a href="mailto:dummy.email@example.com" target="_blank">
-                                            <i class="fas fa-envelope"></i> Email
-                                        </a>
-                                    </li>
-                                    <li class="dropdown-item">
-                                        <a href="https://twitter.com/OntoAaron" target="_blank">
-                                            <i class="fab fa-twitter"></i> Twitter
-                                        </a>
-                                    </li>
-                                    <li class="dropdown-item">
-                                        <a href="https://www.facebook.com/aaron.yin.528?mibextid=ZbWKwL"
-                                            target="_blank">
-                                            <i class="fab fa-facebook"></i> Facebook
-                                        </a>
-                                    </li>
-                                    <li class="dropdown-item">
-                                        <a href="https://wa.me/qr/VWLYQWTX4SNDG1" target="_blank">
-                                            <i class="fab fa-whatsapp"></i> WhatsApp
-                                        </a>
-                                    </li>
-                                    <li class="dropdown-item">
-                                        <a href="https://discord.gg/KJEtabKm" target="_blank">
-                                            <i class="fab fa-discord"></i> Discord
-                                        </a>
-                                    </li>
-                                    <li class="dropdown-item">
-                                        <a href="https://instagram.com/aaron_ontoyin?utm_source=qr&igshid=OGIxMTE0OTdkZA=="
-                                            target="_blank">
-                                            <i class="fab fa-instagram"></i> Instagram
-                                        </a>
-                                    </li>
-                                    <li class="dropdown-item">
-                                        <a href="https://github.com/Aaron-Ontoyin" target="_blank">
-                                            <i class="fab fa-github"></i> GitHub
-                                        </a>
-                                    </li>
-                                    <li class="dropdown-item">
-                                        <a href="https://www.linkedin.com/in/aarononto/" target="_blank">
-                                            <i class="fab fa-linkedin"></i> LinkedIn
-                                        </a>
-                                    </li>
-                                    <li class="dropdown-item">
-                                        <a href="tel:+233597743383" target="_blank">
-                                            <i class="fa fa-phone-square"></i> Phone
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <hr class="dropdown-divider">
-                                    </li>
-                                    <li><a class="dropdown-item" href="#">Reach out to me on any of the above media.</a>
-                                    </li>
-                                </ul>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#testimonials-box">Testimonials</a>
                             </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link" href="#contact">Reach Out</a>
+                            </li>
+                            <!-- <li class="nav-item dropdown">
+                                <a class="nav-link" href="#contact">Get ma CV</a>
+                            </li> -->
                         </ul>
                     </div>
                 </div>
@@ -112,7 +62,8 @@
         </nav>
     </header>
 
-    <main>
+    <main class="w-100">
+        <!-- HERO -->
         <div class="pt-5">
             <div class="bg-dark mt-4 hero-container w-100 d-flex flex-column justify-content-center p-3">
                 <h1><strong>Aaron Ontoyin Yin</strong></h1>
@@ -122,9 +73,11 @@
                 <p class="d-md-none">Electrical & Electronics Engineering Student <br>
                     Software Engineer | Data Scientist | A.I Enthusiast
                 </p>
-                <a href="#contact" class="btn btn-primary cta-button">Get in Touch</a>
+                <a href="#contact" class="btn cta-button">Get in Touch</a>
             </div>
         </div>
+
+        <!-- ABOUT ME -->
         <div class="container px-4 px-md-4 py-4 py-md-5 text-center d-flex justify-content-center mb-5">
             <div class="container bg-white rounded mx-md-5 p-4 pl-5" id="aboutBox">
                 <h2 id="aboutMeHeader">About Me</h2>
@@ -139,25 +92,26 @@
 
                     But wait, there's more! I'm also into AI and Data Science. And I love them. And just to keep things
                     interesting, I'm studying Quantum
-                    Computing at <a href="https://the-cs.org/" target="_blank">The Coding School'</a>. It's like regular
+                    Computing at <a href="https://the-cs.org/" target="_blank">The Coding School'</a> in partnership with MIT. It's like regular
                     computing, but on steroids.
 
                     A Pythonista, I would gladly say I am.
 
                     But at the end of the day, it's not just about the tech. It's about the people I meet and the
-                    friendships I make along the way. Nice to meet you!
+                    friends I make along the way. Nice to meet you!
                 </p>
                 <div class="w-100 text-end">
                     <span>Aaron Ontoyin Yin</span> <br>
-                    <!-- <img src="static/images/signature.jpg" alt="Sign" height="40px"> <br> -->
                     <span>Vadmin</span>
                 </div>
             </div>
         </div>
+
+        <!-- Skills -->
         <div class="p-2 my-5 w-100 py-5">
             <div class="row">
                 <div class="col-12 col-md-6 p-2 p-md-5 text-center d-flex justify-content-around mb-5 mb-md-0">
-                    <div class="sign-container-inner rounded text-center d-flex justify-content-center w-100"
+                    <div class="sign-container-inner rounded align-items-center d-flex justify-content-center w-100"
                         data-aos="zoom-in" data-aos-duration="1000">
                         <span class="sign-text">Vadmin</span>
                     </div>
@@ -168,31 +122,38 @@
                         <h2>Skills</h2>
                         <ul id="skills-list" class="text-start">
                             <li>
-                                <i class="fas fa-laptop"></i> Artificial Intelligence (A.I)
+                                <i class="fas fa-laptop"></i> Machine Learning
                             </li>
                             <li>
-                                <i class="fas fa-chart-bar"></i> Data Analysis
+                                <i class="fas fa-chart-bar"></i> Deep Learning
                             </li>
                             <li>
-                                <i class="fas fa-laptop-code"></i> Software Engineering
+                                <i class="fas fa-eye"></i> Computer Vision
                             </li>
+                            <li>
+                                <i class="fas fa-laptop-code"></i> Data Engineering
+                            </li>
+                            <li>
+                                <i class="fas fa-code"></i> Software Development
                             <li>
                                 <i class="fas fa-robot"></i> Robotics
+                            </li>
+                            <li>
+                                <i class="fas fa-microchip"></i> IoT
                             </li>
                             <li>
                                 <i class="fas fa-atom"></i> Quantum Computing
                             </li>
                             <li>
-                                <i class="fas fa-microchip"></i> Electronics Engineering
-                            </li>
-                            <li>
-                                <i class="fas fa-lightbulb"></i> Electrical Engineering
+                                <i class="fas fa-lightbulb"></i> Electrical Power Systems
                             </li>
                         </ul>
                     </div>
                 </div>
             </div>
         </div>
+
+        <!-- Projects -->
         <div class="my-5 py-5 w-100">
             <div class="d-md-flex flex-wrap">
                 <div class="container bg-white pb-3 text-center px-md-3 px-lg-5" id="projects-box">
@@ -232,24 +193,68 @@
                     </div>
 
                     <div class="project-box p-3 my-3">
+                        <h6 classs="card-title">Customer Churn Prediction</h6>
+                        <p class="card-data justify-text">Using predictive modeling, I developed a customer churn
+                            prediction system using machine learning models on IBM's telco
+                            customer churn data. The models used were logistic regression,
+                            random forest, SVM, KNN, naive bayes, and XGBoost.
+                            I deployed the best 3 models using Streamlit. Users could choose to prioritize recall, precision, or balance in
+                            the Streamlit app.
+                        </p>
+                        <a class="btn project-btn secrete-project"
+                            href="https://customer-churn-prediction-ontoyin.streamlit.app/"
+                            target="_blank">View Project</a>
+                    </div>
+
+                    <div class="project-box p-3 my-3">
                         <h6 classs="card-title">Image Compression App</h6>
                         <p class="card-data justify-text">I developed an Image compression App that works on
                             multiple
                             image types. The app gives more
                             flexibility allowing you
-                            to 'controll your image pixels'.
+                            to 'controll your pixels'.
                         </p>
                         <a class="btn project-btn secrete-project"
                             href="https://the-tech-at-virtual-world.blogspot.com/2023/09/image-compression-web-app.html"
                             target="_blank">View Project</a>
                     </div>
+
+                    <div class="project-box p-3 my-3">
+                        <h6 classs="card-title">Advanced ML Pipeline for Network Intrusion Detection</h6>
+                        <p class="card-data justify-text">Developed a machine learning pipeline for network intrusion detection.
+                            Used Random Forest for feature extraction and PCA for dimensionality reduction.
+                            Implemented an SVM classifier with optimized kernel functions and hyperparameters.
+                            ]Integrated the pipeline using scikit-learn’s Pipeline object for efficient and
+                            consistent data transformation.
+                            Evaluated pipeline performance using accuracy, precision, recall,
+                            F1 score, ROC curve, and AUC-ROC. Enabled probability
+                            estimation in SVM and analyzed the impact of varying decision
+                            thresholds on performance.
+                        </p>
+                        <a class="btn project-btn secrete-project"
+                            href="https://github.com/Aaron-Ontoyin/Network-Intrusion-Detection"
+                            target="_blank">View Project</a>
+                    </div>
+
+                    <div class="project-box p-3 my-3">
+                        <h6 classs="card-title">OSAD API (Object, Speech and Audio Detection)</h6>
+                        <p class="card-data justify-text">Built a test-driven, packed, and robust API that provides
+                            endpoints for converting speech to text and vice versa and object
+                            detection within images.
+                            The API securely manages user authentication with session
+                            tokens and password resets through email.
+                            Used Flask for the API development, Torch Vision's
+                            fasterrcnn_resnet50_fpn_V2 model for object detection,
+                            SpeechRecognition for speech-to-text and pyttsx
+                        </p>
+                        <a class="btn project-btn secrete-project"
+                            href="https://github.com/Aaron-Ontoyin/OSAD-API"
+                            target="_blank">View Project</a>
+                    </div>
                     <div class="project-box p-3 my-3">
                         <h6 classs="card-title">Uni Hostels App</h6>
                         <p class="card-data justify-text">I develped a web app for easy management and finding of
-                            hostels in Universities. The app
-                            gives you
-                            the luxury and time saving
-                            oportunity to find hostels that meets just your needs.
+                            hostels in Universities. This was full scale but just for fun.
                         </p>
                         <a class="btn project-btn secrete-project"
                             href="https://www.linkedin.com/posts/aarononto_ghie-umat-hackathon-activity-7044333066227466240-mR3h?utm_source=share&utm_medium=member_desktop"
@@ -270,7 +275,7 @@
                     </div>
                     <div class="project-box p-3 my-3">
                         <h6 classs="card-title">Electronics</h6>
-                        <p class="card-data justify-text">For mini electronics, I've built countless projects
+                        <p class="card-data justify-text">For electronics, I've built countless projects
                             including
                             Fingerprint + keycard
                             attendance
@@ -282,26 +287,26 @@
                             data-bs-toggle="modal" data-bs-target="#private-project-modal">View
                             Project</a>
                     </div>
-                    <div>Contact Me for Details</div>
+                    <div>Contact Me for Projects</div>
                 </div>
                 <div class="status" data-aos="slide-right" data-aos-duration="900">
                     <div class="status-container-inner w-100 h-100 p-5">
                         <div class="h2 status-title">Me!</div>
                         <div class="">
-                            <div class="h4">Projects Completed</div>
-                            <span>30+</span>
+                            <div class="h4">I liked most</div>
+                            <ul>
+                                <li>Deep Learning</li>
+                                <li>Space Exploration</li>
+                                <li>Quantum Computing</li>
+                            </ul>
                         </div>
                         <div class="">
-                            <div class="h4">Certificates Received</div>
-                            <span>10+</span>
-                        </div>
-                        <div class="">
-                            <div class="h4">Hours Worked</div>
-                            <span>1000+</span>
-                        </div>
-                        <div class="">
-                            <div class="h4">Awards Won</div>
-                            <span>5+</span>
+                            <div class="h4">My Hobbies</div>
+                            <ul>
+                                <li>Watching Movies/Series</li>
+                                <li>Listening to music</li>
+                                <li>Playing games with friends</li>
+                            </ul>
                         </div>
                         <div class="">
                             <span>See me on <a href="https://www.linkedin.com/in/aarononto/"
@@ -311,15 +316,45 @@
                 </div>
             </div>
         </div>
+
+        <!-- Gallery -->
         <div class="container my-5 w-100 text-center d-flex flex-column justify-content-center">
             <p class="h5 gallery-arrow" data-aos="slide-right" data-aos-duration="1500">Scroll right <i
                     class="fa fa-angles-right fa-beat-fade"></i></p>
-            <div class="gallery-container-inner w-100 p-3">
+            <div class="gallery-container-inner w-100 p-3 rounded">
 
             </div>
         </div>
-        <div class="my-5 testimonials-container d-flex justify-content-center text-center w-100 p-2 p-md-5">
+
+        <!-- Testimonials -->
+        <div class="my-5 testimonials-container d-flex justify-content-center text-center w-100 p-2 p-md-5" id="testimonials-box">
             <div class="testimonials-container-inner p-1 p-md-3">
+                <div class="testimonial mb-3 d-md-flex">
+                    <div class="p-2">
+                        <p class="justify-text">You can tell a person is eager to be a better version of themselves when
+                            they are just ready to learn new skills you introduce them to. I have a trained many people in
+                            the Aaenics Community and Aaron is such a person who just needed an initial push.
+                            I am amazed at how far he has gone in tech and robotics, especially with Machine
+                            learning, and can only imagine where he will be in the next couple of years.
+                        </p>
+                        <div class="h3 text-start">Kwaku Effa Adu-Ampomah</div>
+                        <div class="text-start">Electrical and Electronics Engineer</div>
+                        <div class="text-start">Founder, Aaenics Engineering LTD</div>
+                    </div>
+                    <img src="static/images/recommenders/kwaku.webp" alt="Kwaku Effah" loading="lazy">
+                </div>
+                <div class="testimonial mb-3 d-md-flex">
+                    <div class="p-2">
+                        <p class="justify-text">Aaron Ontoyin is a disciplined, organised and an analytical student.
+                            He is also a hard working and highly motivated individual. He has a pleasant personality,
+                            a team player and a result-oriented person.
+                        </p>
+                        <div class="h3 text-start">Mensah Sitti</div>
+                        <div class="text-start">Lecturer, Department of Computer Science and Engineering</div>
+                        <div class="text-start">George Grant University of Mines and Technology</div>
+                    </div>
+                    <img src="static/images/recommenders/sitti.webp" alt="Mensah Sitti" loading="lazy">
+                </div>
                 <div class="testimonial mb-5 d-md-flex p-2">
                     <div class="p-2">
                         <p class="justify-text">I highly recommend Aaron Ontoyin. I had the pleasure of working with him
@@ -335,7 +370,7 @@
                         <div class="h3 text-start">Eyram Dela kuwornu</div>
                         <div class="text-start">Computer Scientist and Engineer, Trestle Group</div>
                     </div>
-                    <img src="static/images/dela.jpeg" alt="Testimonial 1">
+                    <img src="static/images/recommenders/dela.webp" alt="Dela Eyram" loading="lazy">
                 </div>
                 <div class="testimonial mb-3 d-md-flex">
                     <div class="p-2">
@@ -349,10 +384,12 @@
                         <div class="text-start">Lecturer, Department of Information Systems and Technology</div>
                         <div class="text-start">C. K. Tedam University of Technology and Applied Sciences</div>
                     </div>
-                    <img src="static/images/cktedam.png" alt="Testimonial 1">
+                    <img src="static/images/recommenders/cktedam.webp" alt="Iven Aabaah" loading="lazy">
                 </div>
             </div>
         </div>
+        
+        <!-- Contact -->
         <div class="p-2 p-md-3 p-lg-5 w-100 text-center d-flex justify-content-center" id="contact">
             <div class="container text-start p-lg-4" id="contact-container" data-aos="slide-up"
                 data-aos-duration="1000">
@@ -416,6 +453,8 @@
                 </ul>
             </div>
         </div>
+
+        <!-- Footer -->
         <footer class="footer bg-dark mt-5 p-2 bg-black">
             <div class="text-center pt-4">
                 <p class="">© <span id="copyright-year"></span> Aaron Ontoyin Yin. All rights reserved.</p>
@@ -425,21 +464,21 @@
         <button id="back-to-top-button" title="Back to Top"><i class="fa-solid fa-up-long"></i></button>
 
 
+        <!-- Modal -->
         <div class="modal fade" id="private-project-modal" data-bs-backdrop="static" data-bs-keyboard="false"
             tabindex="-1" aria-labelledby="private-project-modalLabel" aria-hidden="true">
-            <div class="modal-dialog">
+            <div class="modal-dialog modal-dialog-centered">
                 <div class="modal-content">
                     <div class="modal-header">
                         <h1 class="modal-title fs-5" id="private-project-modalLabel">View Project</h1>
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
-                        Please contact me to learn more about this Project.
+                        Contact me to learn more about this project.
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                        <button type="button" class="btn btn-primary" onclick="window.location.href='#contact'"
-                            target="_blank">Contact</button>
+                        <button type="button" class="btn btn-primary" onclick="window.location.href='#contact'">Contact</button>
                     </div>
                 </div>
             </div>
