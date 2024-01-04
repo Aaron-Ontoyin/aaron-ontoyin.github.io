@@ -2,7 +2,7 @@ const testimonialDiv = $('.testimonial .p-2');
 const testimonialImg = $('.testimonial img');
 
 const galleryContainer = $('.gallery-container-inner');
-const numOfImages = 17;
+const numOfImages = 18;
 
 
 $(document).ready(function () {
