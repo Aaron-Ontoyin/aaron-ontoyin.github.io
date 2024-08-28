@@ -1,11 +1,8 @@
 body::-webkit-scrollbar {
     width: 0px;
-    /* Remove scrollbar space */
     background: transparent;
-    /* Optional: just make scrollbar invisible */
 }
 
-/* Optional: show position indicator in page margin */
 body::before {
     content: '';
     height: 100%;
@@ -146,6 +143,72 @@ a {
     list-style: none;
 }
 
+.cv-btn {
+    padding: 0.6em 2em;
+    border: none;
+    outline: none;
+    color: rgb(255, 255, 255);
+    background: #111;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 10px;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+
+.cv-btn:before {
+    content: "";
+    background: linear-gradient(45deg,
+            #ff0000,
+            #ff7300,
+            #fffb00,
+            #48ff00,
+            #00ffd5,
+            #002bff,
+            #7a00ff,
+            #ff00c8,
+            #ff0000);
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    -webkit-filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing-cv-btn 20s linear infinite;
+    transition: opacity 0.3s ease-in-out;
+    border-radius: 10px;
+}
+
+@keyframes glowing-cv-btn {
+    0% {
+        background-position: 0 0;
+    }
+
+    50% {
+        background-position: 400% 0;
+    }
+
+    100% {
+        background-position: 0 0;
+    }
+}
+
+.cv-btn:after {
+    z-index: -1;
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #222;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+}
 
 #projects-box {
     max-height: 95vh;
@@ -153,7 +216,7 @@ a {
     overflow: scroll;
     scrollbar-width: none;
     -ms-overflow-style: none;
-    animation: floatingBouncing 2s infinite;
+    animation: floatingBouncing 6s infinite;
     position: relative;
     box-shadow: 1px 3px 4px rgb(238, 1, 238, 0.3);
     z-index: 1;
@@ -218,46 +281,49 @@ a {
     font-weight: 600;
 }
 
-.gallery-container-inner {
-    background-color: rgba(220, 232, 243, 0.846);
-    box-shadow: 0px 40px 50px white;
-    max-height: 85vh;
-    scrollbar-width: none;
-    -ms-overflow-style: none;
-    display: grid;
-    gap: 0.5rem;
-    grid-auto-flow: column;
-    grid-template-rows: repeat(2, 1fr);
-    overflow-x: scroll;
-    overflow-y: hidden;
+.gallery-outter {
+    height: 350px;
 }
 
-.gallery-arrow {
-    color: black;
-    font-size: 2rem;
+.gallery {
+    width: 300px;
+    height: 200px;
+    transform-style: preserve-3d;
+    animation: rotate-gallery 35s linear infinite;
 }
 
-.gallery-item {
-    border-radius: 10px;
-    cursor: pointer;
-    margin: 1px;
-    max-height: 200px;
-    box-sizing: border-box;
-    box-shadow: 2px 0px 5px rgb(137, 43, 226);
-    transition: transform 0.3s ease-in-out;
+@keyframes rotate-gallery {
+    from {
+        transform: perspective(1200px) rotateY(0deg);
+    }
+
+    to {
+        transform: perspective(1200px) rotateY(360deg);
+    }
 }
 
-.gallery-item:hover {
-    transform: scale(1.1);
+.gallery span {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform-origin: center;
+    transform-style: preserve-3d;
+    transform: rotateY(calc(var(--i) * 45deg)) translateZ(380px);
+}
+
+.gallery span img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .testimonials-container {
     background-image: url('../images/cover_image.webp');
     background-size: cover;
     background-position: center;
-    max-height: 80vh;
+    max-height: 90vh;
     box-shadow: 0px 0px 10px rgba(50, 100, 0, 0.8);
-    width: 100vw;
 }
 
 .testimonials-container-inner {
@@ -268,6 +334,7 @@ a {
     transition: background-color 0.3s ease;
     overflow: auto;
     scrollbar-width: none;
+    max-width: 90vw;
     -ms-overflow-style: none;
 }
 
@@ -332,15 +399,9 @@ a {
         max-height: 75vh;
     }
 
-
-    .gallery-container-inner {
-        height: 50vh;
-    }
-
     .testimonials-container {
         max-height: 60vh;
     }
-
 
     .status {
         right: 15vw;
@@ -407,12 +468,17 @@ a {
         border-right: 7px solid #6428fc;
     }
 
-    .gallery-container-inner {
-        height: 50vh;
+    .gallery-outter {
+        height: 200px;
     }
 
-    .gallery-item {
-        max-width: 190px;
+    .gallery {
+        width: 200px;
+        height: 120px;
+    }
+
+    .gallery span {
+        transform: rotateY(calc(var(--i) * 45deg)) translateZ(280px);
     }
 
     .testimonials-container {
@@ -420,7 +486,7 @@ a {
     }
 
     .testimonials-container-inner {
-        width: 80vw;
+        width: 90vw;
     }
 
     .testimonial {
