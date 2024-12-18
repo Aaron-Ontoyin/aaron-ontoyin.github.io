@@ -1,7 +1,7 @@
 const testimonialDiv = $('.testimonial .p-2');
 const testimonialImg = $('.testimonial img');
 
-const numOfImages = 11;
+const numOfImages = 8;
 
 
 $(document).ready(function () {
