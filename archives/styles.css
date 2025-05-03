@@ -1,11 +1,47 @@
+/* CSS Variables for color and font consistency */
+:root {
+    --primary-bg: aliceblue;
+    --primary-color: #333;
+    --accent-color: blueviolet;
+    --nav-bg: black;
+    --nav-color: aliceblue;
+    --font-main: 'Mooli', sans-serif;
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    line-height: 30px;
+    line-height: 1.7;
     text-align: justify;
     scroll-behavior: smooth;
+    font-family: var(--font-main);
 }
+
+html {
+    font-size: 16px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+:focus {
+    outline: 2px solid var(--accent-color);
+    outline-offset: 2px;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    clip: rect(0,0,0,0);
+    border: 0;
+}
+
+/* Responsive utility classes and flex/grid layouts are added below as needed */
+/* Add robots.txt and sitemap.xml in root for SEO */
 
 a {
     text-decoration: none;

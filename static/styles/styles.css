@@ -229,14 +229,6 @@ a {
     border-radius: 10px;
 }
 
-.projects-title {
-    font-size: 2.3rem;
-    position: sticky;
-    z-index: 1;
-    top: 0;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-}
-
 
 .project-box h6 {
     color: #3f14ac;
@@ -279,6 +271,68 @@ a {
 .status-title {
     color: #6428fc;
     font-weight: 600;
+}
+
+/* Academic & Research Publications Responsive Styles */
+.publications-section {
+    background: #f7faff;
+    border-radius: 12px;
+    box-shadow: 0 2px 12px rgba(30, 60, 90, 0.07);
+    max-width: 850px;
+    margin: 0 auto 2rem auto;
+    padding: 2rem 2.5rem;
+}
+
+.section-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #273c75;
+    display: flex;
+    align-items: center;
+}
+
+.publication-card {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 1px 6px rgba(30,60,90,0.07);
+    margin-bottom: 1.5rem;
+    transition: box-shadow 0.2s;
+    border-left: 4px solid #4e73df;
+}
+
+.publication-card:hover {
+    box-shadow: 0 4px 16px rgba(30,60,90,0.12);
+    border-left-color: #273c75;
+}
+
+.pub-title {
+    font-size: 1.15rem;
+    color: #222f3e;
+}
+
+.pub-authors {
+    font-size: 0.98rem;
+    color: #636e72;
+}
+
+.pub-venue .badge {
+    font-size: 0.93rem;
+    background: #eaf0fa;
+    border-radius: 6px;
+    padding: 0.3em 0.7em;
+    margin-bottom: 0.5em;
+}
+
+.pub-link {
+    color: #4e73df;
+    font-weight: 500;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.pub-link:hover {
+    color: #273c75;
+    text-decoration: underline;
 }
 
 .gallery-outter {
@@ -446,10 +500,6 @@ a {
         margin-left: 100px;
         border-top-right-radius: 40px;
         border-bottom-right-radius: 40px;
-    }
-
-    .projects-title {
-        font-size: 1.5rem;
     }
 
     .project-box p {
