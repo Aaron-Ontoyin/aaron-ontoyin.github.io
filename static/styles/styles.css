@@ -321,6 +321,10 @@ a {
     border-radius: 6px;
     padding: 0.3em 0.7em;
     margin-bottom: 0.5em;
+    word-wrap: break-word;
+    white-space: normal;
+    max-width: 100%;
+    display: inline-block;
 }
 
 .pub-link {
@@ -553,6 +557,32 @@ a {
         height: 90px;
         margin-left: 10px;
         margin-bottom: 10px;
+    }
+
+    /* Publications mobile styles */
+    .publication-card {
+        padding: 1rem !important;
+    }
+
+    .pub-title {
+        font-size: 0.95rem;
+        line-height: 1.3;
+    }
+
+    .pub-authors {
+        font-size: 0.85rem;
+    }
+
+    .pub-venue .badge {
+        font-size: 0.8rem;
+        padding: 0.25em 0.5em;
+        line-height: 1.2;
+        word-break: break-word;
+        hyphens: auto;
+    }
+
+    .pub-link {
+        font-size: 0.85rem;
     }
 
 }
