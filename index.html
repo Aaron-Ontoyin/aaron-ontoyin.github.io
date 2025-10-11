@@ -25,6 +25,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="icon" type="image/x-icon" href="/static/images/sign.webp">
+    <link rel="preload" href="./static/styles/styles.css" as="style">
+    <link rel="preload" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" as="style">
+    <link rel="preload" href="./static/images/background-image.webp" as="image">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Mooli&display=swap" rel="stylesheet">
@@ -94,9 +97,9 @@
         <div class="pt-5">
             <div class="bg-dark mt-4 hero-container w-100 d-flex flex-column justify-content-center p-3">
                 <h1><strong>Aaron Ontoyin Yin</strong></h1>
-                <p class="d-none d-md-block">Electrical & Electronics Eng. Student | AI Engineer/Researcher
+                <p class="d-none d-md-block">Electrical & Electronics Engineer | AI Engineer/Researcher
                 </p>
-                <p class="d-md-none">Electrical & Electronics Eng. Student <br>
+                <p class="d-md-none">Electrical & Electronics Engineer <br>
                     AI Engineer/Researcher</p>
                 </p>
                 <a href="#contact" class="btn cta-button">Get in Touch</a>
@@ -108,7 +111,9 @@
             <div class="container bg-white rounded mx-md-5 p-4 pl-5" id="aboutBox">
                 <h2 id="aboutMeHeader">About Me</h2>
                 <p class="about-text">
-                    I am an Artificial Intelligence Engineer and Researcher at <a href="https://vela.partners/" target="_blank">Vela Partners</a>, and an undergraduate student in Electrical and Electronics Engineering. My passion lies in data science, machine learning, and especially deep learning, where I enjoy building intelligent systems that solve real-world problems.
+                    I am an Artificial Intelligence Engineer and Researcher at <a href="https://vela.partners/" target="_blank">Vela Partners</a>,
+                    and an Electrical & Electronics Engineer. My passion lies in data science, machine learning, and especially deep learning,
+                    where I enjoy building intelligent systems that solve real-world problems.
                     <br><br>
                     I am also actively learning quantum computing and expanding my expertise in robotics. I thrive on exploring new technologies and applying them to innovative projects.
                     <br><br>
@@ -184,6 +189,14 @@
                     </div>
 
                     <div class="project-box p-3 my-3">
+                        <h6 class="card-title">Think Reason Learn</h6>
+                        <p class="card-data justify-text">
+                            Think Reason Learn is an open-source Python library that fuses large language models with interpretable machine learning to build transparent, production-grade decision systems for high-stakes domains.
+                        </p>
+                        <a class="btn project-btn" href="https://thinkreasonlearn.com/" target="_blank">Read the Docs</a>
+                    </div>
+
+                    <div class="project-box p-3 my-3">
                         <h6 class="card-title">Data Transmission in Networks</h6>
                         <p class="card-data justify-text">
                             Developed a Streamlit-based software tool to analyze and visualize data transmission in network environments, supporting PhD-level research. The application models the flow of information between network nodes and examines the factors influencing transmission efficiency, providing actionable insights for optimizing network performance.
@@ -201,80 +214,6 @@
                             target="_blank">View
                             Project</a>
                     </div>
-
-                    <div class="project-box p-3 my-3">
-                        <h6 class="card-title">Customer Churn Prediction</h6>
-                        <p class="card-data justify-text">
-                            Designed and implemented a customer churn prediction system utilizing IBM’s telco customer dataset. Leveraged machine learning models including logistic regression, random forest, SVM, KNN, Naive Bayes, and XGBoost. Deployed the top three models via Streamlit, enabling users to prioritize recall, precision, or a balanced approach within the interactive application.
-                        </p>
-                        <a class="btn project-btn secrete-project"
-                            href="https://customer-churn-prediction-ontoyin.streamlit.app/" target="_blank">View
-                            Project</a>
-                    </div>
-
-                    <div class="project-box p-3 my-3">
-                        <h6 class="card-title">Advanced ML Pipeline for Network Intrusion Detection</h6>
-                        <p class="card-data justify-text">
-                            Developed a robust machine learning pipeline for detecting network intrusions. Utilized Random Forest for feature extraction and PCA for dimensionality reduction, and implemented an optimized SVM classifier. Integrated the workflow using scikit-learn’s Pipeline object, with comprehensive performance evaluation using metrics such as accuracy, precision, recall, F1 score, ROC curve, and AUC-ROC. Enabled probability estimation and analyzed the impact of decision thresholds on detection performance.
-                        </p>
-                        <a class="btn project-btn secrete-project"
-                            href="https://github.com/Aaron-Ontoyin/Network-Intrusion-Detection" target="_blank">View
-                            Project</a>
-                    </div>
-
-                    <div class="project-box p-3 my-3">
-                        <h6 class="card-title">OSAD API (Object, Speech and Audio Detection)</h6>
-                        <p class="card-data justify-text">
-                            Engineered a test-driven, production-ready API for object detection in images and speech-to-text/text-to-speech conversion. The API features secure user authentication, session management, and password reset via email. Built with Flask, it employs TorchVision’s Faster R-CNN model for object detection, and integrates SpeechRecognition and pyttsx for audio processing.
-                        </p>
-                        <a class="btn project-btn secrete-project" href="https://github.com/Aaron-Ontoyin/OSAD-API"
-                            target="_blank">View Project</a>
-                    </div>
-                    
-                    <div class="project-box p-3 my-3">
-                        <h6 class="card-title">Uni Hostels App</h6>
-                        <p class="card-data justify-text">I develped a web app for easy management and finding of
-                            hostels in Universities. This was full scale but just for fun.
-                        </p>
-                        <a class="btn project-btn secrete-project"
-                            href="https://www.linkedin.com/posts/aarononto_ghie-umat-hackathon-activity-7044333066227466240-mR3h?utm_source=share&utm_medium=member_desktop"
-                            target="_blank">View Project</a>
-                    </div>
-                    
-                    <div class="project-box p-3 my-3">
-                        <h6 class="card-title">AcademicRecords</h6>
-                        <p class="card-data justify-text">I developed a console based cpp + python
-                            program for efficient and easy management of academic records at the university level.
-                        </p>
-                        <a class="btn project-btn secrete-project"
-                            href="https://github.com/Aaron-Ontoyin/student-Academic-Records" target="_blank">View
-                            Project</a>
-                    </div>
-                    
-                    <div class="project-box p-3 my-3">
-                        <h6 class="card-title">EASEchaos</h6>
-                        <p class="card-data justify-text">Together with other students, we built an app that extracts
-                            the timetable for any class from a general timetable that is always released by our university.
-                        </p>
-                        <a class="btn project-btn secrete-project" href="https://easechaos.streamlit.app/"
-                            target="_blank">View Project</a>
-                    </div>
-                    
-                    <div class="project-box p-3 my-3">
-                        <h6 class="card-title">Electronics</h6>
-                        <p class="card-data justify-text">For electronics, I've built countless projects
-                            including
-                            Fingerprint + keycard
-                            attendance
-                            system, automous vehicles, different types of smart entropy minimizers,
-                            etc.
-                        </p>
-                        <a class="btn project-btn secrete-project"
-                            href="https://github.com/Aaron-Ontoyin/student-Academic-Records" target="_blank"
-                            data-bs-toggle="modal" data-bs-target="#private-project-modal">View
-                            Project</a>
-                    </div>
-                    <div class="text-danger">See my CV for more!</div>
                 </div>
                 <div class="status" data-aos="slide-right" data-aos-duration="900">
                     <div class="status-container-inner w-100 h-100 p-5">
@@ -283,7 +222,7 @@
                             <div class="h4">I liked most</div>
                             <ul>
                                 <li>Deep Learning</li>
-                                <li>Data Science</li>
+                                <li>Robotics</li>
                                 <li>Space Exploration</li>
                                 <li>Quantum Computing</li>
                             </ul>
@@ -293,12 +232,11 @@
                             <ul>
                                 <li>Watching Sci-fi Movies/Series</li>
                                 <li>Listening to music</li>
-                                <li>Playing games (VR mostly)</li>
+                                <li>Playing games</li>
                             </ul>
                         </div>
                         <div class="">
-                            <span>See me on <a href="https://www.linkedin.com/in/aarononto/"
-                                    target="_blank">LinkedIn</a> for more!</span>
+                            <span><a href="#contact" target="_blank">Contact</a> me for more!</span>
                         </div>
                     </div>
                 </div>
@@ -317,7 +255,7 @@
                     Sichao Xiong, Yigit Ihlamur, Fuat Alican, <span class="fw-bold">Aaron Ontoyin Yin</span>
                 </div>
                 <div class="pub-venue mb-2">
-                    <span class="badge bg-light text-dark border">arXiv (Cornell University), 2024</span>
+                    <span class="badge bg-light text-dark border">arXiv, 2024</span>
                 </div>
                 <a href="https://arxiv.org/abs/2411.08257" target="_blank" rel="noopener" class="pub-link">
                     <i class="fas fa-external-link-alt me-1"></i>View Paper
@@ -332,9 +270,39 @@
                     Te Pei, Fuat Alican, <span class="fw-bold">Aaron Ontoyin Yin</span>, Yigit Ihlamur
                 </div>
                 <div class="pub-venue mb-2">
-                    <span class="badge bg-light text-dark border">arXiv (Cornell University), 2025</span>
+                    <span class="badge bg-light text-dark border">arXiv, 2025</span>
                 </div>
                 <a href="https://arxiv.org/abs/2501.13743" target="_blank" rel="noopener" class="pub-link">
+                    <i class="fas fa-external-link-alt me-1"></i>View Paper
+                </a>
+            </div>
+            <div class="publication-card mb-3 p-4">
+                <div class="pub-title mb-2">
+                    <i class="fas fa-file-alt text-secondary me-2"></i>
+                    <strong>VCBench: Benchmarking LLMs in Venture Capital</strong>
+                </div>
+                <div class="pub-authors text-muted mb-1">
+                    Rick Chen, Joseph Ternasky, Afriyie Samuel Kwesi, Ben Griffin, <span class="fw-bold">Aaron Ontoyin Yin</span>, Zakari Salifu, Kelvin Amoaba, Xianling Mu, Fuat Alican, Yigit Ihlamur
+                </div>
+                <div class="pub-venue mb-2">
+                    <span class="badge bg-light text-dark border">arXiv, 2025</span>
+                </div>
+                <a href="https://arxiv.org/pdf/2509.14448" target="_blank" rel="noopener" class="pub-link">
+                    <i class="fas fa-external-link-alt me-1"></i>View Paper
+                </a>
+            </div>
+            <div class="publication-card mb-3 p-4">
+                <div class="pub-title mb-2">
+                    <i class="fas fa-file-alt text-secondary me-2"></i>
+                    <strong>From Limited Data to Rare-event Prediction: LLM-powered Feature Engineering and Multi-model Learning in Venture Capital</strong>
+                </div>
+                <div class="pub-authors text-muted mb-1">
+                    Mihir Kumar, <span class="fw-bold">Aaron Ontoyin Yin</span>, Yigit Ihlamur, et al.
+                </div>
+                <div class="pub-venue mb-2">
+                    <span class="badge bg-light text-dark border">arXiv, 2025</span>
+                </div>
+                <a href="https://arxiv.org/pdf/2509.08140" target="_blank" rel="noopener" class="pub-link">
                     <i class="fas fa-external-link-alt me-1"></i>View Paper
                 </a>
             </div>
@@ -355,15 +323,39 @@
             </div>
         </section>
 
-        <!-- Gallery -->
-        <div class="w-100 d-flex justify-content-center align-items-center gallery-outter">
-            <div class="gallery">
-
+        <!-- Gallery Section -->
+        <section class="gallery-section my-5 py-4" id="gallery">
+            <h2 class="section-title mb-4"><i class="fas fa-images me-2 text-primary"></i>Gallery</h2>
+            <div class="row">
+                <div class="col-md-3 mb-3">
+                    <img src="static/images/gallery/1.webp" class="img-fluid rounded" alt="Gallery image 1" loading="lazy">
+                </div>
+                <div class="col-md-3 mb-3">
+                    <img src="static/images/gallery/2.webp" class="img-fluid rounded" alt="Gallery image 2" loading="lazy">
+                </div>
+                <div class="col-md-3 mb-3">
+                    <img src="static/images/gallery/3.webp" class="img-fluid rounded" alt="Gallery image 3" loading="lazy">
+                </div>
+                <div class="col-md-3 mb-3">
+                    <img src="static/images/gallery/4.webp" class="img-fluid rounded" alt="Gallery image 4" loading="lazy">
+                </div>
+                <div class="col-md-3 mb-3">
+                    <img src="static/images/gallery/5.webp" class="img-fluid rounded" alt="Gallery image 5" loading="lazy">
+                </div>
+                <div class="col-md-3 mb-3">
+                    <img src="static/images/gallery/6.webp" class="img-fluid rounded" alt="Gallery image 6" loading="lazy">
+                </div>
+                <div class="col-md-3 mb-3">
+                    <img src="static/images/gallery/7.webp" class="img-fluid rounded" alt="Gallery image 7" loading="lazy">
+                </div>
+                <div class="col-md-3 mb-3">
+                    <img src="static/images/gallery/8.webp" class="img-fluid rounded" alt="Gallery image 8" loading="lazy">
+                </div>
             </div>
-        </div>
+        </section>
 
         <!-- Testimonials -->
-        <div class="my-5 testimonials-container d-flex justify-content-around w-100 py-3 py-md-5">
+        <div class="my-5 testimonials-container d-flex justify-content-around w-100 py-3 py-md-5" id="testimonials-box">
             <div class="testimonials-container-inner p-1 p-md-3">
                 <div class="testimonial mb-3 d-md-flex">
                     <div class="p-2">
@@ -428,9 +420,8 @@
 
         <!-- Contact -->
         <div class="p-2 p-md-3 p-lg-5 w-100 text-center d-flex justify-content-center" id="contact">
-            <div class="container text-start p-lg-4" id="contact-container" data-aos="slide-up"
+            <div class="container text-center p-lg-4" id="contact-container" data-aos="fade-up"
                 data-aos-duration="1000">
-                <h2>Contact Me</h2>
                 <ul class="contact-list d-flex justify-content-around flex-wrap">
                     <li>
                         <a href="mailto:dummy.email@example.com" target="_blank">
@@ -439,28 +430,9 @@
                         </a>
                     </li>
                     <li>
-                        <a href="https://twitter.com/OntoAaron" target="_blank">
+                        <a href="https://x.com/OntoAaron" target="_blank">
                             <i class="fab fa-twitter"></i>
-                            <span class="social-link">Twitter</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://wa.me/qr/VWLYQWTX4SNDG1" target="_blank">
-                            <i class="fab fa-whatsapp"></i>
-                            <span class="social-link">WhatsApp</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://discord.gg/KJEtabKm" target="_blank">
-                            <i class="fab fa-discord"></i>
-                            <span class="social-link">Discord</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://instagram.com/aaron_ontoyin?utm_source=qr&igshid=OGIxMTE0OTdkZA=="
-                            target="_blank">
-                            <i class="fab fa-instagram"></i>
-                            <span class="social-link">Instagram</span>
+                            <span class="social-link">X</span>
                         </a>
                     </li>
                     <li>

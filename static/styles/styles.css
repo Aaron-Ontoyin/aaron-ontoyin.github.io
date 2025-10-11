@@ -130,7 +130,7 @@ a {
     backdrop-filter: blur(10px);
     opacity: 0.9;
     align-items: center;
-    animation: floatingRotating 2s infinite;
+    animation: floatingRotating 4s infinite;
 }
 
 .skills-container-inner {
@@ -294,14 +294,14 @@ a {
 .publication-card {
     background: #fff;
     border-radius: 10px;
-    box-shadow: 0 1px 6px rgba(30,60,90,0.07);
+    box-shadow: 0 1px 6px rgba(30, 60, 90, 0.07);
     margin-bottom: 1.5rem;
     transition: box-shadow 0.2s;
     border-left: 4px solid #4e73df;
 }
 
 .publication-card:hover {
-    box-shadow: 0 4px 16px rgba(30,60,90,0.12);
+    box-shadow: 0 4px 16px rgba(30, 60, 90, 0.12);
     border-left-color: #273c75;
 }
 
@@ -337,6 +337,23 @@ a {
 .pub-link:hover {
     color: #273c75;
     text-decoration: underline;
+}
+
+.gallery-section {
+    background: #f7faff;
+    border-radius: 12px;
+    box-shadow: 0 2px 12px rgba(30, 60, 90, 0.07);
+    max-width: 1200px;
+    margin: 0 auto 2rem auto;
+    padding: 2rem;
+}
+
+.gallery-section img {
+    transition: transform 0.3s ease;
+}
+
+.gallery-section img:hover {
+    transform: scale(1.05);
 }
 
 .gallery-outter {
@@ -432,11 +449,37 @@ a {
 
 #contact-container {
     box-shadow: 0px 3px 10px rgba(0, 0, 255, 0.1);
+    border-radius: 15px;
+    padding: 2rem;
 }
 
 .contact-list {
     list-style: none;
     gap: 20px;
+    justify-content: center !important;
+    margin: 0;
+    padding: 0;
+}
+
+.contact-list li {
+    text-align: center;
+    color: #2669e5;
+}
+
+.contact-list span {
+    color: #2669e5;
+    transition: color 0.3s;
+}
+
+.contact-list a:hover span {
+    color: #012d80;
+}
+
+.social-link {
+    display: block;
+    font-size: 0.9rem;
+    color: #333;
+    margin-top: 0.5rem;
 }
 
 @media (min-width: 768px) and (max-width: 1199px) {
