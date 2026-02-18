@@ -45,5 +45,25 @@
             const menu = document.querySelector("details.nav__menu[open]");
             if (menu) menu.removeAttribute("open");
         });
+
+        // Close mobile menu when clicking outside of it
+        document.addEventListener("click", (e) => {
+            const openMenu = document.querySelector("details.nav__menu[open]");
+            if (!openMenu) return;
+
+            const target = e.target instanceof Node ? e.target : null;
+            if (!target) return;
+
+            if (!openMenu.contains(target)) {
+                openMenu.removeAttribute("open");
+            }
+        });
+
+        // Also allow Esc key to close the menu
+        document.addEventListener("keydown", (e) => {
+            if (e.key !== "Escape") return;
+            const openMenu = document.querySelector("details.nav__menu[open]");
+            if (openMenu) openMenu.removeAttribute("open");
+        });
     });
 })();
