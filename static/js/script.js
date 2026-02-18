@@ -40,6 +40,10 @@
             window.scrollTo({ top: y, behavior: "smooth" });
 
             history.pushState(null, "", href);
+
+            // Close mobile <details> menu if open
+            const menu = document.querySelector("details.nav__menu[open]");
+            if (menu) menu.removeAttribute("open");
         });
     });
 })();
