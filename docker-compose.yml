@@ -1,0 +1,18 @@
+services:
+  website:
+    image: nginx:alpine
+    container_name: aaron-site
+    restart: unless-stopped
+    volumes:
+      - .:/usr/share/nginx/html:ro
+    networks:
+      - web
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.routers.aaronsite.rule=Host(`aaron-yin.com`) || Host(`www.aaron-yin.com`)"
+      - "traefik.http.routers.aaronsite.tls=true"
+      - "traefik.http.routers.aaronsite.tls.certresolver=letsencrypt"
+
+networks:
+  web:
+    external: true
