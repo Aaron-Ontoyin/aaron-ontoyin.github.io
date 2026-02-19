@@ -191,7 +191,7 @@ code {
 .main {
     max-width: var(--max);
     margin: 0 auto;
-    padding: 28px 18px 64px;
+    padding: 28px 18px 24px;
 }
 
 .hero {
@@ -521,6 +521,26 @@ code {
 .footer {
     padding: 20px 0 0;
     color: var(--muted);
+}
+
+.footer-cta {
+    margin-top: 12px;
+}
+
+.footer-cv-btn {
+    display: inline-block;
+    border: 1px solid var(--border);
+    border-radius: 999px;
+    padding: 8px 14px;
+    color: var(--text);
+    font-weight: 600;
+    background: #fff;
+}
+
+.footer-cv-btn:hover {
+    text-decoration: none;
+    border-color: rgba(11, 87, 208, 0.35);
+    background: rgba(11, 87, 208, 0.04);
 }
 
 #back-to-top-button {
