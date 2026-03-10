@@ -1,443 +1,585 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Aaron Ontoyin Yin — AI Engineer & Researcher. Work in deep learning, large language models, and decision systems."
+    />
+    <meta name="author" content="Aaron Ontoyin Yin" />
+    <link rel="canonical" href="https://aaron-yin.com/" />
 
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description"
-            content="Aaron Ontoyin Yin — AI Engineer & Researcher. Work in deep learning, large language models, and decision systems." />
-        <meta name="author" content="Aaron Ontoyin Yin" />
-        <link rel="canonical" href="https://aaron-yin.com/" />
+    <!-- Open Graph -->
+    <meta
+      property="og:title"
+      content="Aaron Ontoyin Yin — AI Engineer & Researcher"
+    />
+    <meta
+      property="og:description"
+      content="Research, publications, and selected work in deep learning, large language models, and decision systems."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://aaron-yin.com/" />
+    <meta
+      property="og:image"
+      content="https://aaron-yin.com/static/images/og-aaron.png"
+    />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta
+      property="og:image:alt"
+      content="Aaron Ontoyin Yin — AI Engineer and Researcher"
+    />
 
-        <!-- Open Graph -->
-        <meta property="og:title"
-            content="Aaron Ontoyin Yin — AI Engineer & Researcher" />
-        <meta property="og:description"
-            content="Research, publications, and selected work in deep learning, large language models, and decision systems." />
-        <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://aaron-yin.com/" />
-        <meta property="og:image"
-            content="https://aaron-yin.com/static/images/og-aaron.png" />
-        <meta property="og:image:width" content="1200" />
-        <meta property="og:image:height" content="630" />
-        <meta property="og:image:alt"
-            content="Aaron Ontoyin Yin — AI Engineer and Researcher" />
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="Aaron Ontoyin Yin — AI Engineer & Researcher"
+    />
+    <meta
+      name="twitter:description"
+      content="Research, publications, and selected work in deep learning, large language models, and decision systems."
+    />
+    <meta
+      name="twitter:image"
+      content="https://aaron-yin.com/static/images/og-ai-scholar.png"
+    />
 
-        <!-- Twitter -->
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title"
-            content="Aaron Ontoyin Yin — AI Engineer & Researcher" />
-        <meta name="twitter:description"
-            content="Research, publications, and selected work in deep learning, large language models, and decision systems." />
-        <meta name="twitter:image"
-            content="https://aaron-yin.com/static/images/og-ai-scholar.png" />
+    <meta
+      name="keywords"
+      content="Artificial Intelligence, Deep Learning, Machine Learning, Large Language Models, Research, Decision Systems, Robotics, Quantum Computing"
+    />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Aaron Ontoyin Yin",
+        "url": "https://aaron-yin.com/",
+        "image": "https://aaron-yin.com/static/images/aaron.jpg",
+        "jobTitle": "AI Engineer & Researcher",
+        "email": "mailto:aarononto909@gmail.com",
+        "worksFor": {
+          "@type": "Organization",
+          "name": "Vela Partners",
+          "url": "https://vela.partners/"
+        },
+        "sameAs": [
+          "https://scholar.google.com/citations?user=yHKw5EcAAAAJ&hl=en",
+          "https://github.com/Aaron-Ontoyin",
+          "https://www.linkedin.com/in/aarononto/"
+        ],
+        "knowsAbout": [
+          "Artificial Intelligence",
+          "Deep Learning",
+          "Reinforcement Learning",
+          "Large Language Models",
+          "Robotics",
+          "Interpretable Machine Learning"
+        ]
+      }
+    </script>
+    <title>AOY | AI Scholar</title>
 
-        <meta name="keywords"
-            content="Artificial Intelligence, Deep Learning, Machine Learning, Large Language Models, Research, Decision Systems, Robotics, Quantum Computing" />
-        <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Person",
-  "name": "Aaron Ontoyin Yin",
-  "url": "https://aaron-yin.com/",
-  "image": "https://aaron-yin.com/static/images/aaron.jpg",
-  "jobTitle": "AI Engineer & Researcher",
-  "email": "mailto:aarononto909@gmail.com",
-  "worksFor": {
-    "@type": "Organization",
-    "name": "Vela Partners",
-    "url": "https://vela.partners/"
-  },
-  "sameAs": [
-    "https://scholar.google.com/citations?user=yHKw5EcAAAAJ&hl=en",
-    "https://github.com/Aaron-Ontoyin",
-    "https://www.linkedin.com/in/aarononto/"
-  ],
-  "knowsAbout": [
-    "Artificial Intelligence",
-    "Deep Learning",
-    "Reinforcement Learning",
-    "Large Language Models",
-    "Robotics",
-    "Interpretable Machine Learning"
-  ]
-}
-        </script>
-        <title>AOY | AI Scholar</title>
+    <link rel="icon" type="image/webp" href="/static/images/sign.webp" />
+    <link
+      rel="preload"
+      href="./static/styles/styles.css?v=20260218-1"
+      as="style"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="./static/styles/styles.css?v=20260218-1"
+    />
+  </head>
+  <body>
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-YZCXJ00S9T"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "G-YZCXJ00S9T");
+    </script>
 
-        <link rel="icon" type="image/webp" href="/static/images/sign.webp">
-        <link rel="preload" href="./static/styles/styles.css?v=20260218-1"
-            as="style">
-        <link rel="stylesheet" type="text/css"
-            href="./static/styles/styles.css?v=20260218-1">
+    <a class="skip-link" href="#content">Skip to content</a>
 
-    </head>
-    <body>
-        <!-- Google tag (gtag.js) -->
-        <script async
-            src="https://www.googletagmanager.com/gtag/js?id=G-YZCXJ00S9T"></script>
-        <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
-    gtag('js', new Date());
-    gtag('config', 'G-YZCXJ00S9T');
-</script>
+    <header class="site-header">
+      <nav class="nav" aria-label="Primary">
+        <a class="nav__home" href="#top" aria-label="Home">AOY</a>
+        <details class="nav__menu">
+          <summary class="nav__menu-toggle">See</summary>
+          <div class="nav__menu-panel" aria-label="Mobile menu">
+            <a href="#research">Research</a>
+            <a href="#work">Selected Work</a>
+            <a href="#publications">Publications</a>
+            <a href="#projects">Open-source</a>
+            <a href="#news">News</a>
+            <a href="#contact">Contact</a>
+            <a
+              href="/static/docs/aaron-ontoyin-yin-cv.pdf"
+              target="_blank"
+              rel="noopener"
+              >CV (PDF)</a
+            >
+          </div>
+        </details>
 
-        <a class="skip-link" href="#content">Skip to content</a>
+        <div class="nav__links nav__links--desktop">
+          <a href="#research">Research</a>
+          <a href="#work">Selected Work</a>
+          <a href="#publications">Publications</a>
+          <a href="#projects">Open-source</a>
+          <a href="#news">News</a>
+          <a href="#contact">Contact</a>
+          <a
+            href="/static/docs/aaron-ontoyin-yin-cv.pdf"
+            target="_blank"
+            rel="noopener"
+            >CV</a
+          >
+        </div>
+      </nav>
+    </header>
 
-        <header class="site-header">
-            <nav class="nav" aria-label="Primary">
-                <a class="nav__home" href="#top" aria-label="Home">AOY</a>
-                <details class="nav__menu">
-                    <summary class="nav__menu-toggle">See</summary>
-                    <div class="nav__menu-panel" aria-label="Mobile menu">
-                        <a href="#research">Research</a>
-                        <a href="#work">Selected Work</a>
-                        <a href="#publications">Publications</a>
-                        <a href="#projects">Open-source</a>
-                        <a href="#news">News</a>
-                        <a href="#contact">Contact</a>
-                        <a href="/static/docs/aaron-ontoyin-yin-cv.pdf"
-                            target="_blank" rel="noopener">CV (PDF)</a>
-                    </div>
-                </details>
+    <main id="content" class="main">
+      <section id="top" class="hero">
+        <div class="hero__grid">
+          <figure class="hero__portrait" aria-label="Portrait">
+            <img
+              src="static/images/aaron.jpg"
+              width="320"
+              height="320"
+              alt="Portrait of Aaron Ontoyin Yin"
+              loading="eager"
+              decoding="async"
+            />
+          </figure>
 
-                <div class="nav__links nav__links--desktop">
-                    <a href="#research">Research</a>
-                    <a href="#work">Selected Work</a>
-                    <a href="#publications">Publications</a>
-                    <a href="#projects">Open-source</a>
-                    <a href="#news">News</a>
-                    <a href="#contact">Contact</a>
-                    <a href="/static/docs/aaron-ontoyin-yin-cv.pdf"
-                        target="_blank" rel="noopener">CV</a>
-                </div>
-            </nav>
-        </header>
+          <div class="hero__text">
+            <h1 class="hero__title">Aaron Ontoyin Yin</h1>
+            <p class="hero__subtitle">AI Engineer & Researcher</p>
+            <p class="hero__lede">
+              Advancing the foundations of trustworthy AI through deep
+              reinforcement learning and large language models.
+            </p>
 
-        <main id="content" class="main">
-            <section id="top" class="hero">
-                <div class="hero__grid">
-                    <figure class="hero__portrait" aria-label="Portrait">
-                        <img src="static/images/aaron.jpg"
-                            width="320" height="320"
-                            alt="Portrait of Aaron Ontoyin Yin" loading="eager"
-                            decoding="async">
-                    </figure>
-
-                    <div class="hero__text">
-                        <h1 class="hero__title">Aaron Ontoyin Yin</h1>
-                        <p class="hero__subtitle">AI Engineer & Researcher</p>
-                        <p class="hero__lede">
-                            My goal is to make humans wow at machines.
-                        </p>
-
-                        <div class="hero__meta">
-                            <div class="meta-row">
-                                <span class="meta-label">Affiliation</span>
-                                <span class="meta-value"><a
-                                        href="https://vela.partners/"
-                                        target="_blank"
-                                        rel="noopener">Vela Partners</a></span>
-
-                            </div>
-                            <div class="meta-row">
-                                <span class="meta-label">Interests</span>
-                                <span class="meta-value">Deep learning · RL ·
-                                    LLMs · Robotics</span>
-                            </div>
-                            <div class="meta-row">
-                                <span class="meta-label">Email</span>
-                                <span class="meta-value"><a
-                                        href="mailto:aarononto909@gmail.com"
-                                        target="_blank"
-                                        rel="noopener">aarononto909@gmail.com</a></span>
-                            </div>
-                        </div>
-
-                        <div class="quick-links" aria-label="Quick links">
-                            <a class="icon-link"
-                                href="https://scholar.google.com/citations?user=yHKw5EcAAAAJ&hl=en"
-                                target="_blank" rel="noopener">
-                                <svg class="icon" viewBox="0 0 24 24"
-                                    aria-hidden="true" focusable="false">
-                                    <path
-                                        d="M12 3 1 9l11 6 9-4.9V17h2V9L12 3Zm0 10.8L5.2 10 12 6.2 18.8 10 12 13.8ZM4 12.5V16c0 2.8 3.6 5 8 5s8-2.2 8-5v-3.5l-8 4.3-8-4.3Z" />
-                                </svg>
-                                <span>Scholar</span>
-                            </a>
-                            <a class="icon-link"
-                                href="https://github.com/Aaron-Ontoyin"
-                                target="_blank" rel="noopener">
-                                <svg class="icon" viewBox="0 0 24 24"
-                                    aria-hidden="true" focusable="false">
-                                    <path
-                                        d="M12 .6a11.4 11.4 0 0 0-3.6 22.2c.6.1.8-.3.8-.6v-2.2c-3.2.7-3.9-1.4-3.9-1.4-.5-1.3-1.2-1.6-1.2-1.6-1-.7.1-.7.1-.7 1.1.1 1.7 1.1 1.7 1.1 1 .1.8 2.2 3.3 1.6.1-.7.4-1.2.7-1.5-2.6-.3-5.4-1.3-5.4-5.9 0-1.3.5-2.4 1.2-3.3-.1-.3-.5-1.5.1-3.1 0 0 1-.3 3.4 1.2a11.8 11.8 0 0 1 6.2 0c2.4-1.5 3.4-1.2 3.4-1.2.6 1.6.2 2.8.1 3.1.7.9 1.2 2 1.2 3.3 0 4.6-2.8 5.6-5.4 5.9.4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6A11.4 11.4 0 0 0 12 .6Z" />
-                                </svg>
-                                <span>GitHub</span>
-                            </a>
-                            <a class="icon-link"
-                                href="https://www.linkedin.com/in/aarononto/"
-                                target="_blank" rel="noopener">
-                                <svg class="icon" viewBox="0 0 24 24"
-                                    aria-hidden="true" focusable="false">
-                                    <path
-                                        d="M4.98 3.5C4.98 4.88 3.87 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1 4.98 2.12 4.98 3.5ZM.5 23.5h4V7.98h-4V23.5ZM8 7.98h3.8v2.12h.05c.53-1 1.83-2.12 3.77-2.12 4.03 0 4.78 2.65 4.78 6.1v9.42h-4v-8.36c0-2-.04-4.56-2.78-4.56-2.78 0-3.2 2.17-3.2 4.42v8.5H8V7.98Z" />
-                                </svg>
-                                <span>LinkedIn</span>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <section id="research" class="section">
-                <h2 class="section__title">Research</h2>
-                <div class="section__body">
-                    <p>
-                        I research trustworthy AI for decision-making: deep
-                        learning, RL, and LLM-powered systems.
-                    </p>
-                    <ul class="bullets">
-                        <li>Deep learning, RL for real-world problems</li>
-                        <li>Robotics and control (learning in embodied
-                            environments)</li>
-                        <li>LLM-powered decision systems and human-in-the-loop
-                            learning</li>
-                        <li>Interpretable ML and XAI</li>
-                        <li>Quantum computing (actively learning)</li>
-                    </ul>
-                </div>
-            </section>
-
-            <section id="work" class="section">
-                <h2 class="section__title">Selected Work</h2>
-                <div class="section__body">
-                    <div class="cards">
-                        <article class="card">
-                            <h3 class="card__title">GPTree</h3>
-                            <p class="card__desc">
-                                Explainable decision-making via LLM-powered
-                                decision trees, designed for practical,
-                                human-in-the-loop workflows.
-                            </p>
-                            <div class="card__links">
-                                <a href="https://arxiv.org/abs/2411.08257"
-                                    target="_blank" rel="noopener">Paper</a>
-                            </div>
-                        </article>
-
-                        <article class="card">
-                            <h3 class="card__title">Think Reason Learn</h3>
-                            <p class="card__desc">
-                                Open-source library combining large language
-                                models with interpretable ML to build
-                                transparent decision systems.
-                            </p>
-                            <div class="card__links">
-                                <a href="https://thinkreasonlearn.com/"
-                                    target="_blank" rel="noopener">Docs</a>
-                            </div>
-                        </article>
-
-                        <article class="card">
-                            <h3 class="card__title">Dual Approach in Autonomous
-                                Directional Drilling</h3>
-                            <p class="card__desc">
-                                Research on autonomous directional drilling,
-                                combining Drillbotics hardware innovations with
-                                a virtual rig simulator.
-                            </p>
-                            <div class="card__links">
-                                <a
-                                    href="https://onepetro.org/SPEDC/proceedings-abstract/25DC/25DC/D011S001R002/642448?redirectedFrom=PDF"
-                                    target="_blank" rel="noopener">Paper</a>
-                            </div>
-                        </article>
-                    </div>
-                </div>
-            </section>
-
-            <!-- Academic & Research Publications -->
-            <section class="section" id="publications">
-                <h2 class="section__title">Publications</h2>
-                <div class="section__body">
-                    <ol class="pubs">
-                        <li class="pub">
-                            <div class="pub__title">GPTree: Towards Explainable
-                                Decision-Making via LLM-powered Decision
-                                Trees</div>
-                            <div class="pub__meta">Sichao Xiong, Yigit Ihlamur,
-                                Fuat Alican, <strong>Aaron Ontoyin
-                                    Yin</strong> · <span
-                                    class="pub__venue">arXiv 2024</span></div>
-                            <div class="pub__links"><a
-                                    href="https://arxiv.org/abs/2411.08257"
-                                    target="_blank"
-                                    rel="noopener">Paper</a></div>
-                        </li>
-                        <li class="pub">
-                            <div class="pub__title">GPT-HTree: A Decision Tree
-                                Framework Integrating Hierarchical
-                                Clustering and Large Language Models for
-                                Explainable Classification</div>
-                            <div class="pub__meta">Te Pei, Fuat Alican,
-                                <strong>Aaron Ontoyin Yin</strong>, Yigit
-                                Ihlamur ·
-                                <span class="pub__venue">arXiv 2025</span></div>
-                            <div class="pub__links"><a
-                                    href="https://arxiv.org/abs/2501.13743"
-                                    target="_blank"
-                                    rel="noopener">Paper</a></div>
-                        </li>
-                        <li class="pub">
-                            <div class="pub__title">VCBench: Benchmarking LLMs
-                                in Venture Capital</div>
-                            <div class="pub__meta">Rick Chen, Joseph Ternasky,
-                                Afriyie Samuel Kwesi, Ben Griffin,
-                                <strong>Aaron Ontoyin Yin</strong>, Zakari
-                                Salifu, Kelvin Amoaba, Xianling Mu, Fuat Alican,
-                                Yigit Ihlamur · <span class="pub__venue">arXiv
-                                    2025</span></div>
-                            <div class="pub__links"><a
-                                    href="https://arxiv.org/pdf/2509.14448"
-                                    target="_blank"
-                                    rel="noopener">PDF</a></div>
-                        </li>
-                        <li class="pub">
-                            <div class="pub__title">From Limited Data to
-                                Rare-event Prediction: LLM-powered Feature
-                                Engineering and Multi-model Learning in Venture
-                                Capital</div>
-                            <div class="pub__meta">Mihir Kumar, <strong>Aaron
-                                    Ontoyin Yin</strong>, Yigit Ihlamur, et al.
-                                ·
-                                <span class="pub__venue">arXiv 2025</span></div>
-                            <div class="pub__links"><a
-                                    href="https://arxiv.org/pdf/2509.08140"
-                                    target="_blank"
-                                    rel="noopener">PDF</a></div>
-                        </li>
-                        <li class="pub">
-                            <div class="pub__title">Dual Approach in Autonomous
-                                Directional Drilling: Innovations with
-                                Drillbotics 1.5 Inch Automated RSS and Virtual
-                                Rig Platforms</div>
-                            <div class="pub__meta">C. Soilemezidis,
-                                <strong>Aaron Ontoyin Yin</strong>, et al. ·
-                                <span
-                                    class="pub__venue">OnePetro (SPE/IADC),
-                                    2025</span></div>
-                            <div class="pub__links"><a
-                                    href="https://onepetro.org/SPEDC/proceedings-abstract/25DC/25DC/D011S001R002/642448?redirectedFrom=PDF"
-                                    target="_blank"
-                                    rel="noopener">Paper</a></div>
-                        </li>
-                        <li class="pub">
-                            <div class="pub__title">LLM-AR: LLM-powered
-                                Automated Reasoning Framework</div>
-                            <div class="pub__meta">Rick Chen, Joseph Ternasky,
-                                <strong>Aaron Ontoyin Yin</strong>, Xianling
-                                Mu, Fuat Alican, Yigit Ihlamur · <span
-                                    class="pub__venue">arXiv 2025</span></div>
-                            <div class="pub__links"><a
-                                    href="https://www.arxiv.org/abs/2510.22034"
-                                    target="_blank"
-                                    rel="noopener">Paper</a></div>
-                        </li>
-                    </ol>
-                </div>
-            </section>
-
-            <!-- Gallery Section -->
-            <section id="projects" class="section">
-                <h2 class="section__title">Open-source & Projects</h2>
-                <div class="section__body">
-                    <ul class="list">
-                        <li class="list__item list__item--split">
-                            <div class="project-main">
-                                <div class="list__title">Think Reason
-                                    Learn</div>
-                                <div class="list__desc">Interpretable ML + LLMs
-                                    for
-                                    transparent decision systems.</div>
-                                <div class="list__links"><a
-                                        href="https://thinkreasonlearn.com/"
-                                        target="_blank"
-                                        rel="noopener">Docs</a></div>
-                            </div>
-                            <img class="project-logo project-logo--side"
-                                src="https://thinkreasonlearn.com/_static/logo-light.png"
-                                alt="Think Reason Learn logo" loading="lazy"
-                                decoding="async">
-                        </li>
-                    </ul>
-                </div>
-            </section>
-
-            <section id="news" class="section">
-                <h2 class="section__title">News</h2>
-                <div class="section__body">
-                    <ul class="timeline">
-                        <li class="timeline__item">
-                            <span class="timeline__date">2025</span>
-                            <div class="timeline__content">
-                                <span class="timeline__text">New benchmark
-                                    released for evaluating LLMs in venture
-                                    capital.</span>
-                            </div>
-                        </li>
-                        <li class="timeline__item">
-                            <span class="timeline__date">2025</span>
-                            <div class="timeline__content">
-                                <span class="timeline__text">VCBench accepted
-                                    for a computing conference (2026),
-                                    London.</span>
-                            </div>
-                        </li>
-                        <li class="timeline__item">
-                            <span class="timeline__date">2024</span>
-                            <div class="timeline__content">
-                                <span class="timeline__text">Best Student in
-                                    Software Engineering - UMaT Excellence
-                                    Awards.</span>
-                            </div>
-                        </li>
-                        <li class="timeline__item">
-                            <span class="timeline__date">2023</span>
-                            <div class="timeline__content">
-                                <div class="timeline__text">
-                                    UMaT tops Virtual Category of Drillbotics -
-                                    JoyNews.
-                                </div>
-                                <figure class="timeline__media">
-                                    <img
-                                        src="static/images/gallery/drillbotics_joynews.webp"
-                                        alt="JoyNews: UMaT tops the Virtual Category of Drillbotics"
-                                        loading="lazy" decoding="async">
-                                </figure>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-            </section>
-
-            <div class="footer-cta">
-                <a class="footer-cv-btn"
-                    href="/static/docs/aaron-ontoyin-yin-cv.pdf"
-                    target="_blank" rel="noopener">View CV (PDF)</a>
+            <div class="hero__meta">
+              <div class="meta-row">
+                <span class="meta-label">Affiliation</span>
+                <span class="meta-value"
+                  ><a
+                    href="https://vela.partners/"
+                    target="_blank"
+                    rel="noopener"
+                    >Vela Partners</a
+                  ></span
+                >
+              </div>
+              <div class="meta-row">
+                <span class="meta-label">Interests</span>
+                <span class="meta-value"
+                  >Deep learning · RL · LLMs · Robotics</span
+                >
+              </div>
+              <div class="meta-row">
+                <span class="meta-label">Email</span>
+                <span class="meta-value"
+                  ><a
+                    href="mailto:aarononto909@gmail.com"
+                    target="_blank"
+                    rel="noopener"
+                    >aarononto909@gmail.com</a
+                  ></span
+                >
+              </div>
             </div>
 
-            <footer class="footer">
-                <p>© <span id="copyright-year"></span> Aaron Ontoyin Yin.</p>
-            </footer>
+            <div class="quick-links" aria-label="Quick links">
+              <a
+                class="icon-link"
+                href="https://scholar.google.com/citations?user=yHKw5EcAAAAJ&hl=en"
+                target="_blank"
+                rel="noopener"
+              >
+                <svg
+                  class="icon"
+                  viewBox="0 0 24 24"
+                  aria-hidden="true"
+                  focusable="false"
+                >
+                  <path
+                    d="M12 3 1 9l11 6 9-4.9V17h2V9L12 3Zm0 10.8L5.2 10 12 6.2 18.8 10 12 13.8ZM4 12.5V16c0 2.8 3.6 5 8 5s8-2.2 8-5v-3.5l-8 4.3-8-4.3Z"
+                  />
+                </svg>
+                <span>Scholar</span>
+              </a>
+              <a
+                class="icon-link"
+                href="https://github.com/Aaron-Ontoyin"
+                target="_blank"
+                rel="noopener"
+              >
+                <svg
+                  class="icon"
+                  viewBox="0 0 24 24"
+                  aria-hidden="true"
+                  focusable="false"
+                >
+                  <path
+                    d="M12 .6a11.4 11.4 0 0 0-3.6 22.2c.6.1.8-.3.8-.6v-2.2c-3.2.7-3.9-1.4-3.9-1.4-.5-1.3-1.2-1.6-1.2-1.6-1-.7.1-.7.1-.7 1.1.1 1.7 1.1 1.7 1.1 1 .1.8 2.2 3.3 1.6.1-.7.4-1.2.7-1.5-2.6-.3-5.4-1.3-5.4-5.9 0-1.3.5-2.4 1.2-3.3-.1-.3-.5-1.5.1-3.1 0 0 1-.3 3.4 1.2a11.8 11.8 0 0 1 6.2 0c2.4-1.5 3.4-1.2 3.4-1.2.6 1.6.2 2.8.1 3.1.7.9 1.2 2 1.2 3.3 0 4.6-2.8 5.6-5.4 5.9.4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6A11.4 11.4 0 0 0 12 .6Z"
+                  />
+                </svg>
+                <span>GitHub</span>
+              </a>
+              <a
+                class="icon-link"
+                href="https://www.linkedin.com/in/aarononto/"
+                target="_blank"
+                rel="noopener"
+              >
+                <svg
+                  class="icon"
+                  viewBox="0 0 24 24"
+                  aria-hidden="true"
+                  focusable="false"
+                >
+                  <path
+                    d="M4.98 3.5C4.98 4.88 3.87 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1 4.98 2.12 4.98 3.5ZM.5 23.5h4V7.98h-4V23.5ZM8 7.98h3.8v2.12h.05c.53-1 1.83-2.12 3.77-2.12 4.03 0 4.78 2.65 4.78 6.1v9.42h-4v-8.36c0-2-.04-4.56-2.78-4.56-2.78 0-3.2 2.17-3.2 4.42v8.5H8V7.98Z"
+                  />
+                </svg>
+                <span>LinkedIn</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
 
-            <button id="back-to-top-button" type="button" title="Back to Top"
-                aria-label="Back to Top">↑</button>
-        </main>
+      <section id="research" class="section">
+        <h2 class="section__title">Research</h2>
+        <div class="section__body">
+          <p>
+            My research investigates trustworthy artificial intelligence for
+            decision-making, focusing on the intersection of deep reinforcement
+            learning, embodied control, and large language models. My core
+            research interests include:
+          </p>
+          <ul class="bullets">
+            <li>
+              <strong>Deep Reinforcement Learning:</strong> Developing robust
+              algorithms for sequential decision-making in complex,
+              high-dimensional spaces.
+            </li>
+            <li>
+              <strong>Robotics & Control:</strong> Investigating learning-based
+              control strategies and representation learning for embodied
+              agents.
+            </li>
+            <li>
+              <strong>Agentic AI:</strong> Designing reasoning frameworks and
+              human-in-the-loop learning pipelines for autonomous systems.
+            </li>
+            <li>
+              <strong>Quantum Machine Learning (Actively learning):</strong>
+              Exploring the theoretical and practical intersections of quantum
+              computing methodologies and artificial intelligence.
+            </li>
+          </ul>
+        </div>
+      </section>
 
-        <script src="./static/js/script.js?v=20260218-1"></script>
+      <section id="work" class="section">
+        <h2 class="section__title">Selected Work</h2>
+        <div class="section__body">
+          <div class="cards">
+            <article class="card">
+              <h3 class="card__title">GPTree</h3>
+              <p class="card__desc">
+                Explainable decision-making via LLM-powered decision trees,
+                designed for practical, human-in-the-loop workflows.
+              </p>
+              <div class="card__links">
+                <a
+                  href="https://arxiv.org/abs/2411.08257"
+                  target="_blank"
+                  rel="noopener"
+                  >Paper</a
+                >
+              </div>
+            </article>
 
-    </body>
+            <article class="card">
+              <h3 class="card__title">Think Reason Learn</h3>
+              <p class="card__desc">
+                Open-source library combining large language models with
+                interpretable ML to build transparent decision systems.
+              </p>
+              <div class="card__links">
+                <a
+                  href="https://thinkreasonlearn.com/"
+                  target="_blank"
+                  rel="noopener"
+                  >Docs</a
+                >
+              </div>
+            </article>
 
+            <article class="card">
+              <h3 class="card__title">
+                Dual Approach in Autonomous Directional Drilling
+              </h3>
+              <p class="card__desc">
+                Research on autonomous directional drilling, combining
+                Drillbotics hardware innovations with a virtual rig simulator.
+              </p>
+              <div class="card__links">
+                <a
+                  href="https://onepetro.org/SPEDC/proceedings-abstract/25DC/25DC/D011S001R002/642448?redirectedFrom=PDF"
+                  target="_blank"
+                  rel="noopener"
+                  >Paper</a
+                >
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Academic & Research Publications -->
+      <section class="section" id="publications">
+        <h2 class="section__title">Publications</h2>
+        <div class="section__body">
+          <ol class="pubs">
+            <li class="pub">
+              <div class="pub__title">
+                GPTree: Towards Explainable Decision-Making via LLM-powered
+                Decision Trees
+              </div>
+              <div class="pub__meta">
+                Sichao Xiong, Yigit Ihlamur, Fuat Alican,
+                <strong>Aaron Ontoyin Yin</strong> ·
+                <span class="pub__venue">arXiv 2024</span>
+              </div>
+              <div class="pub__links">
+                <a
+                  href="https://arxiv.org/abs/2411.08257"
+                  target="_blank"
+                  rel="noopener"
+                  >Paper</a
+                >
+              </div>
+            </li>
+            <li class="pub">
+              <div class="pub__title">
+                GPT-HTree: A Decision Tree Framework Integrating Hierarchical
+                Clustering and Large Language Models for Explainable
+                Classification
+              </div>
+              <div class="pub__meta">
+                Te Pei, Fuat Alican, <strong>Aaron Ontoyin Yin</strong>, Yigit
+                Ihlamur · <span class="pub__venue">arXiv 2025</span>
+              </div>
+              <div class="pub__links">
+                <a
+                  href="https://arxiv.org/abs/2501.13743"
+                  target="_blank"
+                  rel="noopener"
+                  >Paper</a
+                >
+              </div>
+            </li>
+            <li class="pub">
+              <div class="pub__title">
+                VCBench: Benchmarking LLMs in Venture Capital
+              </div>
+              <div class="pub__meta">
+                Rick Chen, Joseph Ternasky, Afriyie Samuel Kwesi, Ben Griffin,
+                <strong>Aaron Ontoyin Yin</strong>, Zakari Salifu, Kelvin
+                Amoaba, Xianling Mu, Fuat Alican, Yigit Ihlamur ·
+                <span class="pub__venue">arXiv 2025</span>
+              </div>
+              <div class="pub__links">
+                <a
+                  href="https://arxiv.org/pdf/2509.14448"
+                  target="_blank"
+                  rel="noopener"
+                  >PDF</a
+                >
+              </div>
+            </li>
+            <li class="pub">
+              <div class="pub__title">
+                From Limited Data to Rare-event Prediction: LLM-powered Feature
+                Engineering and Multi-model Learning in Venture Capital
+              </div>
+              <div class="pub__meta">
+                Mihir Kumar, <strong>Aaron Ontoyin Yin</strong>, Yigit Ihlamur,
+                et al. · <span class="pub__venue">arXiv 2025</span>
+              </div>
+              <div class="pub__links">
+                <a
+                  href="https://arxiv.org/pdf/2509.08140"
+                  target="_blank"
+                  rel="noopener"
+                  >PDF</a
+                >
+              </div>
+            </li>
+            <li class="pub">
+              <div class="pub__title">
+                Dual Approach in Autonomous Directional Drilling: Innovations
+                with Drillbotics 1.5 Inch Automated RSS and Virtual Rig
+                Platforms
+              </div>
+              <div class="pub__meta">
+                C. Soilemezidis, <strong>Aaron Ontoyin Yin</strong>, et al. ·
+                <span class="pub__venue">OnePetro (SPE/IADC), 2025</span>
+              </div>
+              <div class="pub__links">
+                <a
+                  href="https://onepetro.org/SPEDC/proceedings-abstract/25DC/25DC/D011S001R002/642448?redirectedFrom=PDF"
+                  target="_blank"
+                  rel="noopener"
+                  >Paper</a
+                >
+              </div>
+            </li>
+            <li class="pub">
+              <div class="pub__title">
+                LLM-AR: LLM-powered Automated Reasoning Framework
+              </div>
+              <div class="pub__meta">
+                Rick Chen, Joseph Ternasky, <strong>Aaron Ontoyin Yin</strong>,
+                Xianling Mu, Fuat Alican, Yigit Ihlamur ·
+                <span class="pub__venue">arXiv 2025</span>
+              </div>
+              <div class="pub__links">
+                <a
+                  href="https://www.arxiv.org/abs/2510.22034"
+                  target="_blank"
+                  rel="noopener"
+                  >Paper</a
+                >
+              </div>
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <!-- Gallery Section -->
+      <section id="projects" class="section">
+        <h2 class="section__title">Open-source & Projects</h2>
+        <div class="section__body">
+          <ul class="list">
+            <li class="list__item list__item--split">
+              <div class="project-main">
+                <div class="list__title">Think Reason Learn</div>
+                <div class="list__desc">
+                  Interpretable ML + LLMs for transparent decision systems.
+                </div>
+                <div class="list__links">
+                  <a
+                    href="https://thinkreasonlearn.com/"
+                    target="_blank"
+                    rel="noopener"
+                    >Docs</a
+                  >
+                </div>
+              </div>
+              <img
+                class="project-logo project-logo--side"
+                src="https://thinkreasonlearn.com/_static/logo-light.png"
+                alt="Think Reason Learn logo"
+                loading="lazy"
+                decoding="async"
+              />
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="news" class="section">
+        <h2 class="section__title">News</h2>
+        <div class="section__body">
+          <ul class="timeline">
+            <li class="timeline__item">
+              <span class="timeline__date">2025</span>
+              <div class="timeline__content">
+                <span class="timeline__text"
+                  >New benchmark released for evaluating LLMs in venture
+                  capital.</span
+                >
+              </div>
+            </li>
+            <li class="timeline__item">
+              <span class="timeline__date">2025</span>
+              <div class="timeline__content">
+                <span class="timeline__text"
+                  >VCBench accepted for a computing conference (2026),
+                  London.</span
+                >
+              </div>
+            </li>
+            <li class="timeline__item">
+              <span class="timeline__date">2024</span>
+              <div class="timeline__content">
+                <span class="timeline__text"
+                  >Best Student in Software Engineering - UMaT Excellence
+                  Awards.</span
+                >
+              </div>
+            </li>
+            <li class="timeline__item">
+              <span class="timeline__date">2023</span>
+              <div class="timeline__content">
+                <div class="timeline__text">
+                  UMaT tops Virtual Category of Drillbotics - JoyNews.
+                </div>
+                <figure class="timeline__media">
+                  <img
+                    src="static/images/gallery/drillbotics_joynews.webp"
+                    alt="JoyNews: UMaT tops the Virtual Category of Drillbotics"
+                    loading="lazy"
+                    decoding="async"
+                  />
+                </figure>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <div class="footer-cta">
+        <a
+          class="footer-cv-btn"
+          href="/static/docs/aaron-ontoyin-yin-cv.pdf"
+          target="_blank"
+          rel="noopener"
+          >View CV (PDF)</a
+        >
+      </div>
+
+      <footer class="footer">
+        <p>© <span id="copyright-year"></span> Aaron Ontoyin Yin.</p>
+      </footer>
+
+      <button
+        id="back-to-top-button"
+        type="button"
+        title="Back to Top"
+        aria-label="Back to Top"
+      >
+        ↑
+      </button>
+    </main>
+
+    <script src="./static/js/script.js?v=20260218-1"></script>
+  </body>
 </html>
