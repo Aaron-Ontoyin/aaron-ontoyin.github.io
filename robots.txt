@@ -1,3 +1,4 @@
 User-agent: *
 Allow: /
-Sitemap: https://aaron-ontoyin.github.io/sitemap.xml
+
+Sitemap: https://aaron-yin.com/sitemap.xml
