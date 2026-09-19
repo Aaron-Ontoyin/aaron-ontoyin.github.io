@@ -1,0 +1,58 @@
+# Aaron Ontoyin Yin
+
+> AI researcher at Vela Partners (San Francisco, remote from Accra, Ghana). Builds
+> decision-making systems that learn from data. Applying to PhD programs for Fall 2027
+> in reinforcement learning, continual learning, deep learning, and robotics.
+
+Site: https://aaron-yin.com/ · Email: aarononto909@gmail.com
+ORCID: 0009-0002-9142-5890 · Google Scholar: user yHKw5EcAAAAJ
+GitHub: https://github.com/Aaron-Ontoyin · LinkedIn: https://www.linkedin.com/in/aarononto/
+
+## Summary
+
+Aaron Ontoyin Yin builds decision-making systems that learn from data. His current work
+uses large language models to construct interpretable classifiers and decision rules from
+unstructured data, and benchmarks to test them. He wants to work next on reinforcement
+learning and continual learning for LLM-based and robotic agents.
+
+At Vela Partners since January 2024, he builds and maintains the research group's dataset
+of tens of thousands of startups and their founders, built the founder-success prediction
+models in production at the firm (precision about ten times the 1.9% base rate), and started
+think-reason-learn, the group's open-source LLM-native machine-learning framework. He has
+co-authored eight papers with the group and is an inventor on the GPTree patent application
+(US 19/357,996). The group publishes with collaborators at the University of Oxford.
+
+He holds a B.Sc. in Electrical & Electronic Engineering (First Class, 3.91/4.0) from the
+University of Mines and Technology, Tarkwa, Ghana. He led software development for UMaT's
+Drillbotics entries, which won the virtual-rig directional-drilling category in 2023 and the
+well-control category in 2024.
+
+## Selected publications
+
+- VCBench: Benchmarking LLMs in Venture Capital. Chen, Ternasky, Kwesi, Griffin, Yin, Salifu,
+  Amoaba, Mu, Alican, Ihlamur. Intelligent Computing (Computing Conference 2026, London),
+  Springer, pp. 167-187. https://doi.org/10.1007/978-3-032-24804-6_10
+- Random Rule Forest (RRF): Interpretable and Manageable Ensembles of LLM-Generated Questions
+  for Predicting Success from Unstructured Data. Griffin, Yin, Vidaurre, Koyluoglu, Ternasky,
+  Alican, Ihlamur. https://arxiv.org/abs/2505.24622
+- Learning What to Ask and When to Stop: Cost-Aware Sequential Founder Evaluation. Ye, Alican,
+  Griffin, Yin, Ihlamur. Manuscript under revision, 2026.
+  https://vela.partners/research/cost-aware-sequential-evaluation
+
+## All publications
+
+- CoFEE: Reasoning Control for LLM-Based Feature Discovery, 2026. https://arxiv.org/abs/2604.21584
+- From Stochastic Answers to Verifiable Reasoning, 2026. https://arxiv.org/abs/2603.13287
+- Integrating Machine Learning with Domain Expertise for Smarter Real-Time Well Monitoring Using
+  D-WIS Interface. SPE Ghana Biennial International Conference & Exhibition, 2026.
+- LLM-AR: LLM-powered Automated Reasoning Framework, 2025. https://arxiv.org/abs/2510.22034
+- From Limited Data to Rare-event Prediction, 2025. https://arxiv.org/abs/2509.08140
+- Dual Approach in Autonomous Directional Drilling, SPE/IADC 2025. https://doi.org/10.2118/223656-MS
+- GPT-HTree, 2025. https://arxiv.org/abs/2501.13743
+- GPTree: Towards Explainable Decision-Making via LLM-powered Decision Trees, 2024.
+  https://arxiv.org/abs/2411.08257
+
+## Software
+
+- think-reason-learn, open-source LLM-native machine-learning framework (MIT).
+  https://thinkreasonlearn.com/ · https://github.com/Vela-Research/think-reason-learn
