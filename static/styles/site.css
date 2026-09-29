@@ -161,6 +161,8 @@ html:not(.js) .pg + .pg { margin-top: 64px; padding-top: 48px; border-top: 1px s
 /* research */
 .direction { font-size: 1.12rem; line-height: 1.5; padding: 18px 22px; background: var(--bg-2); border-radius: 4px; margin-bottom: 26px !important; font-style: italic; }
 .direction__label { display: block; font-family: var(--mono); font-style: normal; font-size: 0.7rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--accent); margin-bottom: 8px; }
+.direction ul { margin: 14px 0 0; padding-left: 1.3em; }
+.direction li + li { margin-top: 10px; }
 .cards { display: grid; gap: 18px; }
 .card { padding: 20px 22px 18px; border: 1px solid var(--rule); border-radius: 4px; background: color-mix(in srgb, var(--bg) 70%, var(--bg-2)); }
 .card p { margin: 0 0 10px; font-size: 0.97rem; }
