@@ -1,8 +1,8 @@
 # Aaron Ontoyin Yin
 
-> AI researcher at Vela Partners (San Francisco, remote from Accra, Ghana). Builds
-> decision-making systems that learn from data. Applying to PhD programs for Fall 2027
-> in reinforcement learning, continual learning, deep learning, and robotics.
+> AI researcher at Vela Partners (San Francisco, remote from Accra, Ghana). Applying to PhD
+> programs for Fall 2027 in deep learning and reinforcement learning, and their use in
+> physical systems.
 
 Site: https://aaron-yin.com/ · Email: aarononto909@gmail.com
 ORCID: 0009-0002-9142-5890 · Google Scholar: user yHKw5EcAAAAJ
@@ -10,10 +10,12 @@ GitHub: https://github.com/Aaron-Ontoyin · LinkedIn: https://www.linkedin.com/i
 
 ## Summary
 
-Aaron Ontoyin Yin builds decision-making systems that learn from data. His current work
-uses large language models to construct interpretable classifiers and decision rules from
-unstructured data, and benchmarks to test them. He wants to work next on reinforcement
-learning and continual learning for LLM-based and robotic agents.
+Aaron Ontoyin Yin is an AI researcher drawn to the mathematics of how models learn. The
+question he now wants to study is what models actually learn, and how to make that learning
+reliable. His work so far has been on interpretable LLM and ML decision-making, benchmarks,
+and reinforcement learning. Next he wants to work on deep learning and reinforcement learning
+methods and their use where data is scarce and mistakes are costly: physical systems
+(control, robotics, dynamical systems), healthcare, and other high-stakes decisions.
 
 At Vela Partners since January 2024, he builds and maintains the research group's dataset
 of tens of thousands of startups and their founders, built the founder-success prediction
@@ -24,8 +26,11 @@ co-authored eight papers with the group and is an inventor on the GPTree patent 
 
 He holds a B.Sc. in Electrical & Electronic Engineering (First Class, 3.91/4.0) from the
 University of Mines and Technology, Tarkwa, Ghana. He led software development for UMaT's
-Drillbotics entries, which won the virtual-rig directional-drilling category in 2023 and the
-well-control category in 2024.
+Drillbotics entries: a digital-twin planner for directional drilling (winner, virtual-rig
+directional-drilling category, 2023) and an LSTM model that detects kicks from real-time
+virtual-rig sensor data and triggers automated well control with human override, built to
+connect to physical rigs through the D-WIS interface (winner, well-control category, 2024).
+The work led to two SPE conference papers.
 
 ## Selected publications
 
