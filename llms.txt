@@ -26,11 +26,11 @@ co-authored eight papers with the group and is an inventor on the GPTree patent 
 
 He holds a B.Sc. in Electrical & Electronic Engineering (First Class, 3.91/4.0) from the
 University of Mines and Technology, Tarkwa, Ghana. He led software development for UMaT's
-Drillbotics entries, and the research for the second: a digital-twin planner for directional drilling (winner, virtual-rig
+Drillbotics entries: a digital-twin planner for directional drilling (winner, virtual-rig
 directional-drilling category, 2023) and an LSTM model that detects kicks from real-time
-virtual-rig sensor data and triggers automated well control with human override, built to
-connect to physical rigs through the D-WIS interface (winner, well-control category, 2024).
-The work led to two SPE conference papers.
+virtual-rig sensor data and triggers automated well control with human override (he also led
+the research for this category), built to connect to
+physical rigs through the D-WIS interface (winner, well-control category, 2024). The work led to two SPE conference papers.
 
 ## Selected publications
 
