@@ -42,7 +42,7 @@ improve the planner, which placed first in the category in 2024. The work led to
   for Predicting Success from Unstructured Data. Griffin, Yin, Vidaurre, Koyluoglu, Ternasky,
   Alican, Ihlamur. https://arxiv.org/abs/2505.24622
 - Learning What to Ask and When to Stop: Cost-Aware Sequential Founder Evaluation. Ye, Alican,
-  Griffin, Yin, Ihlamur. Manuscript under revision, 2026.
+  Griffin, Yin, Ihlamur. Under review, ICAIF 2026.
   https://vela.partners/research/cost-aware-sequential-evaluation
 
 ## All publications
