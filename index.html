@@ -370,9 +370,10 @@
     },
     {
       "@type": "ScholarlyArticle",
-      "name": "Random Rule Forest (RRF): Interpretable and Manageable Ensembles of LLM-Generated Questions for Predicting Success from Unstructured Data",
+      "name": "Rule Forest: Interpretable Ensembles of LLM-Generated Questions for Rare-Outcome Prediction",
       "url": "https://arxiv.org/abs/2505.24622",
       "datePublished": "2025-05-30",
+      "creativeWorkStatus": "Accepted, ACM ICAIF 2026 (to appear)",
       "author": [
         {
           "@type": "Person",
@@ -604,7 +605,7 @@
       "name": "Learning What to Ask and When to Stop: Cost-Aware Sequential Founder Evaluation",
       "url": "https://vela.partners/research/cost-aware-sequential-evaluation",
       "datePublished": "2026",
-      "creativeWorkStatus": "Under review, ICAIF 2026",
+      "creativeWorkStatus": "Manuscript",
       "author": [
         {
           "@type": "Person",
@@ -692,7 +693,7 @@
           </p>
           <dl class="home">
             <dt>Now</dt>
-            <dd>Since January 2024, starting in the third year of my undergrad, I have been an AI researcher at <a href="https://vela.partners/" target="_blank" rel="noopener">Vela Partners</a>, in a research group that publishes with collaborators at the University of Oxford. Our problem is predicting which early-stage startups will become unicorns. Fewer than 2% do, the data is sparse and noisy, and the outcome can look like pure luck. I build and maintain the group's dataset and started <a href="https://thinkreasonlearn.com/" target="_blank" rel="noopener">think-reason-learn</a>, our open-source library for LLM-native models. I have co-authored eight papers and am a named inventor on a US patent application. I am most interested in the mathematical problems: normalizing inputs so a model is not fooled by them, scoring rules fairly when positives are rare, and helping models learn the right signals cheaply while they keep learning from new data.</dd>
+            <dd>Since January 2024, starting in the third year of my undergrad, I have been an AI researcher at <a href="https://vela.partners/" target="_blank" rel="noopener">Vela Partners</a>, in a research group that publishes with collaborators at the University of Oxford. Our problem is predicting which early-stage startups will become unicorns. Fewer than 2% do, the data is sparse and noisy, and the outcome can look like pure luck. I build and maintain the group's dataset and started <a href="https://thinkreasonlearn.com/" target="_blank" rel="noopener">think-reason-learn</a>, our open-source library for LLM-native models. I have co-authored 11 papers, nine of them at Vela, and am a named inventor on a US patent application. I am most interested in the mathematical problems: normalizing inputs so a model is not fooled by them, scoring rules fairly when positives are rare, and helping models learn the right signals cheaply while they keep learning from new data.</dd>
             <dt>Background</dt>
             <dd>I studied Electrical &amp; Electronic Engineering at the University of Mines and Technology, Ghana, graduating with First Class honors. I was always most excited by problems where a learned model has to act in the real world. On UMaT's Drillbotics team I led the software for two entries that placed at the top of their design options: a <a href="https://www.umat.edu.gh/media-press/news/drillbotics-team-tops-the-virtual-directional-drilling-rig-simulator-design-category-at-the-2023-international-drillbotics-competition" target="_blank" rel="noopener">digital-twin planner for directional drilling</a>, and a model that detects dangerous pressure kicks from a virtual rig's real-time sensor data and triggers automated well control, with a human override, because a wrong call on a rig is costly. I also led the research for that second entry. The kick-detection model was built to connect to physical rigs through the <a href="https://d-wis.org/" target="_blank" rel="noopener">D-WIS</a> interface. The work led to <a href="#publications">two SPE conference papers</a>.</dd>
           </dl>
@@ -717,8 +718,8 @@
           <article class="card">
             <h3 class="card__h">Interpretable decision-making with LLMs</h3>
             <p>Instead of asking a language model for an answer, the group asks it for a decision structure: a tree split, a yes/no question, a probabilistic rule, a piece of executable code. The structure is then fitted and validated statistically, so every prediction has a path a person can read.</p>
-            <p class="card__role">Inventor on the GPTree patent application; implemented the Random Rule Forest ensemble and much of this line in think-reason-learn.</p>
-            <p class="card__refs"><a href="#pub-gptree">GPTree</a> · <a href="#pub-gpthtree">GPT-HTree</a> · <a href="#pub-rrf">Random Rule Forest</a> · <a href="#pub-llmar">LLM-AR (automated reasoning)</a> · <a href="#pub-verifiable">Verifiable reasoning</a> · <a href="#pub-cofee">CoFEE (feature discovery)</a></p>
+            <p class="card__role">Inventor on the GPTree patent application; implemented the Rule Forest ensemble and much of this line in think-reason-learn.</p>
+            <p class="card__refs"><a href="#pub-gptree">GPTree</a> · <a href="#pub-gpthtree">GPT-HTree</a> · <a href="#pub-rrf">Rule Forest</a> · <a href="#pub-llmar">LLM-AR (automated reasoning)</a> · <a href="#pub-verifiable">Verifiable reasoning</a> · <a href="#pub-cofee">CoFEE (feature discovery)</a></p>
           </article>
           <article class="card">
             <h3 class="card__h">Benchmarks and data</h3>
@@ -736,7 +737,7 @@
         <h2 id="sw-h" class="sec__h">Software</h2>
         <article class="card card--wide">
           <h3 class="card__h">think-reason-learn</h3>
-          <p>An open-source, LLM-native machine-learning framework: scikit-learn-style estimators whose splits, rules, and questions are proposed by a language model, then fitted and validated like any other model. It brings the group's LLM-built models, among them GPTree and Random Rule Forest, under one interface. MIT licensed.</p>
+          <p>An open-source, LLM-native machine-learning framework: scikit-learn-style estimators whose splits, rules, and questions are proposed by a language model, then fitted and validated like any other model. It brings the group's LLM-built models, among them GPTree and Rule Forest, under one interface. MIT licensed.</p>
           <p class="card__role">I started the library and remain a core contributor.</p>
           <p class="card__refs"><a href="https://thinkreasonlearn.com/" target="_blank" rel="noopener">Documentation</a> · <a href="https://github.com/Vela-Research/think-reason-learn" target="_blank" rel="noopener">GitHub</a></p>
         </article>
@@ -754,13 +755,13 @@
             <p class="sel__sum">The first benchmark for founder-success prediction: 9,000 anonymized profiles with re-identification tests, and nine LLMs evaluated against human investors. The benchmark is built from the startup and founder data I maintain.</p>
           </li>
           <li class="sel__item">
-            <a class="sel__title" href="https://arxiv.org/abs/2505.24622" target="_blank" rel="noopener">Random Rule Forest (RRF): Interpretable and Manageable Ensembles of LLM-Generated Questions for Predicting Success from Unstructured Data</a>
-            <p class="sel__meta">Griffin, <b>Yin</b>, Vidaurre, Koyluoglu, Ternasky, Alican, Ihlamur · arXiv:2505.24622 · 2025</p>
+            <a class="sel__title" href="https://arxiv.org/abs/2505.24622" target="_blank" rel="noopener">Rule Forest: Interpretable Ensembles of LLM-Generated Questions for Rare-Outcome Prediction</a>
+            <p class="sel__meta">Griffin, <b>Yin</b>, Vidaurre, Koyluoglu, Ternasky, Alican, Ihlamur · <i>ACM ICAIF 2026</i>, to appear · arXiv:2505.24622</p>
             <p class="sel__sum">An LLM writes simple yes/no questions as weak learners; a unit-weight vote turns them into an auditable scorecard that is robust when positives are scarce. I implemented the ensemble in think-reason-learn.</p>
           </li>
           <li class="sel__item">
             <a class="sel__title" href="https://vela.partners/research/cost-aware-sequential-evaluation" target="_blank" rel="noopener">Learning What to Ask and When to Stop: Cost-Aware Sequential Founder Evaluation</a>
-            <p class="sel__meta">Ye, Alican, Griffin, <b>Yin</b>, Ihlamur · Under review, ICAIF 2026</p>
+            <p class="sel__meta">Ye, Alican, Griffin, <b>Yin</b>, Ihlamur · Manuscript, 2026</p>
             <p class="sel__sum">A reinforcement-learning policy decides which attributes to query next and when to stop, keeping most of the accuracy at about half the information cost. Runs on the same data. I suggested the features and wrote the code for leakage-safe extraction, and caught errors in the action-space normalization and the policy loss.</p>
           </li>
         </ol>
@@ -815,9 +816,9 @@
           </li>
 
           <li class="pub" id="pub-rrf">
-            <h3 class="pub__title"><a href="https://arxiv.org/abs/2505.24622" target="_blank" rel="noopener">Random Rule Forest (RRF): Interpretable and Manageable Ensembles of LLM-Generated Questions for Predicting Success from Unstructured Data</a></h3>
+            <h3 class="pub__title"><a href="https://arxiv.org/abs/2505.24622" target="_blank" rel="noopener">Rule Forest: Interpretable Ensembles of LLM-Generated Questions for Rare-Outcome Prediction</a></h3>
             <p class="pub__authors">Ben Griffin, <b>Aaron Ontoyin Yin</b>, Diego Vidaurre, Ugur Koyluoglu, Joseph Ternasky, Fuat Alican, Yigit Ihlamur</p>
-            <p class="pub__venue">arXiv:2505.24622 · May 2025</p>
+            <p class="pub__venue"><i>ACM ICAIF 2026</i>, to appear · arXiv:2505.24622</p>
             <p class="pub__sum">An LLM writes yes/no questions as weak learners; a unit-weight vote turns them into an auditable scorecard that is robust when positives are scarce.</p>
           </li>
 
@@ -845,12 +846,12 @@
           </li>
         </ol>
 
-        <h3 class="sub__h">Under review</h3>
+        <h3 class="sub__h">Manuscripts</h3>
         <ol class="pubs pubs--flat">
           <li class="pub" id="pub-costaware">
             <h3 class="pub__title"><a href="https://vela.partners/research/cost-aware-sequential-evaluation" target="_blank" rel="noopener">Learning What to Ask and When to Stop: Cost-Aware Sequential Founder Evaluation</a></h3>
             <p class="pub__authors">Yuhang Ye, Fuat Alican, Ben Griffin, <b>Aaron Ontoyin Yin</b>, Yigit Ihlamur</p>
-            <p class="pub__venue">Under review, ICAIF 2026</p>
+            <p class="pub__venue">Manuscript, 2026</p>
             <p class="pub__sum">A reinforcement-learning policy decides which attributes to query next and when to stop, keeping most of the accuracy at about half the information cost.</p>
           </li>
         </ol>
@@ -879,7 +880,7 @@
                   <li>Build and maintain the group's dataset of tens of thousands of startups and their founders, collected from public and licensed sources, on which the group's models are trained.</li>
                   <li>Built the founder-success prediction models in production use at the firm, with precision about ten times the 1.9% base rate; now building their second version.</li>
                   <li>Started think-reason-learn, the group's open-source LLM-native machine-learning framework, and remain a core contributor.</li>
-                  <li>Co-authored eight papers with the group and am an inventor on the GPTree patent application.</li>
+                  <li>Co-authored nine papers with the group and am an inventor on the GPTree patent application.</li>
                 </ul>
               </div>
             </li>
