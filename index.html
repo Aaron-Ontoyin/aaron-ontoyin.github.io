@@ -32,7 +32,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,400;0,500;0,600;1,400;1,500&amp;family=IBM+Plex+Mono:wght@400;500&amp;display=swap">
-  <link rel="stylesheet" href="/static/styles/site.css?v=20260929a">
+  <link rel="stylesheet" href="/static/styles/site.css?v=20261103a">
 
   <script>document.documentElement.classList.add("js");</script>
   <script type="application/ld+json">
@@ -83,6 +83,8 @@
         "Large language models",
         "Reinforcement learning",
         "Continual learning",
+        "Sequential decision-making",
+        "Learning from delayed feedback",
         "Deep learning",
         "Robotics",
         "Machine learning for physical systems"
@@ -94,7 +96,7 @@
         "https://github.com/Aaron-Ontoyin",
         "https://www.linkedin.com/in/aarononto/"
       ],
-      "description": "Aaron Ontoyin Yin is an AI researcher at Vela Partners who is drawn to the mathematics of how models learn. His work covers interpretable LLM and ML decision-making, benchmarks, and reinforcement learning. He is applying to PhD programs for Fall 2027 in deep learning and reinforcement learning, and their use in physical systems.",
+      "description": "Aaron Ontoyin Yin is an AI researcher at Vela Partners who is drawn to how models learn and make decisions. His work covers interpretable LLM and ML decision-making, benchmarks, and reinforcement learning. He is applying to PhD programs for Fall 2027 in deep learning and reinforcement learning, and their use in physical systems.",
       "homeLocation": {
         "@type": "Place",
         "address": {
@@ -671,7 +673,7 @@
         <li><a href="https://www.linkedin.com/in/aarononto/" target="_blank" rel="me noopener">LinkedIn</a></li>
         <li><a href="https://orcid.org/0009-0002-9142-5890" target="_blank" rel="me noopener">ORCID</a></li>
       </ul>
-      <p class="side__stamp">Updated September 2026</p>
+      <p class="side__stamp">Updated November 2026</p>
     </aside>
 
     <main class="main" id="content">
@@ -689,11 +691,11 @@
         <section class="sec sec--home" aria-labelledby="about-h">
           <h2 id="about-h" class="sec__h">About</h2>
           <p class="lede">
-            I am a researcher drawn to the mathematics of how models learn. The question I now want to study is what models actually learn, and how to make that learning reliable.
+            I am a researcher drawn to how models learn and make decisions. I want to understand what they learn, and how an agent should act when information is costly or feedback arrives late.
           </p>
           <dl class="home">
             <dt>Now</dt>
-            <dd>Since January 2024, starting in the third year of my undergrad, I have been an AI researcher at <a href="https://vela.partners/" target="_blank" rel="noopener">Vela Partners</a>, in a research group that publishes with collaborators at the University of Oxford. Our problem is predicting which early-stage startups will become unicorns. Fewer than 2% do, the data is sparse and noisy, and the outcome can look like pure luck. I build and maintain the group's dataset and started <a href="https://thinkreasonlearn.com/" target="_blank" rel="noopener">think-reason-learn</a>, our open-source library for LLM-native models. I have co-authored 11 papers, nine of them at Vela, and am a named inventor on a US patent application. I am most interested in the mathematical problems: normalizing inputs so a model is not fooled by them, scoring rules fairly when positives are rare, and helping models learn the right signals cheaply while they keep learning from new data.</dd>
+            <dd>Since January 2024, starting in the third year of my undergrad, I have been an AI researcher at <a href="https://vela.partners/" target="_blank" rel="noopener">Vela Partners</a>, in a research group that publishes with collaborators at the University of Oxford. Our problem is predicting which early-stage startups will become unicorns. Fewer than 2% do, the data is sparse and noisy, and the outcome can look like pure luck. I build and maintain the group's dataset and started <a href="https://thinkreasonlearn.com/" target="_blank" rel="noopener">think-reason-learn</a>, our open-source library for LLM-native models. I have co-authored 11 papers, nine of them at Vela, and am a named inventor on a US patent application. I am also first author of a manuscript on how models should learn from labels that are not final yet.</dd>
             <dt>Background</dt>
             <dd>I studied Electrical &amp; Electronic Engineering at the University of Mines and Technology, Ghana, graduating with First Class honors. I was always most excited by problems where a learned model has to act in the real world. On UMaT's Drillbotics team I led the software for two entries that placed at the top of their design options: a <a href="https://www.umat.edu.gh/media-press/news/drillbotics-team-tops-the-virtual-directional-drilling-rig-simulator-design-category-at-the-2023-international-drillbotics-competition" target="_blank" rel="noopener">digital-twin planner for directional drilling</a>, and a model that detects dangerous pressure kicks from a virtual rig's real-time sensor data and triggers automated well control, with a human override, because a wrong call on a rig is costly. I also led the research for that second entry. The kick-detection model was built to connect to physical rigs through the <a href="https://d-wis.org/" target="_blank" rel="noopener">D-WIS</a> interface. The work led to <a href="#publications">two SPE conference papers</a>.</dd>
           </dl>
@@ -706,12 +708,13 @@
         <div class="prose">
           <div class="direction">
             <span class="direction__label">Direction</span>
-            I want to understand what deep learning and reinforcement learning models learn and why, and use that to make them learn faster, generalize further, and behave more reliably, especially where data is scarce and mistakes are costly. Three questions interest me most:
+            I want to understand what deep learning and reinforcement learning models learn and how they should act on it, especially where data is scarce and mistakes are costly. These questions interest me most:
             <ul>
-              <li>What do models represent internally, and can we read, test or correct it?</li>
-              <li>How can a model focus on learning the right signals at a low cost, and keep learning from new data without forgetting what it knows?</li>
-              <li>How do these methods hold up where data is scarce and mistakes are costly: in physical systems (control, robotics, dynamical systems), in healthcare, and in other high-stakes decisions?</li>
+              <li>When should an agent act on what it knows, gather more information, or ask a person, especially when it is unsure what that person wants?</li>
+              <li>How should a model keep learning when feedback arrives late, or only for the cases it chose to act on?</li>
+              <li>What do models represent internally, can we check it, and can structure such as symmetry help them learn from less data?</li>
             </ul>
+            <p>I hope to study them in robots and other physical systems, and in high-stakes decisions such as lending.</p>
           </div>
         </div>
         <div class="cards">
@@ -750,6 +753,11 @@
         <h3 class="sub__h sub__h--first">Selected</h3>
         <ol class="sel">
           <li class="sel__item">
+            <span class="sel__title">Drift or Immaturity? Correcting for Maturity Matters, Learning a Young Cohort's Own Timing Rarely Helps</span>
+            <p class="sel__meta"><b>Aaron Ontoyin Yin</b> et al. · Manuscript in preparation, 2026 (working title)</p>
+            <p class="sel__sum">Shows that drift detectors and adaptive training windows mistake delayed labels for real change, and that weighting each cohort by how mature its labels are fixes this, with a window rule that is minimax optimal up to a log factor. Tested on 4.2 million mortgages and 1.9 million patents, and in a pre-registered test on 1.4 million small-business loans.</p>
+          </li>
+          <li class="sel__item">
             <a class="sel__title" href="https://doi.org/10.1007/978-3-032-24804-6_10" target="_blank" rel="noopener">VCBench: Benchmarking LLMs in Venture Capital</a>
             <p class="sel__meta">Chen, Ternasky, Kwesi, Griffin, <b>Yin</b>, Salifu, Amoaba, Mu, Alican, Ihlamur · <i>Intelligent Computing</i>, Springer · 2026</p>
             <p class="sel__sum">The first benchmark for founder-success prediction: 9,000 anonymized profiles with re-identification tests, and nine LLMs evaluated against human investors. The benchmark is built from the startup and founder data I maintain.</p>
@@ -762,7 +770,7 @@
           <li class="sel__item">
             <a class="sel__title" href="https://vela.partners/research/cost-aware-sequential-evaluation" target="_blank" rel="noopener">Learning What to Ask and When to Stop: Cost-Aware Sequential Founder Evaluation</a>
             <p class="sel__meta">Ye, Alican, Griffin, <b>Yin</b>, Ihlamur · Manuscript, 2026</p>
-            <p class="sel__sum">A reinforcement-learning policy decides which attributes to query next and when to stop, keeping most of the accuracy at about half the information cost. Runs on the same data. I suggested the features and wrote the code for leakage-safe extraction, and caught errors in the action-space normalization and the policy loss.</p>
+            <p class="sel__sum">A reinforcement-learning policy decides which attributes to query next and when to stop, scoring a higher F0.5 than a model that sees every attribute while using about half the information. Runs on the same data. I suggested the features, wrote the leakage-safe extraction code, proposed a policy loss that includes the stop action, and helped fix the action-space normalization.</p>
           </li>
         </ol>
 
@@ -770,6 +778,13 @@
         <p class="sec__note">Author lists as published. Preprints are marked with their arXiv identifier.</p>
         <ol class="pubs">
           <li class="pubs__year"><span>2026</span></li>
+
+          <li class="pub" id="pub-drift">
+            <h3 class="pub__title">Drift or Immaturity? Correcting for Maturity Matters, Learning a Young Cohort's Own Timing Rarely Helps</h3>
+            <p class="pub__authors"><b>Aaron Ontoyin Yin</b> et al.</p>
+            <p class="pub__venue">Manuscript in preparation, 2026 (working title)</p>
+            <p class="pub__sum">Shows that drift detectors and adaptive training windows mistake delayed labels for real change, and that weighting each cohort by how mature its labels are fixes this, with a window rule that is minimax optimal up to a log factor. Tested on 4.2 million mortgages and 1.9 million patents, and in a pre-registered test on 1.4 million small-business loans.</p>
+          </li>
 
           <li class="pub" id="pub-cofee">
             <h3 class="pub__title"><a href="https://arxiv.org/abs/2604.21584" target="_blank" rel="noopener">CoFEE: Reasoning Control for LLM-Based Feature Discovery</a></h3>
@@ -852,7 +867,7 @@
             <h3 class="pub__title"><a href="https://vela.partners/research/cost-aware-sequential-evaluation" target="_blank" rel="noopener">Learning What to Ask and When to Stop: Cost-Aware Sequential Founder Evaluation</a></h3>
             <p class="pub__authors">Yuhang Ye, Fuat Alican, Ben Griffin, <b>Aaron Ontoyin Yin</b>, Yigit Ihlamur</p>
             <p class="pub__venue">Manuscript, 2026</p>
-            <p class="pub__sum">A reinforcement-learning policy decides which attributes to query next and when to stop, keeping most of the accuracy at about half the information cost.</p>
+            <p class="pub__sum">A reinforcement-learning policy decides which attributes to query next and when to stop, scoring a higher F0.5 than a model that sees every attribute while using about half the information.</p>
           </li>
         </ol>
 

@@ -10,12 +10,13 @@ GitHub: https://github.com/Aaron-Ontoyin · LinkedIn: https://www.linkedin.com/i
 
 ## Summary
 
-Aaron Ontoyin Yin is an AI researcher drawn to the mathematics of how models learn. The
-question he now wants to study is what models actually learn, and how to make that learning
-reliable. His work so far has been on interpretable LLM and ML decision-making, benchmarks,
-and reinforcement learning. Next he wants to work on deep learning and reinforcement learning
-methods and their use where data is scarce and mistakes are costly: physical systems
-(control, robotics, dynamical systems), healthcare, and other high-stakes decisions.
+Aaron Ontoyin Yin is an AI researcher drawn to how models learn and make decisions. He wants
+to understand what they learn, and how an agent should act when information is costly or
+feedback arrives late. His work so far has been on interpretable LLM and ML decision-making,
+benchmarks, and reinforcement learning. Next he wants to work on deep learning and
+reinforcement learning methods, and how they should act on what they learn, especially where
+data is scarce and mistakes are costly: in robots and other physical systems, and in
+high-stakes decisions such as lending.
 
 At Vela Partners since January 2024, he builds and maintains the research group's dataset
 of tens of thousands of startups and their founders, built the founder-success prediction
@@ -23,6 +24,8 @@ models in production at the firm (precision about ten times the 1.9% base rate),
 think-reason-learn, the group's open-source LLM-native machine-learning framework. He has
 co-authored 11 papers, nine of them with the group, and is an inventor on the GPTree patent application
 (US 19/357,996). The group publishes with collaborators at the University of Oxford.
+He is also first author of a manuscript on how models should learn from labels that are not
+final yet.
 
 He holds a B.Sc. in Electrical & Electronic Engineering (First Class, 3.91/4.0) from the
 University of Mines and Technology, Tarkwa, Ghana. He led software development for UMaT's 2023 Drillbotics entry, a digital-twin planner for
@@ -35,6 +38,12 @@ improve the planner, which placed first in the category in 2024. The work led to
 
 ## Selected publications
 
+- Drift or Immaturity? Correcting for Maturity Matters, Learning a Young Cohort's Own Timing
+  Rarely Helps. Yin et al. Manuscript in preparation, 2026 (working title). Shows that drift
+  detectors and adaptive training windows mistake delayed labels for real change, and that
+  weighting each cohort by how mature its labels are fixes this. Tested on 4.2 million
+  mortgages and 1.9 million patents, and in a pre-registered test on 1.4 million small-business
+  loans. Not yet available online.
 - VCBench: Benchmarking LLMs in Venture Capital. Chen, Ternasky, Kwesi, Griffin, Yin, Salifu,
   Amoaba, Mu, Alican, Ihlamur. Intelligent Computing (Computing Conference 2026, London),
   Springer, pp. 167-187. https://doi.org/10.1007/978-3-032-24804-6_10
