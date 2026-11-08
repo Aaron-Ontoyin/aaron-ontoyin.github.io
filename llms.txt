@@ -10,9 +10,9 @@ GitHub: https://github.com/Aaron-Ontoyin · LinkedIn: https://www.linkedin.com/i
 
 ## Summary
 
-Aaron Ontoyin Yin is an AI researcher drawn to how models learn and make decisions. His work
-so far has been on interpretable LLM and ML decision-making,
-benchmarks, and reinforcement learning. Next he wants to work on deep learning and
+Aaron Ontoyin Yin is an AI researcher drawn to how deep learning and reinforcement learning
+models learn and make decisions. His work so far has been on interpretable LLM and ML
+decision-making, benchmarks, and reinforcement learning. Next he wants to work on deep learning and
 reinforcement learning methods, and how they should act on what they learn, especially where
 data is scarce and mistakes are costly: in robots and other physical systems, and in
 high-stakes decisions such as lending.
