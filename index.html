@@ -84,7 +84,7 @@
         "Reinforcement learning",
         "Continual learning",
         "Sequential decision-making",
-        "Learning from delayed feedback",
+        "Learning from provisional feedback",
         "Deep learning",
         "Robotics",
         "Machine learning for physical systems"
@@ -691,7 +691,7 @@
         <section class="sec sec--home" aria-labelledby="about-h">
           <h2 id="about-h" class="sec__h">About</h2>
           <p class="lede">
-            I am a researcher drawn to how models learn and make decisions. I want to understand what they learn, and how an agent should act when information is costly or feedback arrives late.
+            I am drawn to how models learn and make decisions.
           </p>
           <dl class="home">
             <dt>Now</dt>
@@ -708,31 +708,40 @@
         <div class="prose">
           <div class="direction">
             <span class="direction__label">Direction</span>
-            I want to understand what deep learning and reinforcement learning models learn and how they should act on it, especially where data is scarce and mistakes are costly. These questions interest me most:
+            Three questions interest me:
             <ul>
-              <li>When should an agent act on what it knows, gather more information, or ask a person, especially when it is unsure what that person wants?</li>
-              <li>How should a model keep learning when feedback arrives late, or only for the cases it chose to act on?</li>
-              <li>What do models represent internally, can we check it, and can structure such as symmetry help them learn from less data?</li>
+              <li>How models should keep learning when their newest labels are provisional, or available only for the cases they acted on.</li>
+              <li>When an agent should act, gather more information, or ask a person, especially when it is unsure what that person wants.</li>
+              <li>What models represent internally, whether we can check it, and whether structure such as symmetry can reduce how much data they need.</li>
             </ul>
-            <p>I hope to study them in robots and other physical systems, and in high-stakes decisions such as lending.</p>
+            <p>I hope to study these in robots, other physical systems, and high-stakes areas such as lending.</p>
           </div>
         </div>
         <div class="cards">
           <article class="card">
+            <h3 class="card__h">Learning from provisional labels</h3>
+            <p>A recent loan looks safe only because it has had little time to default. Adaptive windows and drift detectors that treat such labels as final get worse as data grows. Weighting each cohort by how complete its labels are fixes this, and the resulting rule is minimax optimal up to a log factor.</p>
+            <p class="card__refs">Papers: <a href="#pub-drift">Drift or Immaturity?</a> (first author; under review at TMLR)</p>
+          </article>
+          <article class="card">
+            <h3 class="card__h">Deciding when to stop</h3>
+            <p>An agent that pays for each detail of a founder's background must decide when it has seen enough. With about half the information, our cost-aware RL agent scores a higher F0.5 than a model that sees every detail.</p>
+            <p class="card__refs">Papers: <a href="#pub-costaware">Learning What to Ask and When to Stop</a> (working paper)</p>
+          </article>
+          <article class="card">
             <h3 class="card__h">Interpretable decision-making with LLMs</h3>
-            <p>Instead of asking a language model for an answer, the group asks it for a decision structure: a tree split, a yes/no question, a probabilistic rule, a piece of executable code. The structure is then fitted and validated statistically, so every prediction has a path a person can read.</p>
-            <p class="card__role">Inventor on the GPTree patent application; implemented the Rule Forest ensemble and much of this line in think-reason-learn.</p>
-            <p class="card__refs"><a href="#pub-gptree">GPTree</a> · <a href="#pub-gpthtree">GPT-HTree</a> · <a href="#pub-rrf">Rule Forest</a> · <a href="#pub-llmar">LLM-AR (automated reasoning)</a> · <a href="#pub-verifiable">Verifiable reasoning</a> · <a href="#pub-cofee">CoFEE (feature discovery)</a></p>
+            <p>Language models propose decision structures such as tree splits, rules or code, and statistical tests fit and check them.</p>
+            <p class="card__refs">Papers: <a href="#pub-gptree">GPTree</a> (patent pending), <a href="#pub-gpthtree">GPT-HTree</a>, <a href="#pub-rrf">Rule Forest</a> (ACM ICAIF 2026), <a href="#pub-llmar">LLM-AR</a>, <a href="#pub-verifiable">Verifiable reasoning</a>, <a href="#pub-cofee">CoFEE</a></p>
           </article>
           <article class="card">
             <h3 class="card__h">Benchmarks and data</h3>
-            <p>Rare-outcome prediction needs clean, leak-resistant data. I build and maintain the dataset of startups and founders the group's models are trained on, and contributed to VCBench, the first standardized benchmark for founder-success prediction.</p>
-            <p class="card__refs"><a href="#pub-vcbench">VCBench</a> · <a href="#pub-rare">Rare-event prediction</a></p>
+            <p>Datasets for predicting rare outcomes such as startup success.</p>
+            <p class="card__refs">Papers: <a href="#pub-vcbench">VCBench</a> (Intelligent Computing, Springer, 2026), <a href="#pub-rare">Rare-event prediction</a> (arXiv, 2025)</p>
           </article>
           <article class="card">
             <h3 class="card__h">Learning for physical systems</h3>
-            <p>I led the software for UMaT's 2023 Drillbotics entry, a digital-twin planner for directional drilling, and the research and software for its 2024 well-control entry, an LSTM over real-time sensor data from a virtual rig simulator that detects kicks and triggers automated well control with human override. The <a href="https://d-wis.org/" target="_blank" rel="noopener">D-WIS</a> well-monitoring paper comes out of that work. My undergraduate capstone was a smart-metering analytics system for electricity distribution. This is where my interest in learning for physical systems comes from.</p>
-            <p class="card__refs"><a href="#pub-drillbotics">Drillbotics</a> · <a href="#pub-dwis">D-WIS well monitoring</a></p>
+            <p>Kick detection that triggers automated well control with human override, and a directional-drilling planner, for UMaT's Drillbotics entries.</p>
+            <p class="card__refs">Papers: <a href="#pub-drillbotics">Drillbotics</a> (SPE/IADC, 2025), <a href="#pub-dwis">D-WIS well monitoring</a> (SPE Ghana Biennial Conference, 2026)</p>
           </article>
         </div>
       </section>
@@ -755,7 +764,7 @@
           <li class="sel__item">
             <span class="sel__title">Drift or Immaturity? Correcting for Maturity Matters, Learning a Young Cohort's Own Timing Rarely Helps</span>
             <p class="sel__meta"><b>Aaron Ontoyin Yin</b> et al. · Manuscript in preparation, 2026 (working title)</p>
-            <p class="sel__sum">Shows that drift detectors and adaptive training windows mistake delayed labels for real change, and that weighting each cohort by how mature its labels are fixes this, with a window rule that is minimax optimal up to a log factor. Tested on 4.2 million mortgages and 1.9 million patents, and in a pre-registered test on 1.4 million small-business loans.</p>
+            <p class="sel__sum">Shows that drift detectors and adaptive training windows mistake provisional labels for real change, and that weighting each cohort by how mature its labels are fixes this, with a window rule that is minimax optimal up to a log factor. Tested on 4.2 million mortgages and 1.9 million patents, and in a pre-registered test on 1.4 million small-business loans.</p>
           </li>
           <li class="sel__item">
             <a class="sel__title" href="https://doi.org/10.1007/978-3-032-24804-6_10" target="_blank" rel="noopener">VCBench: Benchmarking LLMs in Venture Capital</a>
@@ -783,7 +792,7 @@
             <h3 class="pub__title">Drift or Immaturity? Correcting for Maturity Matters, Learning a Young Cohort's Own Timing Rarely Helps</h3>
             <p class="pub__authors"><b>Aaron Ontoyin Yin</b> et al.</p>
             <p class="pub__venue">Manuscript in preparation, 2026 (working title)</p>
-            <p class="pub__sum">Shows that drift detectors and adaptive training windows mistake delayed labels for real change, and that weighting each cohort by how mature its labels are fixes this, with a window rule that is minimax optimal up to a log factor. Tested on 4.2 million mortgages and 1.9 million patents, and in a pre-registered test on 1.4 million small-business loans.</p>
+            <p class="pub__sum">Shows that drift detectors and adaptive training windows mistake provisional labels for real change, and that weighting each cohort by how mature its labels are fixes this, with a window rule that is minimax optimal up to a log factor. Tested on 4.2 million mortgages and 1.9 million patents, and in a pre-registered test on 1.4 million small-business loans.</p>
           </li>
 
           <li class="pub" id="pub-cofee">
