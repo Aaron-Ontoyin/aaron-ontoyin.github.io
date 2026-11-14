@@ -37,7 +37,7 @@ improve the planner, which placed first in the category in 2024. The work led to
 
 ## Selected publications
 
-- Drift or Immaturity? Correcting for Maturity Matters, Learning a Young Cohort's Own Timing
+- Drift or Immaturity? Correcting for Maturity Matters; Learning a Young Cohort's Own Speed
   Rarely Helps. Yin et al. Under review at Transactions on Machine Learning Research (TMLR),
   2026. Shows that drift detectors and adaptive training windows mistake provisional labels for
   real change, and that weighting each cohort by how mature its labels are fixes this. Tested
