@@ -38,11 +38,12 @@ improve the planner, which placed first in the category in 2024. The work led to
 ## Selected publications
 
 - Drift or Immaturity? Correcting for Maturity Matters, Learning a Young Cohort's Own Timing
-  Rarely Helps. Yin et al. Under review at TMLR, 2026. Shows that drift
-  detectors and adaptive training windows mistake provisional labels for real change, and that
-  weighting each cohort by how mature its labels are fixes this. Tested on 4.2 million
+  Rarely Helps. Yin et al. Under review at Transactions on Machine Learning Research (TMLR),
+  2026. Shows that drift detectors and adaptive training windows mistake provisional labels for
+  real change, and that weighting each cohort by how mature its labels are fixes this. Tested
+  on 4.2 million
   mortgages and 1.9 million patents, and in a pre-registered test on 1.4 million small-business
-  loans. Not yet available online.
+  loans. PDF: https://aaron-yin.com/papers/drift-or-immaturity.pdf
 - VCBench: Benchmarking LLMs in Venture Capital. Chen, Ternasky, Kwesi, Griffin, Yin, Salifu,
   Amoaba, Mu, Alican, Ihlamur. Intelligent Computing (Computing Conference 2026, London),
   Springer, pp. 167-187. https://doi.org/10.1007/978-3-032-24804-6_10
